@@ -1,0 +1,14 @@
+.DS_Store
+
+/.quarto/
+
+/*.qmd
+/docs/
+
+*.code-workspace
+
+_extensions
+
+__pycache__
+
+**/*.quarto_ipynb
