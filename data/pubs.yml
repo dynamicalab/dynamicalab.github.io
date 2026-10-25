@@ -2112,9 +2112,9 @@
     - desrosiers-patrick
     - Michèle Desjardins
   conference: 8th Canadian Neuroscience Meeting
-  year: 2025
-  poster: "assets/pdf/posters/2025-jordan-can.pdf"
   location: Toronto, Canada
+  year: 2025
+  poster: 2025-can-charest-jordan.pdf
 
 - type: oral-presentation
   title: Kuramoto meets Koopman -- Constants of motion, symmetries and network motifs
