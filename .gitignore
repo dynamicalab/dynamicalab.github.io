@@ -1,14 +1,15 @@
 .DS_Store
 
-/.quarto/
+__pycache__
+.venv
 
-/*.qmd
+/.quarto/
+**/*.quarto_ipynb
+_extensions
 /docs/
+/*.qmd
 
 *.code-workspace
 
-_extensions
 
-__pycache__
 
-**/*.quarto_ipynb
