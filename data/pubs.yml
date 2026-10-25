@@ -1,0 +1,3571 @@
+# Example
+# - type: article                     # see the list of types below
+#   title: Some paper title
+#   authors:                          # member ids (highlighted as lab members) or plain names (collaborators)
+#     - nom-prenom
+#     - Jane Doe
+#   journal: Phys. Rev. E             # article only; omit for a preprint
+#   volume: 108                       # article only, optional
+#   pages: 044301                     # article only, optional
+#   year: 2023
+#   doi: 10.1103/...                  # optional
+#   open-access: true                 # optional, adds an open-access icon next to the doi link
+#   pdf: nom-prenom-2023.pdf          # optional, file in pdf/
+#   fulltext: https://...             # optional, link to a free full text
+#   arxiv: 2301.01234                 # optional
+#   biorxiv: 10.1101/...              # optional (doi)
+#   medrxiv: 10.1101/...              # optional (doi)
+#   keywords:                         # optional, shown as tags
+#     - network-geometry
+#   highlights:                       # optional, shown with a star
+#     - "Featured on the cover of Nature Physics."
+#   outside-of-dynamica: true         # optional, shown only on the authors' personal pages
+#
+# - type: oral-presentation           # or invited-presentation, poster-presentation
+#   title: Some talk title
+#   authors:
+#     - nom-prenom
+#     - Jane Doe
+#   presenters:                       # optional, defaults to the first author
+#     - nom-prenom
+#   conference: Conference on Complex Systems (CCS2025)
+#   location: Siena, Italy
+#   year: 2025
+#   slides: nom-prenom-ccs2025.pdf    # optional, file in slides/
+#   poster: nom-prenom-ccs2025.pdf    # optional, file in posters/
+#
+# Types shown under "Journal Articles & Writings":
+#   article, conference-proceeding (conference, location), book-chapter,
+#   other-writing (reference: free-text reference, e.g. "Nat. Phys. 18, 238 (2022)")
+# Types shown under "Presentations":
+#   invited-presentation, oral-presentation, poster-presentation
+# Theses are not listed here: they are taken from the positions in data/team.yml.
+
+
+- type: article
+  title: Comprehensive profiling of anaesthetised brain dynamics across phylogeny
+  authors:
+    - Andrea I. Luppi
+    - Lynn Uhrig
+    - Jordy Tasserie
+    - Golia Shafiei
+    - legare-antoine
+    - Kanako Muta
+    - Junichi Hata
+    - Hideyuki Okano
+    - Daniel Golkowski
+    - Andreas Ranft
+    - Rudiger Ilg
+    - Denis Jordan
+    - Silvia Gini
+    - Zhen-Qi Liu
+    - Yohan Yee
+    - Camilo M. Signorelli
+    - Rodrigo Cofre
+    - Alain Destexhe
+    - David K. Menon
+    - Emmanuel A. Stamatakis
+    - desrosiers-patrick
+    - Paul De Koninck
+    - Christopher W. Connor
+    - Alessandro Gozzi
+    - Ben D. Fulcher
+    - Bechir Jarraya
+    - Bratislav Misic
+  year: 2026
+  biorxiv: 10.1101/2025.03.22.644729
+  keywords:
+    - neuroscience
+
+
+- type: article
+  title: Chronic optogenetic activation of hippocampal CA1 neurons triggers Alzheimer's disease-like proteomic remodeling
+  authors:
+    - Iason Keramidis
+    - Martina Samiotaki
+    - Romain Sansonetti
+    - Johanna Alonso
+    - desrosiers-patrick
+    - Katerina Papanikolopoulou
+    - Yves De Koninck
+  journal: iScience
+  open-access: true
+  volume: 208
+  pages: 113454
+  year: 2025
+  doi: 10.1016/j.isci.2025.113454
+  keywords:
+    - neuroscience
+
+
+- type: article
+  id: "#behavioral-homophily"
+  title: The impact of behavioral homophily and conformity on epidemic spreading in networks with large groups
+  authors:
+    - ribordy-olivier
+    - Clara Granell
+    - Guillaume St-Onge
+    - Laurent Hébert-Dufresne
+    - Alex Arenas
+    - allard-antoine
+  year: 2025
+  arxiv: 2605.25875
+  keywords:
+    - contagion-dynamics
+
+
+- type: article
+  id: "#geometric-networks"
+  title: Function aligns with geometry in locally connected neuronal network
+  authors:
+    - legare-antoine
+    - ribordy-olivier
+    - Paul De Koninck
+    - allard-antoine
+    - desrosiers-patrick
+  journal: "_to appear in Nat. Commun._"
+  year: 2025
+  biorxiv: 10.1101/2025.08.08.669348
+  keywords:
+    - network-geometry
+    - neuroscience
+
+
+- type: article
+  title: "Kuramoto meets Koopman: Constants of motion, symmetries, and network motifs"
+  authors:
+    - thibeault-vincent
+    - claveau-benjamin
+    - allard-antoine
+    - desrosiers-patrick
+  year: 2025
+  arxiv: 2504.06248
+  keywords:
+    - dimension-reduction
+
+
+- type: article
+  title: On the reconstruction limits of complex networks
+  authors:
+    - murphy-charles
+    - lizotte-ariane
+    - thibault-francois
+    - thibeault-vincent
+    - desrosiers-patrick
+    - allard-antoine
+  year: 2024
+  arxiv: 2501.01437
+  keywords:
+    - information-theory
+
+
+- type: article
+  title: Structural and genetic determinants of zebrafish functional brain networks
+  authors:
+    - legare-antoine
+    - Mado Lemieux
+    - Vincent Boily
+    - Sandrine Poulin
+    - legare-arthur
+    - desrosiers-patrick
+    - Paul De Koninck
+  journal: Sci. Adv.
+  open-access: true
+  volume: 11
+  pages: eadv7576
+  year: 2025
+  doi: 10.1126/sciadv.adv7576
+  biorxiv: 10.1101/2024.12.20.629476
+  keywords:
+    - neuroscience
+
+
+- type: article
+  title: "NeuroTorch: A Python library for neuroscience-oriented machine learning"
+  authors:
+    - gince-jeremie
+    - drouin-anthony
+    - desrosiers-patrick
+    - Simon Hardy
+  year: 2024
+  biorxiv: 10.1101/2024.12.29.630683v1
+  keywords:
+    - neuroscience
+
+
+- type: article
+  title: On the Uniform Sampling of the Configuration Model with Centrality Constraints
+  authors:
+    - thibault-francois
+    - Laurent Hébert-Dufresne
+    - allard-antoine
+  year: 2024
+  arxiv: 2409.20493
+  keywords:
+    - network-models
+
+
+- type: article
+  title: Geometric renormalization unravels self-similarity of the multiscale human connectome
+  authors:
+    - Muhua Zheng
+    - allard-antoine
+    - Patric Hagmann
+    - Yasser Alemán-Gómez
+    - M. Ángeles Serrano
+  journal: Proc. Natl. Acad. Sci. U.S.A.
+  open-access: true
+  volume: 117
+  pages: 20244
+  year: 2020
+  doi: 10.1073/pnas.1922248117
+  arxiv: 1904.11793
+  keywords:
+    - network-geometry
+    - neuroscience
+
+
+- type: article
+  title: Genome-scale modeling of metabolism in the polar diatom Fragilariopsis cylindrus underscores the strong robustness of growth rate in response to cellular perturbations
+  authors:
+    - Michel Lavoie
+    - Blanche Saint-Béat
+    - Jan Strauss
+    - Sébastien Guérin
+    - allard-antoine
+    - Simon V. Hardy
+    - Angela Falciatore
+    - Johann Lavaud
+  journal: Biology
+  open-access: true
+  volume: 9
+  pages: 30
+  year: 2020
+  doi: 10.3390/biology9020030
+  keywords:
+    - ecology
+
+
+- type: article
+  title: "Beyond R<sub>0</sub>: the importance of contact tracing when predicting epidemics"
+  authors:
+    - Laurent Hébert-Dufresne
+    - Benjamin M. Althouse
+    - Samuel V. Scarpino
+    - allard-antoine
+  journal: J. R. Soc. Interface
+  open-access: true
+  volume: 17
+  pages: 20200393
+  year: 2020
+  doi: 10.1098/rsif.2020.0393
+  arxiv: 2002.04004
+  medrxiv: 10.1101/2020.02.10.20021725
+  keywords:
+    - contagion-dynamics
+    - epidemiology
+
+
+- type: article
+  title: "Threefold way to the dimension reduction of dynamics on networks: an application to synchronization"
+  authors:
+    - thibeault-vincent
+    - st-onge-guillaume
+    - dube-louis-j
+    - desrosiers-patrick
+  journal: Phys. Rev. Research
+  open-access: true
+  volume: 2
+  pages: 043215
+  year: 2020
+  doi: 10.1103/PhysRevResearch.2.043215
+  arxiv: 2005.10922
+  keywords:
+    - dimension-reduction
+
+
+- type: article
+  title: Navigable maps of structural brain networks across species
+  authors:
+    - allard-antoine
+    - M. Ángeles Serrano
+  journal: PLOS Comput. Biol.
+  open-access: true
+  volume: 16
+  pages: e1007584
+  year: 2020
+  doi: 10.1371/journal.pcbi.1007584
+  arxiv: 1801.06079
+  keywords:
+    - network-geometry
+    - neuroscience
+
+
+- type: article
+  title: "Mercator: uncovering faithful hyperbolic embeddings of complex networks"
+  authors:
+    - Guillermo García-Pérez
+    - allard-antoine
+    - M. Ángeles Serrano
+    - Marián Boguñá
+  journal: New J. Phys.
+  open-access: true
+  volume: 21
+  pages: 123033
+  year: 2019
+  doi: 10.1088/1367-2630/ab57d2
+  arxiv: 1904.10814
+  github: networkgeometry/mercator
+  keywords:
+    - network-geometry
+
+
+- type: article
+  title: Ultra-rare biallelic THAP12 variants cause loss of function and underlie severe epileptic encephalopathy
+  authors:
+    - Katarzyna Ochenkowska
+    - Bryce Rampal
+    - legare-antoine
+    - Valérie Triassi
+    - Sébastien Audet
+    - Alexandre Brisson
+    - Guillaume Bernas
+    - Meijiang Liao
+    - Alexandra da Silva Babinet
+    - Julie Pilliod
+    - Mariah Gillaspie
+    - Grace E. VanNoy
+    - Lynn Pais
+    - Anne O’Donnell-Luria
+    - Nicole Leclerc
+    - Diana Walleigh
+    - Jean-François Schmouth
+    - Laurent Cappadocia
+    - desrosiers-patrick
+    - Paul De Koninck
+    - Martine Tétreault
+    - Éric Samarut
+  medrxiv: 10.64898/2026.02.27.26347078
+  year: 2026
+  keywords:
+    - neuroscience
+
+
+- type: article
+  title: Inferring biodiversity from indicator species using co-occurrence network structure
+  authors:
+    - bouderbala-ilhem
+    - Daniel Fortin
+    - Junior A. Tremblay
+    - Christian Hébert
+    - allard-antoine
+    - desrosiers-patrick
+  biorxiv: 10.64898/2026.02.02.703325
+  year: 2026
+  keywords:
+    - ecology
+
+
+- type: article
+  title: Random graphs with specific degree distribution and giant component size
+  authors:
+    - Laurent Hébert-Dufresne
+    - Márton Pósfai
+    - allard-antoine
+  journal: Phys. Rev. Research
+  open-access: true
+  volume: 7
+  pages: L022050
+  year: 2025
+  doi: 10.1103/PhysRevResearch.7.L022050
+  arxiv: 2307.03559
+  keywords:
+    - network-models
+
+
+- type: article
+  title: Network compression with configuration models and the minimum description length
+  authors:
+    - Laurent Hébert-Dufresne
+    - Jean-Gabriel Young
+    - Alexander Daniels
+    - Alex Kirkley
+    - allard-antoine
+  journal: Phys. Rev. E
+  volume: 110
+  pages: 034305
+  year: 2024
+  doi: 10.1103/PhysRevE.110.034305
+  arxiv: 2204.08444
+  keywords:
+    - network-models
+
+
+- type: article
+  title: The network epidemiology of an Ebola epidemic
+  authors:
+    - Laurent Hébert-Dufresne
+    - Jean-Gabriel Young
+    - Jamie Bedson
+    - Laura A. Skrip
+    - Danielle Pedi
+    - Mohammed F. Jalloh
+    - raulier-bastian
+    - lapointe-gagne-olivier
+    - Amara Jambai
+    - allard-antoine
+    - Benjamin M. Althouse
+  year: 2021
+  arxiv: 2111.08686
+  keywords:
+    - epidemiology
+
+
+- type: article
+  title: Detecting structural perturbations from time series with deep learning
+  authors:
+    - laurence-edward
+    - murphy-charles
+    - st-onge-guillaume
+    - roy-pomerleau-xavier
+    - thibeault-vincent
+  year: 2020
+  arxiv: 2006.05232
+  keywords:
+    - machine-learning
+
+
+- type: article
+  title: On the accuracy of message-passing approaches to percolation in complex networks
+  authors:
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+  year: 2019
+  arxiv: 1906.10377
+
+
+- type: article
+  title: Symmetry-driven embedding of networks in hyperbolic space
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  journal: Commun. Phys.
+  open-access: true
+  volume: 8
+  pages: 199
+  year: 2025
+  doi: 10.1038/s42005-025-02122-0
+  arxiv: 2406.10711
+  keywords:
+    - network-geometry
+
+
+- type: article
+  title: Firing rate distributions in plastic networks of spiking neurons
+  authors:
+    - vegue-marina
+    - allard-antoine
+    - desrosiers-patrick
+  journal: Netw. Neurosci.
+  open-access: true
+  volume: 9
+  pages: 447-474
+  year: 2025
+  doi: 10.1162/netn_a_00442
+  arxiv: 2311.05442
+  keywords:
+    - neuroscience
+
+
+- type: article
+  title: Duality between predictability and reconstructability in complex systems
+  authors:
+    - murphy-charles
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  journal: Nat. Commun.
+  open-access: true
+  volume: 15
+  pages: 4478
+  year: 2024
+  doi: 10.1038/s41467-024-48020-x
+  arxiv: 2206.04000
+  keywords:
+    - information-theory
+
+
+- type: article
+  title: Escherichia coli CRISPR arrays from early life fecal samples preferentially target prophages
+  authors:
+    - Moïra B. Dion
+    - Shiraz A. Shah
+    - Ling Deng
+    - Jonathan Thorsen
+    - Jakob Stokholm
+    - Karen A. Krogfelt
+    - Susanne Schjørring
+    - Philippe Horvath
+    - allard-antoine
+    - Dennis S. Nielsen
+    - Marie-Agnès Petit
+    - Sylvain Moineau
+  journal: ISME J.
+  open-access: true
+  volume: 18
+  pages: wrae005
+  year: 2024
+  doi: 10.1093/ismejo/wrae005
+
+
+- type: article
+  title: The determining role of covariances in large networks of stochastic neurons
+  authors:
+    - painchaud-vincent
+    - desrosiers-patrick
+    - Nicolas Doyon
+  volume: 36
+  pages: 1121–1162
+  year: 2024
+  journal: Neural Comput.
+  doi: 10.1162/neco_a_01656
+  arxiv: 2212.09705
+  keywords:
+    - neuroscience
+
+
+- type: article
+  title: "NBS-SNI, an extension of the Network-based statistic: Investigating differences in functional connections between important structural actors in case-control studies"
+  authors:
+    - normand-francis
+    - Mehul Gajwani
+    - Daniel C. Côté
+    - allard-antoine
+  journal: Netw. Neurosci.
+  open-access: true
+  volume: 8
+  pages: 44-80
+  year: 2024
+  doi: 10.1162/netn_a_00344
+  biorxiv: 10.1101/2022.08.29.505749
+  keywords:
+    - neuroscience
+
+
+- type: article
+  title: Geometric description of clustering in directed networks
+  authors:
+    - allard-antoine
+    - M. Ángeles Serrano
+    - Marián Boguñá
+  journal: Nat. Phys.
+  volume: 20
+  pages: 150-156
+  year: 2024
+  doi: 10.1038/s41567-023-02246-6
+  arxiv: 2302.09055
+  keywords:
+    - network-geometry
+
+
+- type: article
+  title: The low-rank hypothesis of complex systems
+  authors:
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  journal: Nat. Phys.
+  volume: 20
+  pages: 294-302
+  year: 2024
+  doi: 10.1038/s41567-023-02303-0
+  arxiv: 2208.04848
+  keywords:
+    - dimension-reduction
+  highlights:
+    - "Featured on the cover of [Nature Physics](https://www.nature.com/nphys/volumes/20/issues/2)."
+    - "Featured in [Nature Physics' News & Views](https://doi.org/10.1038/s41567-023-02268-0)."
+
+
+- type: article
+  title: The D-Mercator method for the multidimensional hyperbolic embedding of real networks
+  authors:
+    - Robert Jankowski
+    - allard-antoine
+    - Marián Boguñá
+    - M. Ángeles Serrano
+  journal: Nat. Commun.
+  open-access: true
+  volume: 14
+  pages: 7585
+  year: 2023
+  doi: 10.1038/s41467-023-43337-5
+  arxiv: 2304.06580
+  keywords:
+    - network-geometry
+
+
+- type: article
+  title: The unintended consequences of inconsistent closure policies and mobility restrictions during epidemics
+  authors:
+    - Benjamin M. Althouse
+    - Brendan Wallace
+    - Brendan Case
+    - Samuel V. Scarpino
+    - allard-antoine
+    - Andrew M. Berdahl
+    - Easton R. White
+    - Laurent Hébert-Dufresne
+  journal: BMC Global Public Health
+  open-access: true
+  volume: 1
+  pages: 28
+  year: 2023
+  doi: 10.1186/s44263-023-00028-z
+  medrxiv: 10.1101/2020.08.21.20179473
+  keywords:
+    - epidemiology
+
+
+- type: article
+  title: Nonlinear bias toward complex contagion in uncertain transmission settings
+  authors:
+    - st-onge-guillaume
+    - Laurent Hébert-Dufresne
+    - allard-antoine
+  journal: Proc. Natl. Acad. Sci. USA
+  volume: 121
+  pages: e2312202121
+  year: 2023
+  doi: 10.1073/pnas.2312202121
+  arxiv: 2307.03559
+  keywords:
+    - epidemiology
+
+
+- type: article
+  title: Hypergraph reconstruction from uncertain pairwise observations
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  journal: Sci. Rep.
+  open-access: true
+  volume: 13
+  pages: 21364
+  year: 2023
+  doi: 10.1038/s41598-023-48081-w
+  arxiv: 2208.06503
+
+
+- type: article
+  title: Temporal and probabilistic forecasts of epidemic interventions
+  authors:
+    - Mariah C. Boudreau
+    - Andrea J. Allen
+    - Nicholas J. Roberts
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+  journal: Bull. Math. Biol.
+  volume: 85
+  pages: 118
+  year: 2023
+  doi: 10.1007/s11538-023-01220-w
+  arxiv: 2302.03210
+  keywords:
+    - epidemiology
+
+
+- type: article
+  title: Hierarchical team structure and multidimensional localization (or siloing) on networks
+  authors:
+    - Laurent Hébert-Dufresne
+    - st-onge-guillaume
+    - John Meluso
+    - James P. Bagrow
+    - allard-antoine
+  journal: J. Phys. Complex.
+  open-access: true
+  volume: 4
+  pages: 035002
+  year: 2023
+  doi: 10.1088/2632-072X/ace602
+  arxiv: 2203.00745
+
+
+- type: article
+  title: Exact and rapid linear clustering of networks with dynamic programming
+  authors:
+    - Alice Patania
+    - allard-antoine
+    - Jean-Gabriel Young
+  journal: Proc. R. Soc. A
+  volume: 479
+  pages: 20230159
+  year: 2023
+  doi: 10.1098/rspa.2023.0159
+  arxiv: 2301.10403
+
+
+- type: article
+  title: Predicting cognitive decline in a low-dimensional representation of brain morphology
+  authors:
+    - Rémi Lamontagne-Caron
+    - desrosiers-patrick
+    - Olivier Potvin
+    - Nicolas Doyon
+    - Simon Duchesne
+  journal: Sci. Rep.
+  volume: 13
+  pages: 16793
+  year: 2023
+  doi: 10.1038/s41598-023-43063-4
+
+
+- type: article
+  title: "Zebrafish brain atlases: a collective effort for a tiny vertebrate brain"
+  authors:
+    - legare-antoine
+    - Mado Lemieux
+    - desrosiers-patrick
+    - Paul De Koninck
+  year: 2023
+  journal: Neurophotonics
+  volume: 10
+  pages: 044409
+  doi: 10.1117/1.NPh.10.4.044409
+
+
+- type: article
+  title: Dimension reduction of dynamics on modular and heterogeneous directed networks
+  authors:
+    - vegue-marina
+    - thibeault-vincent
+    - desrosiers-patrick
+    - allard-antoine
+  journal: PNAS Nexus
+  open-access: true
+  volume: 2
+  pages: pgad150
+  year: 2023
+  doi: 10.1093/pnasnexus/pgad150
+  arxiv: 2206.11230
+
+
+- type: article
+  title: Dimension matters when modeling network communities in hyperbolic spaces
+  authors:
+    - desy-beatrice
+    - desrosiers-patrick
+    - allard-antoine
+  journal: PNAS Nexus
+  open-access: true
+  volume: 2
+  pages: pgad136
+  year: 2023
+  doi: 10.1093/pnasnexus/pgad136
+  arxiv: 2209.09201
+  keywords:
+    - network-geometry
+
+
+- type: article
+  title: The Role of Directionality, Heterogeneity, and Correlations in Epidemic Risk and Spread
+  authors:
+    - allard-antoine
+    - Cristopher Moore
+    - Samuel V. Scarpino
+    - Benjamin M. Althouse
+    - Laurent Hébert-Dufresne
+  journal: SIAM Rev.
+  open-access: true
+  volume: 65
+  pages: 471-492
+  year: 2023
+  doi: 10.1137/20m1383811
+  arxiv: 2005.11283
+
+
+- type: article
+  title: "Effects of global change on bird and beetle populations in boreal forest landscape: An assemblage dissimilarity analysis"
+  authors:
+    - bouderbala-ilhem
+    - Guillemette Labadie
+    - Jean-Michel Béland
+    - Yan Boulanger
+    - Christian Hébert
+    - desrosiers-patrick
+    - allard-antoine
+    - Daniel Fortin
+  journal: Divers. Distrib.
+  open-access: true
+  volume: 29
+  pages: 757-773
+  year: 2023
+  doi: 10.1111/ddi.13697
+  biorxiv: 10.1101/2022.01.31.477297v2
+
+
+- type: article
+  title: Long-term effect of forest harvesting on boreal species assemblages under climate change
+  authors:
+    - bouderbala-ilhem
+    - Guillemette Labadie
+    - Jean-Michel Béland
+    - Junior A. Tremblay
+    - Yan Boulanger
+    - Christian Hébert
+    - desrosiers-patrick
+    - allard-antoine
+    - Daniel Fortin
+  journal: PLOS Clim.
+  open-access: true
+  volume: 2
+  pages: e0000179
+  year: 2023
+  doi: 10.1371/journal.pclm.0000179
+  biorxiv: 10.1101/2022.08.21.504664
+
+
+- type: article
+  title: "Beyond Wilson-Cowan dynamics: oscillations and chaos without inhibition"
+  authors:
+    - painchaud-vincent
+    - Nicolas Doyon
+    - desrosiers-patrick
+  journal: Biol. Cybern.
+  volume: 116
+  pages: 527
+  year: 2022
+  doi: 10.1007/s00422-022-00941-w
+  arxiv: 2204.00583
+
+
+- type: article
+  title: Toward an integrative neurovascular framework for studying brain networks
+  authors:
+    - Jérémie Guilbert
+    - legare-antoine
+    - Paul De Koninck
+    - desrosiers-patrick
+    - Michèle Desjardins
+  journal: Neurophotonics
+  volume: 9
+  pages: 032211
+  year: 2022
+  doi: 10.1117/1.NPh.9.3.032211
+
+
+- type: other-writing
+  title: One for All
+  authors:
+    - desrosiers-patrick
+    - roy-pomerleau-xavier
+  reference: Nat. Phys. 18, 238 (2022)
+  # journal: Nat. Phys.
+  # volume: 18
+  # pages: 238
+  year: 2022
+  doi: 10.1038/s41567-021-01449-z
+
+
+- type: article
+  title: Predicting the diversity of early epidemic spread on networks
+  authors:
+    - Andrea J. Allen
+    - Mariah C. Boudreau
+    - Nicholas J. Roberts
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+  journal: Phys. Rev. Research
+  open-access: true
+  volume: 4
+  pages: 013123
+  year: 2022
+  doi: 10.1103/PhysRevResearch.4.013123
+
+
+- type: article
+  title: Universal Nonlinear Infection Kernel from Heterogeneous Exposure on Higher-Order Networks
+  authors:
+    - st-onge-guillaume
+    - Hanlin Sun
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+    - Ginestra Bianconi
+  journal: Phys. Rev. Lett.
+  volume: 127
+  pages: 158301
+  year: 2021
+  doi: 10.1103/PhysRevLett.127.158301
+  arxiv: 2101.07229
+
+
+- type: article
+  title: Deep learning of stochastic contagion dynamics on complex networks
+  authors:
+    - murphy-charles
+    - laurence-edward
+    - allard-antoine
+  journal: Nat. Commun.
+  open-access: true
+  volume: 12
+  pages: 4720
+  year: 2021
+  doi: 10.1038/s41467-021-24732-2
+  arxiv: 2006.05410
+
+
+- type: article
+  title: Dynamical rate equation model for femtosecond laser-induced breakdown in dielectrics
+  authors:
+    - deziel-jean-luc
+    - dube-louis-j
+    - Charles Varin
+  journal: Phys. Rev. B
+  volume: 104
+  pages: 045201
+  year: 2021
+  doi: 10.1103/PhysRevB.104.045201
+  arxiv: 1906.08338
+
+
+- type: article
+  title: Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs
+  authors:
+    - st-onge-guillaume
+    - Iacopo Iacopini
+    - Vito Latora
+    - Alain Barrat
+    - Giovanni Petri
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+  journal: Commun. Phys.
+  open-access: true
+  volume: 5
+  pages: 25
+  year: 2022
+  doi: 10.1038/s42005-021-00788-w
+  arxiv: 2105.07092
+
+
+- type: conference-proceeding
+  title: Limits of Individual Consent and Models of Distributed Consent in Online Social Networks
+  authors:
+    - Juniper Lovato
+    - allard-antoine
+    - Randall Harp
+    - Jeremiah Onaolapo
+    - Laurent Hébert-Dufresne
+  conference: "FAccT'22: 2022 ACM Conference on Fairness, Accountability, and Transparency"
+  location: Seoul, Republic of Korea
+  open-access: true
+  # pages: 2251–2262
+  year: 2022
+  doi: 10.1145/3531146.3534640
+  arxiv: 2006.16140
+
+
+- type: article
+  title: "Superspreading events in the transmission dynamics of SARS-CoV-2: Opportunities for interventions and control"
+  authors:
+    - Benjamin M. Althouse
+    - Edward A. Wenger
+    - Joel C. Miller
+    - Samuel V. Scarpino
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+    - Hao Hu
+  journal: PLOS Biol.
+  open-access: true
+  volume: 18
+  pages: e3000897
+  year: 2020
+  doi: 10.1371/journal.pbio.3000897
+  arxiv: 2005.13689
+
+
+- type: article
+  title: Social Confinement and Mesoscopic Localization of Epidemics on Networks
+  authors:
+    - st-onge-guillaume
+    - thibeault-vincent
+    - allard-antoine
+    - dube-louis-j
+    - Laurent Hébert-Dufresne
+  journal: Phys. Rev. Lett.
+  volume: 126
+  pages: 098301
+  year: 2021
+  doi: 10.1103/PhysRevLett.126.098301
+  arxiv: 2003.05924
+
+
+- type: article
+  title: Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks
+  authors:
+    - st-onge-guillaume
+    - thibeault-vincent
+    - allard-antoine
+    - dube-louis-j
+    - Laurent Hébert-Dufresne
+  journal: Phys. Rev. E
+  volume: 103
+  pages: 032301
+  year: 2021
+  doi: 10.1103/PhysRevE.103.032301
+  arxiv: 2004.10203
+
+
+- type: article
+  title: Localization, epidemic transitions, and unpredictability of multistrain epidemics with an underlying genotype network
+  authors:
+    - Blake J. M. Williams
+    - st-onge-guillaume
+    - Laurent Hébert-Dufresne
+  journal: PLOS Comput. Biol.
+  open-access: true
+  volume: 17
+  pages: e1008606
+  year: 2021
+  doi: 10.1371/journal.pcbi.1008606
+  arxiv: 2007.07429
+
+
+- type: article
+  title: Geometric renormalization unravels self-similarity of the multiscale human connectome
+  authors:
+    - Muhua Zheng
+    - allard-antoine
+    - Patric Hagmann
+    - Yasser Alemán-Gómez
+    - M. Ángeles Serrano
+  journal: Proc. Natl. Acad. Sci. U.S.A.
+  open-access: true
+  volume: 117
+  pages: 20244
+  year: 2020
+  doi: 10.1073/pnas.1922248117
+  arxiv: 1904.11793
+  keywords:
+    - network-geometry
+    - neuroscience
+
+
+- type: article
+  title: Genome-scale modeling of metabolism in the polar diatom Fragilariopsis cylindrus underscores the strong robustness of growth rate in response to cellular perturbations
+  authors:
+    - Michel Lavoie
+    - Blanche Saint-Béat
+    - Jan Strauss
+    - Sébastien Guérin
+    - allard-antoine
+    - Simon V. Hardy
+    - Angela Falciatore
+    - Johann Lavaud
+  journal: Biology
+  open-access: true
+  volume: 9
+  pages: 30
+  year: 2020
+  doi: 10.3390/biology9020030
+
+
+- type: article
+  title: Phase Transition in the Recoverability of Network History
+  authors:
+    - young-jean-gabriel
+    - st-onge-guillaume
+    - laurence-edward
+    - murphy-charles
+    - Laurent Hébert-Dufresne
+    - desrosiers-patrick
+  journal: Phys. Rev. X
+  open-access: true
+  volume: 9
+  pages: 041056
+  year: 2019
+  arxiv: 1803.09191
+  doi: 10.1103/PhysRevX.9.041056
+  github: 'https://github.com/jg-you/network-archaeology'
+
+
+- type: article
+  title: Inference, Model Selection, and the Combinatorics of Growing Trees
+  authors:
+    - George T. Cantwell
+    - st-onge-guillaume
+    - Jean-Gabriel Young
+  journal: Phys. Rev. Lett.
+  volume: 126
+  pages: 038301
+  year: 2021
+  doi: 10.1103/PhysRevLett.126.038301
+  arxiv: 1910.04788
+  github: gcant/temporal-recovery-tree-py
+
+
+- type: article
+  title: Smeared phase transition of percolation on real complex networks
+  authors:
+    - Laurent Hébert-Dufresne
+    - allard-antoine
+  journal: Phys. Rev. Research
+  open-access: true
+  volume: 1
+  pages: 013009
+  year: 2019
+  doi: 10.1103/PhysRevResearch.1.013009
+  arxiv: 1810.00735
+
+
+- type: article
+  title: Percolation and the effective structure of complex networks
+  authors:
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+  journal: Phys. Rev. X
+  open-access: true
+  volume: 9
+  pages: 011023
+  year: 2019
+  doi: 10.1103/PhysRevX.9.011023
+  arxiv: 1804.09633
+
+
+- type: article
+  title: Spectral dimension reduction of complex dynamical networks
+  authors:
+    - laurence-edward
+    - Nicolas Doyon
+    - dube-louis-j
+    - desrosiers-patrick
+  journal: Phys. Rev. X
+  open-access: true
+  volume: 9
+  pages: 011042
+  year: 2019
+  doi: 10.1103/PhysRevX.9.011042
+  arxiv: 1809.08285
+
+
+- type: article
+  title: Efficient sampling of spreading processes on complex networks using a composition and rejection algorithm
+  authors:
+    - st-onge-guillaume
+    - Jean-Gabriel Young
+    - Laurent Hébert-Dufresne
+    - dube-louis-j
+  journal: Comput. Phys. Commun.
+  volume: 240
+  pages: 30
+  year: 2019
+  doi: 10.1016/j.cpc.2019.02.008
+  arxiv: 1808.05859
+  github: gstonge/spreading_CR
+
+
+- type: article
+  title: Universality of the stochastic block model
+  authors:
+    - young-jean-gabriel
+    - st-onge-guillaume
+    - desrosiers-patrick
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 98
+  pages: 030309
+  year: 2018
+  doi: 10.1103/PhysRevE.98.032309
+  arxiv: 1806.04214
+
+
+- type: article
+  title: Exact analytical solution of irreversible binary dynamics on networks
+  authors:
+    - laurence-edward
+    - young-jean-gabriel
+    - Sergey Melnik
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 97
+  pages: 032302
+  year: 2018
+  doi: 10.1103/PhysRevE.97.032302
+  arxiv: 1711.02721
+  github: laurencee9/exact_binary_dynamics
+
+
+- type: article
+  title: Geometric evolution of complex networks with degree correlations
+  authors:
+    - murphy-charles
+    - allard-antoine
+    - laurence-edward
+    - st-onge-guillaume
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 97
+  pages: 032309
+  year: 2018
+  doi: 10.1103/PhysRevE.97.032309
+  arxiv: 1710.01600
+  keywords:
+    - network-geometry
+
+
+- type: article
+  title: Phase transition of the susceptible-infected-susceptible dynamics on time-varying configuration model networks
+  authors:
+    - st-onge-guillaume
+    - young-jean-gabriel
+    - laurence-edward
+    - murphy-charles
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 97
+  year: 2018
+  pages: 022305
+  doi: 10.1103/PhysRevE.97.022305
+  arxiv: 1709.09257
+
+
+- type: article
+  title: Construction of and efficient sampling from the simplicial configuration model
+  authors:
+    - young-jean-gabriel
+    - Giovanni Petri
+    - Francesco Vaccarino
+    - Alice Patania
+  journal: Phys. Rev. E
+  volume: 96
+  year: 2017
+  pages: 032312
+  doi: 10.1103/PhysRevE.96.032312
+  arxiv: 1705.10298
+
+
+- type: article
+  title: Strategic tradeoffs in competitor dynamics on adaptive networks
+  authors:
+    - Laurent Hébert-Dufresne
+    - allard-antoine
+    - Pierre-André Noël
+    - young-jean-gabriel
+    - Eric Libby
+  journal: Sci. Rep.
+  open-access: true
+  volume: 7
+  pages: 7576
+  year: 2017
+  doi: 10.1038/s41598-017-07621-x
+  arxiv: 1607.04632
+
+
+- type: article
+  title: Susceptible-infected-susceptible dynamics on the rewired configuration model
+  authors:
+    - st-onge-guillaume
+    - young-jean-gabriel
+    - laurence-edward
+    - murphy-charles
+    - dube-louis-j
+  year: 2017
+  arxiv: 1701.01740
+
+
+- type: article
+  title: Finite size analysis of the detectability limit of the stochastic block model
+  authors:
+    - young-jean-gabriel
+    - desrosiers-patrick
+    - Laurent Hébert-Dufresne
+    - laurence-edward
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 95
+  pages: 062304
+  year: 2017
+  arxiv: 1701.00062
+  github: jg-you/sbm_canonical_mcmc
+
+
+- type: article
+  title: Growing networks of overlapping communities with internal structure
+  authors:
+    - young-jean-gabriel
+    - Laurent Hébert-Dufresne
+    - allard-antoine
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 94
+  pages: 022317
+  year: 2016
+  doi: 10.1103/PhysRevE.94.022317
+  arxiv: 1603.05566
+  github: spa-networks/spa
+
+
+- type: article
+  title: Constrained growth of complex scale-independent systems
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - young-jean-gabriel
+    - dube-louis-j
+  volume: 93
+  journal: Phys. Rev. E
+  pages: 032304
+  year: 2016
+  doi: 10.1103/PhysRevE.93.032304
+  arxiv: 1310.0112
+
+
+- type: article
+  title: Complex networks as an emerging property of hierarchical preferential attachment
+  authors:
+    - hebert-dufresne-laurent
+    - laurence-edward
+    - allard-antoine
+    - young-jean-gabriel
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 92
+  pages: 062809
+  year: 2015
+  doi: 10.1103/PhysRevE.92.062809
+  arxiv: 1312.0171
+
+
+- type: article
+  title: General and exact approach to percolation on random graphs
+  authors:
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - young-jean-gabriel
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 92
+  pages: 062807
+  year: 2015
+  doi: 10.1103/PhysRevE.92.062807
+  arxiv: 1509.01207
+
+
+- type: article
+  title: "A Shadowing Problem in the Detection of Overlapping Communities: Lifting the Resolution Limit through a Cascading Procedure"
+  authors:
+    - young-jean-gabriel
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - dube-louis-j
+  journal: PLOS ONE
+  open-access: true
+  volume: 10
+  pages: e0140133
+  year: 2015
+  doi: 10.1371/journal.pone.0140133
+  arxiv: 1211.1364
+  github: jg-you/cascading_detection
+
+
+# - type: book-chapter
+#   title: "The Social Zombie: Modelling undead outbreaks on social networks"
+#   authors:
+  # - Laurent Hébert-Dufresne, marceau-vincent, noel-pierre-andre, allard-antoine, dube-louis-
+#   publisher: "University of Ottawa Press"
+#   editor: "Robert Smith?"
+#   book: "Mathematical Modelling of Zombies"
+#   doi: "https://press.uottawa.ca/mathematical-modelling-of-zombies.html"
+#   chapter: "assets/pdf/books/social_zombie_chapter.pdf"
+#   year: 2014
+
+
+- type: article
+  title: Coexistence of phases and the observability of random graphs
+  authors:
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - young-jean-gabriel
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 89
+  pages: 022801
+  year: 2014
+  doi: 10.1103/PhysRevE.89.022801
+  arxiv: 1309.7983
+
+
+- type: article
+  title: Percolation on random networks with arbitrary <i>k</i>-core structure
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - young-jean-gabriel
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 88
+  pages: 062820
+  year: 2013
+  doi: 10.1103/PhysRevE.88.062820
+  arxiv: 1308.6537
+
+
+- type: article
+  title: Global efficiency of local immunization on complex networks
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - young-jean-gabriel
+    - dube-louis-j
+  journal: Sci. Rep.
+  open-access: true
+  volume: 3
+  pages: 2171
+  year: 2013
+  doi: 10.1038/srep02171
+  arxiv: 1208.5768
+
+
+- type: article
+  title: "Spreading dynamics on contact networks: a general stochastic approach"
+  authors:
+    - noel-pierre-andre
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - marceau-vincent
+    - dube-louis-j
+  journal: J. Math. Bio.
+  volume: 69
+  pages: 1627-1660
+  year: 2014
+  doi: 10.1007/s00285-013-0744-9
+  arxiv: 1201.0296
+
+
+- type: article
+  title: Bond percolation on a class of correlated and clustered random graphs
+  authors:
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - noel-pierre-andre
+    - marceau-vincent
+    - dube-louis-j
+  journal: J. Phys. A
+  volume: 45
+  pages: 405005
+  year: 2012
+  doi: 10.1088/1751-8113/45/40/405005
+  arxiv: 1201.4602
+
+
+- type: article
+  title: Exact solution of bond percolation on small arbitrary graphs
+  authors:
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - noel-pierre-andre
+    - marceau-vincent
+    - dube-louis-j
+  journal: EPL
+  volume: 98
+  pages: 16001
+  year: 2012
+  doi: 10.1209/0295-5075/98/16001
+  arxiv: 1201.4369
+
+
+- type: article
+  title: "Propagation on networks: an exact alternative perspective"
+  authors:
+    - noel-pierre-andre
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - marceau-vincent
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 85
+  pages: 031118
+  year: 2012
+  doi: 10.1103/PhysRevE.85.031118
+  arxiv: 1102.0987
+
+
+- type: article
+  title: "Structural preferential attachment: Stochastic process for the growth of scale-free, modular and self-similar systems"
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - marceau-vincent
+    - noel-pierre-andre
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 85
+  pages: 026108
+  year: 2012
+  doi: 10.1103/PhysRevE.85.026108
+  arxiv: 1109.0034
+
+
+- type: article
+  title: "Structural preferential attachment: Network organization beyond the link"
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - marceau-vincent
+    - noel-pierre-andre
+    - dube-louis-j
+  journal: Phys. Rev. Lett.
+  volume: 107
+  year: 2011
+  pages: 158702
+  doi: 10.1103/PhysRevLett.107.158702
+  arxiv: 1105.5980
+
+
+- type: article
+  title: Modeling the dynamical interaction between epidemics on overlay networks
+  authors:
+    - marceau-vincent
+    - noel-pierre-andre
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 84
+  pages: 026105
+  year: 2011
+  doi: 10.1103/PhysRevE.84.026105
+  arxiv: 1103.4059
+
+
+- type: article
+  title: "Adaptive networks: Coevolution of disease and topology"
+  authors:
+    - marceau-vincent
+    - noel-pierre-andre
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 82
+  pages: 036116
+  year: 2010
+  doi: 10.1103/PhysRevE.82.036116
+  arxiv: 1005.1299
+
+
+- type: article
+  title: Propagation dynamics on networks featuring complex topologies
+  authors:
+    - hebert-dufresne-laurent
+    - noel-pierre-andre
+    - marceau-vincent
+    - allard-antoine
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 82
+  pages: 036115
+  year: 2010
+  doi: 10.1103/PhysRevE.82.036115
+  arxiv: 1005.1397
+
+
+- type: other-writing
+  title: "Des Ponts d'Euler à la Grippe Aviaire: De l'abstraction mathématique à la réalité sociale des épidémies"
+  authors:
+    - allard-antoine
+    - noel-pierre-andre
+    - dube-louis-j
+  reference: Accromath 4, 24-29 (2009)
+  open-access: true
+  year: 2009
+  fulltext: https://accromath.uqam.ca/wp-content/uploads/2013/04/ponts-euler.pdf
+#   volume: 4
+#   pages: 24-29
+#   journal: "Accromath"
+
+
+- type: article
+  title: Heterogeneous Bond Percolation on Multitype Networks with an Application to Epidemic Dynamics
+  authors:
+    - allard-antoine
+    - noel-pierre-andre
+    - dube-louis-j
+    - B. Pourbohloul
+  journal: Phys. Rev. E
+  volume: 79
+  pages: 036113
+  year: 2009
+  doi: 10.1103/PhysRevE.79.036113
+  arxiv: 0811.2349
+
+
+- type: article
+  title: "Time Evolution of Epidemic Disease on Finite and Infinite Networks"
+  authors:
+    - noel-pierre-andre
+    - B. Davoudi
+    - R.C. Brunham
+    - dube-louis-j
+    - B. Pourbohloul
+  journal: Phys. Rev. E
+  volume: 79
+  pages: 026101
+  year: 2009
+  doi: 10.1103/PhysRevE.79.026101
+  arxiv: 0804.1807
+
+
+- type: article
+  title: Femtosecond self-reconfiguration of laser-induced plasma patterns in dielectrics
+  authors:
+    - deziel-jean-luc
+    - dube-louis-j
+    - Sandra H. Messaddeq
+    - Younès Messaddeq
+    - Charles Varin
+  journal: Phys. Rev. B
+  volume: 97
+  pages: 205116
+  year: 2018
+  doi: 10.1103/PhysRevB.97.205116
+  arxiv: 1702.02480
+
+
+- type: article
+  title: Constructive feedback for the growth of laser-induced periodic surface structures
+  authors:
+    - deziel-jean-luc
+    - dumont-joey
+    - gagnon-denis
+    - dube-louis-j
+    - Sandra Messaddeq
+    - Younès Messaddeq
+  journal: Phys. Status Solidi C
+  volume: 13
+  pages: 121-124
+  year: 2015
+  doi: 10.1002/pssc.201510146
+  arxiv: 1507.02490
+
+
+- type: article
+  title: Lorenz-Mie theory for 2D scattering and resonance calculations (tutorial)
+  authors:
+    - gagnon-denis
+    - dube-louis-j
+  journal: J. Opt.
+  volume: 17
+  pages: 103501
+  year: 2015
+  doi: 10.1088/2040-8978/17/10/103501
+  arxiv: 1505.07691
+
+
+- type: article
+  title: Toward the formation of crossed laser-induced periodic surface structures
+  authors:
+    - deziel-jean-luc
+    - dumont-joey
+    - gagnon-denis
+    - dube-louis-j
+    - Sandra Messaddeq
+    - Younès Messaddeq
+  journal: J. Opt.
+  volume: 17
+  pages: 075405
+  year: 2015
+  doi: 10.1088/2040-8978/17/7/075405
+  arxiv: 1410.0583
+
+
+- type: article
+  title: Optimization of integrated polarization filters
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - deziel-jean-luc
+    - dube-louis-j
+  journal: Opt. Lett.
+  volume: 39
+  pages: 5768-5771
+  year: 2014
+  doi: 10.1364/OL.39.005768
+  arxiv: 1407.7401
+
+
+- type: article
+  title: Ab initio investigation of lasing thresholds in photonic molecules
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - deziel-jean-luc
+    - dube-louis-j
+  journal: J. Opt. Soc. Am. B
+  volume: 31
+  pages: 1867-1873
+  year: 2014
+  doi: 10.1364/JOSAB.31.001867
+  arxiv: 1401.7305
+
+
+- type: article
+  title: Multiobjective optimization in integrated photonics design
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - dube-louis-j
+  journal: Opt. Lett.
+  volume: 38
+  pages: 2181-2184
+  year: 2013
+  doi: 10.1364/OL.38.002181
+  arxiv: 1305.5455
+
+
+- type: conference-proceeding
+  title: Coherent beam shaping using two-dimensional photonic crystals
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - dube-louis-j
+  conference: 15th International Conference on Transparent Optical Networks (ICTON)
+  location: Cartagena, Spain
+  year: 2013
+  doi: 10.1109/ICTON.2013.6602751
+  arxiv: 1305.0193
+
+
+- type: conference-proceeding
+  title: "S and Q Matrices Reloaded: applications to open, inhomogeneous, and complex cavities"
+  authors:
+    - painchaud-april-guillaume
+    - dumont-joey
+    - gagnon-denis
+    - dube-louis-j
+  conference: 15th International Conference on Transparent Optical Networks (ICTON)
+  location: Cartagena, Spain
+  year: 2013
+  doi: 10.1109/ICTON.2013.6602811
+  arxiv: 1305.0473
+
+
+- type: article
+  title: Beam shaping using genetically optimized two-dimensional photonic crystals
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - dube-louis-j
+  journal: J. Opt. Soc. Am. A
+  volume: 29
+  pages: 2673-2678
+  year: 2012
+  doi: 10.1364/JOSAA.29.002673
+  arxiv: 1204.5380
+
+
+- type: conference-proceeding
+  title: Phase Space Engineering in Optical Microcavities I. Preserving near-field uniformity while inducing far-field directionality
+  authors:
+    - painchaud-april-guillaume
+    - poirier-julien
+    - gagnon-denis
+    - dube-louis-j
+  conference: 12th International Conference on Transparent Optical Networks (ICTON)
+  location: Munich, Germany
+  year: 2010
+  doi: 10.1109/ICTON.2010.5548943
+  arxiv: 1005.1092
+
+
+- type: conference-proceeding
+  title: Phase Space Engineering in Optical Microcavities II. Controlling the far-field
+  authors:
+    - poirier-julien
+    - painchaud-april-guillaume
+    - gagnon-denis
+    - dube-louis-j
+  conference: 12th International Conference on Transparent Optical Networks (ICTON)
+  location: Munich, Germany
+  year: 2010
+  doi: 10.1109/ICTON.2010.5549310
+  arxiv: 1005.1093
+
+
+- type: article
+  title: Universality of Level Spacing Distributions in Classical Chaos
+  authors:
+    - J. F. Laprise
+    - O. Blondeau-Fournier
+    - J. Kröger
+    - H. Kröger
+    - Pierre-Yves St-Louis
+    - dube-louis-j
+    - E. Endresse
+    - A. Burra
+    - R. Zomorrodi
+    - G. Melkonyan
+    - K. J. M. Moriarty
+  journal: Phys. Lett. A
+  volume: 372
+  pages: 4574-4577
+  year: 2008
+  doi: 10.1016/j.physleta.2008.04.044
+
+
+- type: article
+  title: Chaotic Rotations Generated by Light in Nematic Liquid Crystals
+  authors:
+    - Étienne Brasselet
+    - dube-louis-j
+  journal: Mol. Cryst. Liq. Cryst.
+  volume: 453
+  pages: 93-105
+  year: 2006
+  doi: 10.1080/15421400600651716
+
+
+- type: article
+  title: Light-Induced Chaotic Rotations in Nematic Liquid Crystals
+  authors:
+    - Étienne Brasselet
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 73
+  pages: 021704
+  year: 2006
+  doi: 10.1103/PhysRevE.73.021704
+
+
+- type: article
+  title: Transverse Nonlocal Effects in Optical Reorientation of Nematic Liquid Crystals
+  journal: J. Opt. Soc. Am. B
+  authors:
+    - Étienne Brasselet
+    - dube-louis-j
+  volume: 23
+  pages: 36-44
+  year: 2006
+  doi: 10.1364/JOSAB.23.000036
+
+
+- type: article
+  title: "Bifurcation Analysis of Optically Induced Dynamics in Nematic Liquid Crystals: Elliptical Polarization at Normal Incidence"
+  authors:
+    - D. O. Krimer
+    - L. Kramer
+    - Étienne Brasselet
+    - T. V. Galstian
+    - dube-louis-j
+  journal: J. Opt. Soc. Am. B
+  volume: 22
+  pages: 1681-1690
+  year: 2005
+  doi: 10.1364/JOSAB.22.001681
+
+
+- type: article
+  title: "Bifurcation Analysis of Optically Induced Dynamics in Nematic Liquid Crystals: Circular Polarization at Normal Incidence"
+  authors:
+    - Étienne Brasselet
+    - T. V. Galstian
+    - dube-louis-j
+    - D. O. Krimer
+    - L. Kramer
+  journal: J. Opt. Soc. Am. B
+  volume: 22
+  pages: 1671-1680
+  year: 2005
+  doi: 10.1364/JOSAB.22.001671
+
+
+- type: article
+  title: On Jacobian Matrices for Flows
+  authors:
+    - doyon-bernard
+    - dube-louis-j
+  journal: Chaos
+  volume: 15
+  pages: 013108
+  year: 2005
+  doi: 10.1063/1.1854031
+
+
+- type: article
+  title: Dynamics of Light Induced Reorientation of Nematic Liquid Crystals in Spatially Confined Beams
+  authors:
+    - Étienne Brasselet
+    - T. V. Galstian
+    - dube-louis-j
+  journal: Mol. Cryst. Liq. Cryst.
+  volume: 421
+  pages: 69-80
+  year: 2004
+  doi: 10.1080/15421400490501400
+
+
+- type: article
+  title: "Optically Induced Dynamics in Nematic Liquid Crystals: The Role of Finite Beam Size"
+  authors:
+    - Étienne Brasselet
+    - doyon-bernard
+    - T. V. Galstian
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 69
+  pages: 021701
+  year: 2004
+  doi: 10.1103/PhysRevE.69.021701
+
+
+- type: article
+  title: "Optically Induced Dynamics in Nematic Liquid Crystals: The Role of Twist Deformation and Asymmetry"
+  authors:
+    - Étienne Brasselet
+    - doyon-bernard
+    - T. V. Galstian
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 67
+  pages: 031706
+  year: 2003
+  doi: 10.1103/PhysRevE.67.031706
+
+
+- type: article
+  title: New Laser Induced Spatio-Temporal Transition In Nematics
+  authors:
+    - Étienne Brasselet
+    - doyon-bernard
+    - T. V. Galstian
+    - dube-louis-j
+  journal: Phys. Lett. A
+  volume: 299
+  pages: 212-216
+  year: 2002
+  doi: 10.1016/S0375-9601(02)00515-7
+
+
+- type: article
+  title: Targeting Unknown and Unstable Periodic Orbits
+  authors:
+    - doyon-bernard
+    - dube-louis-j
+  journal: Phys. Rev. E
+  volume: 65
+  pages: 037202
+  year: 2002
+  doi: 10.1103/PhysRevE.65.037202
+
+
+- type: other-writing
+  title: "The Control of Hamiltonian Chaos"
+  authors:
+    - dube-louis-j
+    - despres-philippe
+    - doyon-bernard
+    - pourbohloul-babk
+  journal: "Physics in Canada – Special Issue on Nonlinear Dynamics"
+  reference: "Physics in Canada 57, 77-82 (2001)"
+  # volume: 57
+  # pages: 77-82
+  year: 2001
+  fulltext: https://pic-pac.cap.ca/index.php/Issues/showpdf/article/v57n2.0-a382.pdf
+  # doi: "assets/pdf/proceedings/control_hamiltonian_chaos.pdf"
+
+
+# - type: article
+#   title: "Detection and Prediction of Epileptic Seizures: A Patient's Case Study"
+#   authors:
+#     - P. F. Verdes
+#     - G. Deco
+#     - D. Obradovic
+#     - dube-louis-j
+#     - R. Hopfengaertner
+#     - H. Stefan
+#   journal: Proceedings of Congreso Argentino de Ciencia de la Computación
+#   pages: 1493-1503
+#   year: 2000
+
+
+- type: conference-proceeding
+  title: "The control of dynamical systems -- recovering order from chaos --"
+  authors:
+    - dube-louis-j
+    - despres-philippe
+  conference: "The Physics of Electronic and Atomic Collisions: XXI International Conference"
+  location: Sendai, Japan
+  # volume: 500
+  # pages: 551-570
+  year: 2000
+  doi: 10.1063/1.1302686
+  # pdf: "assets/pdf/proceedings/control_dynamical_system.pdf"
+
+
+- type: other-writing
+  title: "Zoom sur le Chaos"
+  authors:
+      - dube-louis-j
+  reference: Interface 18, 50-51
+  # journal: Interface
+  # volume: 18
+  # pages: 50-51
+  year: 1997
+  # pdf: "assets/pdf/proceedings/zoom_chaos.pdf"
+
+
+- type: oral-presentation
+  title: Function aligns with geometry in locally connected neuronal networks
+  authors:
+    - legare-antoine
+    - Olivier Ribordi
+    - Paul De Koninck
+    - allard-antoine
+    - desrosiers-patrick
+  conference: UNIQUE Center Scientific Retreat
+  location: Saint-Paulin, Canada
+  year: 2025
+
+
+- type: poster-presentation
+  title: Analytical and computational approach to structure-function relationship in neural networks
+  authors:
+    - legare-arthur
+    - legare-antoine
+    - Paul De Koninck
+    - Nicolas Doyon
+    - desrosiers-patrick
+  conference: UNIQUE Center Scientific Retreat
+  year: 2025
+  location: Saint-Paulin, Canada
+  poster: "assets/pdf/posters/2025-arthur-unique.pdf"
+
+
+- type: poster-presentation
+  title: Analytical Koopman approach to recurrent neural networks
+  authors:
+    - claveau-benjamin
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  conference: UNIQUE Center Scientific Retreat
+  year: 2025
+  poster: "assets/pdf/posters/2025-benjamin-unique.pdf"
+  location: Saint-Paulin, Canada
+
+- type: oral-presentation
+  title: Symmetry-driven embedding of networks in hyperbolic space
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  conference: Conference on Complex Systems (CCS2025)
+  # abstract: "assets/pdf/abstracts/ccs2025_abstract_lizotte.pdf"
+  slides: "assets/pdf/slides/ccs2025_slides_lizotte.pdf"
+  year: 2025
+  location: Siena, Italy
+
+- type: oral-presentation
+  title: Correspondence between geometric eigenmodes and functional connectivity gradients in embedded complex systems
+  authors:
+    - legare-antoine
+    - ribordy-olivier
+    - desrosiers-patrick
+    - allard-antoine
+    - Paul De Koninck
+  presenters:
+    - ribordy-olivier
+  conference: Conference on Complex Systems (CCS2025)
+  year: 2025
+  location: Siena, Italy
+
+- type: poster-presentation
+  title: Stabilization of ecosystems through a genetic algorithm
+  authors:
+    - thibault-francois
+    - Maxime Clenet
+    - Dominique Gravel
+    - allard-antoine
+  conference: Conference on Complex Systems (CCS2025)
+  year: 2025
+  location: Siena, Italy
+
+- type: poster-presentation
+  title: How cortical activity co-fluctuations shape neurovascular function in mice
+  authors:
+    - charest-jordan
+    - Alexandre Cléroux-Cuillerier
+    - desrosiers-patrick
+    - Michèle Desjardins
+  conference: 8th Canadian Neuroscience Meeting
+  year: 2025
+  poster: "assets/pdf/posters/2025-jordan-can.pdf"
+  location: Toronto, Canada
+
+- type: oral-presentation
+  title: Kuramoto meets Koopman -- Constants of motion, symmetries and network motifs
+  authors:
+    - thibeault-vincent
+    - claveau-benjamin
+    - allard-antoine
+    - desrosiers-patrick
+  conference: SIAM Conference on Applications of Dynamical Systems (DS25)
+  year: 2025
+  location: Denver, USA
+
+- type: oral-presentation
+  title: Rank-reducible dynamics on networks through Koopman eigenfunctions
+  authors:
+    - claveau-benjamin
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  conference: SIAM Conference on Applications of Dynamical Systems (DS25)
+  year: 2025
+  location: Denver, USA
+
+- type: oral-presentation
+  title: Perspectives on interdisciplinary modelisation
+  authors:
+    - Gabriel Bergeron
+    - thibault-francois
+  presenters:
+    - Gabriel Bergeron
+    - thibault-francois
+  conference: Sentinelle Nord Scientific Meeting
+  year: 2025
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: "Algorithmic exploration of ecosystem stability"
+  authors:
+    - thibault-francois
+    - Maxime Clenet
+    - allard-antoine
+    - Dominique Gravel
+  conference: Sentinelle Nord Scientific Meeting
+  year: 2025
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: "Géométrie hyperbolique des réseaux orientés"
+  authors:
+    - lesage-jeremi
+    - allard-antoine
+  conference: Sentinelle Nord Scientific Meeting
+  year: 2025
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: Deciphering large-scale dynamics in complex systems through Koopman operator theory
+  authors:
+    - claveau-benjamin
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  conference: Sentinelle Nord Scientific Meeting
+  year: 2025
+  location: Québec, Canada
+
+- type: invited-presentation
+  title: "De la physique théorique aux réseaux neuronaux -- migrations mathématiques à travers les disciplines"
+  authors:
+    - desrosiers-patrick
+  conference: Sentinelle Nord Scientific Meeting
+  year: 2025
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: Symmetry-driven embedding of networks in hyperbolic space
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  slides: "/assets/pdf/slides/cirrelt2025_slides_lizotte.pdf"
+  # abstract: "/assets/pdf/abstracts/cirrelt2025_abstract_lizotte.pdf"
+  conference: Montréal Network Science Workshop
+  year: 2025
+  location: Montréal, Canada
+
+- type: oral-presentation
+  title: Extraction of structural properties based on graph theory during neurodevelopment of cultured neurons using machine learning and digital holographic microscopy
+  authors:
+    - yazdani-zahra
+    - Erik Belanger
+    - Maxime Moreaud
+    - Jodie Llinares
+    - allard-antoine
+    - Pierre Marquet
+    - desrosiers-patrick
+  conference: SPIE Photonics West
+  slides: "/assets/pdf/slides/Behnaz_PW2025.pptx.zip"
+  country: United States
+  year: 2025
+  location: San Francisco, California
+
+- type: oral-presentation
+  title: Unravelling neuronal network organization and growth stages through graph fingerprints
+  authors:
+    - yazdani-zahra
+    - Niraj Patel
+    - roy-anne-sophie
+    - Erik Belanger
+    - Maxime Moreaud
+    - Pierre Marquet
+    - allard-antoine
+    - desrosiers-patrick
+  conference: International School and Conference on Network Science (NetSci2024)
+  country: Canada
+  year: 2024
+  location: Québec, Qc
+
+- type: poster-presentation
+  title: Uniform Sampling of the Layered Configuration Model
+  authors:
+    - thibault-francois
+    - Laurent Hébert-Dufresne
+    - allard-antoine
+  conference: International School and Conference on Network Science (NetSci2024)
+  country: Canada
+  year: 2024
+  location: Québec, Qc
+
+- type: oral-presentation
+  title: Revisiting the Kuramoto model on graph -- integrals of motion, motifs, and symmetries
+  authors:
+    - thibeault-vincent
+    - claveau-benjamin
+    - allard-antoine
+    - desrosiers-patrick
+  conference: International School and Conference on Network Science (NetSci2024)
+  slides: "assets/pdf/slides/Thibeault_Vincent_Netsci2024_slides_final.pdf"
+  country: Canada
+  year: 2024
+  location: Québec, Qc
+
+- type: oral-presentation
+  title: Structural and genetic constraints on zebrafish brain networks
+  authors:
+    - legare-antoine
+    - Vincent Boily
+    - Sandrine Poulin
+    - legare-arthur
+    - Hugo Poulin
+    - Mado Lemieux
+    - desrosiers-patrick
+    - Paul De Koninck
+  conference: International School and Conference on Network Science (NetSci2024)
+  country: Canada
+  year: 2024
+  location: Québec, Qc
+
+- type: poster-presentation
+  title: Exploring recurrent neural network dynamics -- A spectral approach based on Koopman operator theory
+  authors:
+    - claveau-benjamin
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  conference: International School and Conference on Network Science (NetSci2024)
+  poster: "assets/pdf/posters/netsci2024_claveau.pdf"
+  location: Québec, Canada
+  year: 2024
+
+- type: poster-presentation
+  title: Symmetries as a guide for network hyperbolic embedding
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  conference: International School and Conference on Network Science (NetSci2024)
+  poster: "assets/pdf/posters/netsci2024_poster_lizotte.pdf"
+  # abstract: "assets/pdf/abstracts/netsci2024_abstract_lizotte.pdf"
+  location: Québec, Canada
+  year: 2024
+  award: Best poster
+
+- type: oral-presentation
+  title: La géométrie au cœur des systèmes nordiques
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  conference: Sentinelle Nord Scientific Meeting
+  # abstract: "assets/pdf/abstracts/sn2023_abstract_lizotte.pdf"
+  slides: "assets/pdf/slides/sn2023_slides_lizotte.pdf"
+  location: Québec, Canada
+  year: 2023
+
+- type: oral-presentation
+  title: On the reconstructability of complex networks
+  authors:
+    - murphy-charles
+    - lizotte-ariane
+    - thibault-francois
+    - thibeault-vincent
+    - desrosiers-patrick
+    - allard-antoine
+  conference: Sentinelle Nord Scientific Meeting
+  location: Québec, Canada
+  year: 2023
+
+- type: oral-presentation
+  title: Optimal Mesoscopic Structure of General Binary-State Dynamics on Networks
+  authors:
+    - lesage-jeremi
+    - murphy-charles
+    - Guillaume St-Onge
+    - Laurent Hébert-Dufresne and allard-antoine
+  conference: International School & Conference on Network Science (NetSci2023)
+  location: Vienna, Austria
+  year: 2023
+
+- type: oral-presentation
+  title: Inherent uncertainty of hyperbolic embeddings of complex networks
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  conference: International School & Conference on Network Science (NetSci2023)
+  # abstract: "assets/pdf/abstracts/netsci2023_abstract_lizotte.pdf"
+  slides: "assets/pdf/slides/netsci2023_slides_lizotte.pdf"
+  location: Vienna, Austria
+  year: 2023
+
+- type: oral-presentation
+  title: An information theoretical approach to network reconstruction
+  authors:
+    - murphy-charles
+    - lizotte-ariane
+    - thibault-francois
+    - thibeault-vincent
+    - desrosiers-patrick
+    - allard-antoine
+  presenters:
+    - thibault-francois
+  conference: International School & Conference on Network Science (NetSci2023)
+  location: Vienna, Austria
+  year: 2023
+
+- type: oral-presentation
+  title: Inherent uncertainty of hyperbolic embeddings of complex networks
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  conference: New England Statistics Symposium (NESS2023)
+  slides: "assets/pdf/slides/ness2023_slides_lizotte.pdf"
+  location: Boston, USA
+  year: 2023
+
+- type: oral-presentation
+  title: Extracting structural connectomes from living neurons in culture by combining digital holographic microscopy with deep-learning methods
+  authors:
+    - yazdani-zahra
+    - Mohamed Haouat
+    - Erik Bélanger
+    - Pierre Marquet
+    - allard-antoine
+    - desrosiers-patrick
+  conference: AN 202
+  slides: "assets/pdf/posters/Behnaz-Poster-CAN2023.pdf"
+  year: 2023
+  location: Montreal, Canada
+
+- type: oral-presentation
+  title: The Low-Rank Hypothesis of Complex Systems -- From Empirical and Theoretical Evidence to the Emergence of Higher-Order Interaction
+  authors:
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  conference: SIAM Conference on Dynamical Systems (DS23)
+  slides: "assets/pdf/slides/Thibeault_presentation_SIAMDS_2023_compressed.pdf"
+  year: 2023
+  location: Portland, USA
+
+- type: poster-presentation
+  title: Influence of neuromodulators on brain state transitions in larval zebrafish
+  authors:
+    - legare-antoine
+    - Sandrine Poulin
+    - Vincent Boily
+    - Mado Lemieux
+    - desrosiers-patrick
+    - Paul De Koninck
+  conference: COSYNE 2023
+  year: 2023
+  poster: "assets/pdf/posters/cosyne2023_poster_legare.pdf"
+  location: Montreal, Canada
+
+- type: poster-presentation
+  title: On the effectiveness of reconstructing biodiversity from indicator species along a climate gradient
+  authors:
+    - Ilhem Bouderbala
+    - Daniel Fortin
+    - Junior A. Tremblay
+    - allard-antoine
+    - Louis-Paul Rivest
+    - desrosiers-patrick
+  conference: Sentinelle Nord Scientific Meeting
+  poster: "assets/pdf/affiches/Ilhem_Poster_SN_2022.pdf"
+  year: 2022
+  location: Québec, Canada
+
+- type: poster-presentation
+  title: Whole-brain neuronal dynamics underlying spontaneous behavior in larval zebrafish
+  authors:
+    - legare-antoine
+    - Vincent Boily
+    - Sandrine Poulin
+    - Mado Lemieux
+    - desrosiers-patrick
+    - Paul De Koninck
+  conference: Sentinelle Nord Scientific Meeting
+  poster: "assets/pdf/affiches/CAN2022_Poster_AL.pdf"
+  year: 2022
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: The hidden low-dimensional dynamics of large neuronal networks
+  authors:
+    - desrosiers-patrick
+  conference: Frontiers in Neurophotonics Symposium 2022 (FINS2022)
+  year: 2022
+  location: Québec, Canada
+  slides: "assets/pdf/slides/Desrosiers-FINS-2022-08-12.pdf"
+
+- type: oral-presentation
+  title: Influence of neuromodulation on brain states and their transitions in larval zebrafish
+  authors:
+    - legare-antoine
+  conference: Frontiers in Neurophotonics Symposium 2022 (FINS2022)
+  year: 2022
+  location: Québec, Canada
+  slides: "assets/pdf/slides/FINS2022_ALegare.pdf"
+
+- type: oral-presentation
+  title: Dimension matters when modelling network communities in hyperbolic spaces
+  authors:
+    - desy-beatrice
+    - desrosiers-patrick
+    - allard-antoine
+  conference: International School and Conference on Network Science (Netsci2022)
+  location: Shanghai, China
+  year: 2022
+
+- type: oral-presentation
+  title: Random graph models with fixed centrality patterns and degree sequence
+  authors:
+    - thibault-francois
+    - allard-antoine
+  conference: International School and Conference on Network Science (Netsci2022)
+  year: 2022
+  location: Shanghai, China
+
+- type: oral-presentation
+  title: On the importance of correlation in graph reconstruction
+  authors:
+    - lizotte-ariane
+    - Jean-Gabriel Young
+    - allard-antoine
+  conference: International School and Conference on Network Science (Netsci2022)
+  # abstract: "assets/pdf/abstracts/netsci2022_abstract_lizotte.pdf"
+  slides: "assets/pdf/slides/netsci2022_slides_lizotte.pdf"
+  location: Shanghai, China
+  year: 2022
+
+- type: oral-presentation
+  title: "The low-dimension hypothesis implies higher-order interactions in complex systems"
+  authors:
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  conference: Fifth Northeast Regional Conference on Complex Systems (NERCCS 2022)
+  year: 2022
+  location: Buffalo, USA
+
+- type: oral-presentation
+  title: Nonlinear infection rate to compress mechanistic epidemic models
+  authors:
+    - st-onge-guillaume
+    - Laurent Hébert-Dufresne
+    - allard-antoine
+  conference: Fifth Northeast Regional Conference on Complex Systems (NERCCS 2022)
+  year: 2022
+  location: Buffalo, USA
+
+- type: oral-presentation
+  title: Whole-brain Ca2+ imaging in larval zebrafish
+  authors:
+    - legare-antoine
+    - Vincent Boily
+    - Mado Lemieux
+    - desrosiers-patrick
+    - Paul De Koninck
+  conference: 14th Canadian Neuroscience Meeting
+  # abstract: "assets/pdf/abstracts/can2021_abstract_legare.pdf"
+  slides: "assets/pdf/slides/can2021_slides_legare.pdf"
+  year: 2021
+  location: Online
+
+- type: oral-presentation
+  title: Firing rate distributions in plastic networks of spiking neurons
+  authors:
+    - vegue-marina
+    - allard-antoine
+    - desrosiers-patrick
+  conference: SIAM Conference on Applications of Dynamical Systems (DS21)
+  # abstract: "assets/pdf/abstracts/siam2021_abstract_vegue.pdf"
+  slides: "assets/pdf/slides/siam_networks_2021_slides_vegue.pdf"
+  year: 2021
+  location: Portland, USA
+
+- type: oral-presentation
+  title: Firing rate distributions in plastic networks of spiking neurons
+  authors:
+    - vegue-marina
+    - allard-antoine
+    - desrosiers-patrick
+  conference: "Networks 2021: A Joint Sunbelt and NetSci Conference"
+  # abstract: "assets/pdf/abstracts/networks2021_abstract_vegue.pdf"
+  slides: "assets/pdf/slides/siam_networks_2021_slides_vegue.pdf"
+  year: 2021
+  location: Bloomington, USA
+
+- type: oral-presentation
+  title: Universal nonlinear infection kernel from heterogeneous exposure on higher-order networks
+  authors:
+    - st-onge-guillaume
+    - Hanlin Sun
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+    - Ginestra Bianconi
+  conference: "Networks 2021: A Joint Sunbelt and NetSci Conference"
+  slides: "assets/pdf/slides/networks2021_st-onge_slides.pdf"
+  # abstract: "assets/pdf/abstracts/networks2021_st-onge_abstract.pdf"
+  year: 2021
+  location: Bloomington, USA
+
+- type: oral-presentation
+  title: Dimension reduction of high-dimensional dynamics on networks with adaptation
+  authors:
+    - thibeault-vincent
+    - vegue-marina
+    - allard-antoine
+    - desrosiers-patrick
+  conference: "Networks 2021: A Joint Sunbelt and NetSci Conference"
+  # abstract: "assets/pdf/abstracts/Thibeault_Vincent_Networks2021_abstract_final.pdf"
+  slides: "assets/pdf/slides/Thibeault_Vincent_Networks2021_slides_final.pdf"
+  year: 2021
+  location: Bloomington, USA
+
+- type: oral-presentation
+  title: "Dimension reduction on heterogeneous networks"
+  authors:
+    - vegue-marina
+    - thibeault-vincent
+    - desrosiers-patrick
+    - allard-antoine
+  conference: "Networks 2021: A Joint Sunbelt and NetSci Conference"
+  # abstract: "assets/pdf/abstracts/networks2021_abstract_desrosiers.pdf"
+  slides: "assets/pdf/slides/networks2021_slides_desrosiers.pdf"
+  year: 2021
+  location: Bloomington, USA
+
+- type: oral-presentation
+  title: "Realistic clustering patterns in directed geometric networks"
+  authors:
+    - allard-antoine
+    - M. Ángeles Serrano
+    - Marián Boguñá
+  conference: "Networks 2021: A Joint Sunbelt and NetSci Conference"
+  # abstract: "assets/pdf/abstracts/networks2021_abstract_allard.pdf"
+  slides: "assets/pdf/slides/networks2021_slides_allard.pdf"
+  year: 2021
+  location: Bloomington, USA
+
+- type: poster-presentation
+  title: "A stochastic approach to the study of large biological neural networks' dynamics"
+  authors:
+    - painchaud-vincent
+    - Nicolas Doyon
+    - desrosiers-patrick
+  conference: SIAM Conference on Applications of Dynamical Systems (DS21)
+  poster: "assets/pdf/posters/siamds2021_poster_painchaud.pdf"
+  year: 2021
+  location: Portland, USA
+
+- type: oral-presentation
+  title: "Dimension reduction of high-dimensional dynamics on networks with adaptation"
+  authors:
+    - thibeault-vincent
+    - vegue-marina
+    - allard-antoine
+    - desrosiers-patrick-vincent
+  conference: SIAM Conference on Applications of Dynamical Systems (DS21)
+  # abstract: "assets/pdf/abstracts/Thibeault_Vincent_SIAM2021_abstract_final.pdf"
+  slides: "assets/pdf/slides/Thibeault_Vincent_SIAM2021_slides_final.pdf"
+  year: 2021
+  location: Portland, USA
+
+- type: oral-presentation
+  title: Bursty exposure on higher-order networks leads to nonlinear infection kernels
+  authors:
+    - st-onge-guillaume
+    - Hanlin Sun
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+    - Ginestra Bianconi
+  conference: SIAM Conference on Applications of Dynamical Systems (DS21)
+  slides: "assets/pdf/slides/siamds2021_st-onge.pdf"
+  year: 2021
+  location: Portland, USA
+
+- type: oral-presentation
+  title: Dimension reduction on heterogeneous networks
+  authors:
+    - vegue-marina
+    - thibeault-vincent
+    - desrosiers-patrick
+    - allard-antoine
+  conference: Fourth Northeast Regional Conference on Complex Systems (NERCCS 2021)
+  # abstract: "assets/pdf/abstracts/nerccs2021_abstract_vegue.pdf"
+  slides: "assets/pdf/slides/nerccs2021_slides_vegue.pdf"
+  year: 2021
+  location: Buffalo, USA
+
+- type: oral-presentation
+  title: Dimension reduction of high-dimensional dynamics on networks with adaptation
+  authors:
+    - thibeault-vincent
+    - vegue-marina
+    - allard-antoine
+    - desrosiers-patrick
+  conference: Fourth Northeast Regional Conference on Complex Systems (NERCCS 2021)
+  # abstract: "assets/pdf/abstracts/Thibeault_Vincent_NERCCS2021_abstract_final.pdf"
+  slides: "assets/pdf/slides/Thibeault_Vincent_NERCCS2021_slides_final.pdf"
+  year: 2021
+  location: Buffalo, USA
+
+- type: oral-presentation
+  title: Bursty exposure on higher-order networks leads to nonlinear infection kernels
+  authors:
+    - st-onge-guillaume
+    - Hanlin Sun
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+    - Ginestra Bianconi
+  conference: Fourth Northeast Regional Conference on Complex Systems (NERCCS 2021)
+  # abstract: "assets/pdf/abstracts/nerccs2021_abstract_st-onge.pdf"
+  slides: "assets/pdf/slides/nerccs2021_slides_st-onge.pdf"
+  year: 2021
+  location: Buffalo, USA
+  award: Best oral presentation
+
+- type: poster-presentation
+  title: "A threefold approach for reducing the dimension of dynamics on networks: An application to synchronization"
+  authors:
+    - thibeault-vincent
+    - st-onge-guillaume
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: 15th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/Thibeault_Netsci2020_abstract.pdf"
+  poster: "assets/pdf/posters/Thibeault_Netsci2020_poster.pdf"
+  year: 2020
+  location: Rome, Italy
+
+- type: poster-presentation
+  title: "Stochastic dimensional reduction on large biological neural networks"
+  authors:
+    - painchaud-vincent
+    - Nicolas Doyon
+    - desrosiers-patrick
+  conference: 15th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2020_abstract_painchaud.pdf"
+  poster: "assets/pdf/posters/netsci2020_poster_painchaud.pdf"
+  year: 2020
+  location: Rome, Italy
+
+- type: poster-presentation
+  title: "Inferring higher-order co-occurrence patterns and simplicial complexes from presence/absence data"
+  authors:
+    - roy-pomerleau-xavier
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: 15th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/XRP_Netsci2020_abstract.pdf"
+  poster: "assets/pdf/posters/XRP_NetSci2020_poster.pdf"
+  year: 2020
+  location: Rome, Italy
+
+- type: oral-presentation
+  title: "Deep learning of stochastic contagion dynamics on complex networks"
+  authors:
+    - murphy-charles
+    - laurence-edward
+    - allard-antoine
+  conference: 15th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2020_abstract_murphy.pdf"
+  slides: "assets/pdf/slides/netsci2020_slides_murphy.pdf"
+  year: 2020
+  location: Rome, Italy
+
+- type: oral-presentation
+  title: "Influence maximization in simplicial contagion"
+  authors:
+    - st-onge-guillaume
+    - Iacopo Iacopini
+    - Giovanni Petri
+    - Alain Barrat
+    - Vito Latora
+    - Laurent Hébert-Dufresne
+  conference: 15th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2020_abstract_sto.pdf"
+  slides: "assets/pdf/slides/netsci2020_slides_sto.pdf"
+  year: 2020
+  location: Rome, Italy
+
+- type: oral-presentation
+  title: "Localization, bistability and optimal seeding of contagions on higher-order networks"
+  authors:
+    - st-onge-guillaume
+    - allard-antoine
+    - Laurent Hébert-Dufresne
+  conference: Alife
+  # abstract: "assets/pdf/abstracts/alife2020_abstract_sto.pdf"
+  slides: "assets/pdf/slides/alife2020_slides_sto.pdf"
+  year: 2020
+  location: Montréal, Canada
+
+- type: oral-presentation
+  title: "Network analysis of collective motion"
+  authors:
+    - thibeault-vincent
+    - Brennan Klein
+    - Brendan Case
+    - Francis Normand
+  conference: Complex Networks Winter Workshop
+  # abstract: "assets/pdf/abstracts/Thibeault_CNWW2019_Abstract_final.pdf"
+  slides: "assets/pdf/slides/Thibeault_Vincent_CNWW2019_slides_final.pdf"
+  year: 2019
+  location: Québec, Canada
+
+- type: poster-presentation
+  title: "Inferring higher-order co-occurrence patterns and simplicial complexes from presence/absence data"
+  authors:
+    - roy-pomerleau-xavier
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: "Workshop on Higher-order Interaction Networks: Dynamics, Structure, Data"
+  poster: "assets/pdf/posters/Poster_XRPOMERLEAU_Oxford.pdf"
+  year: 2019
+  location: Oxford, United Kingdom
+
+- type: oral-presentation
+  title: "Detecting higher-order co-occurrence patterns within aquatic bacterial communities across changing Nunavik permafrost landscape"
+  authors:
+    - roy-pomerleau-xavier
+    - Jérôme Comte
+    - Warwick F. Vincent
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: Sentinelle Nord Annual Meeting
+  # abstract: "assets/pdf/abstracts/Pomerleau_SN19_Abstract_final.pdf"
+  year: 2019
+  location: Lévis, Canada
+
+- type: oral-presentation
+  title: "Mesoscopic localization of spreading processes on networks"
+  authors:
+    - st-onge-guillaume
+    - Laurent Hébert-Dufresne
+    - dube-louis-j
+  conference: 14th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2019_abstract_st-onge.pdf"
+  year: 2019
+  location: Burlington, USA
+
+- type: oral-presentation
+  title: "Predicting synchronization regimes with dimension reduction on modular graphs"
+  authors:
+    - thibeault-vincent
+    - st-onge-guillaume
+    - roy-pomerleau-xavier
+    - desrosiers-patrick
+  conference: 14th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2019_abstract_thibeault.pdf"
+  slides: "assets/pdf/slides/Thibeault_Vincent_NETSCI2019_slides_final.pdf"
+  year: 2019
+  location: Burlington, USA
+
+- type: oral-presentation
+  title: "Learning dynamical processes on complex networks from time series"
+  authors:
+    - murphy-charles
+    - laurence-edward
+    - allard-antoine
+  conference: 14th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2019_abstract_murphy.pdf"
+  year: 2019
+  location: Burlington, USA
+
+- type: oral-presentation
+  title: "Predicting synchronization regimes with reduced dimensional dynamics on modular graphs"
+  authors:
+    - thibeault-vincent
+    - roy-pomerleau-xavier
+    - st-onge-guillaume
+    - Jean-Gabriel Young
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: Mediterranean School of Complex Networks
+  slides: "assets/pdf/slides/Thibeault_Vincent_MSCx2018_slide_final.pdf"
+  year: 2018
+  location: Salina, Italy
+
+- type: oral-presentation
+  title: "Network archeology: phase transition in the recoverability of network history"
+  authors:
+    - young-jean-gabriel
+    - Laurent Hébert-Dufresne
+    - laurence-edward
+    - murphy-charles
+    - st-onge-guillaume
+    - desrosiers-patrick
+  conference: Sentinelle Nord Annual Meeting
+  # abstract: "assets/pdf/abstracts/Young_SN18_Abstract_06-06-18.pdf"
+  year: 2018
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: "Predicting breakdowns of dynamical complex networks"
+  authors:
+    - laurence-edward
+    - Nicolas Doyon
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: Sentinelle Nord Annual Meeting
+  # abstract: "assets/pdf/abstracts/Laurence_SN18_Abstract_final.pdf"
+  year: 2018
+  location: Québec, Canada
+
+- type: poster-presentation
+  title: "The impact of community structure on network dynamics: The case of synchronization"
+  authors:
+    - thibeault-vincent
+    - roy-pomerleau-xavier
+    - st-onge-guillaume
+    - Jean-Gabriel Young
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: Sentinelle Nord Annual Meeting
+  # abstract: "assets/pdf/abstracts/Thibeault_SN18_Abstract_final.pdf"
+  poster: "assets/pdf/posters/Thibeault_SN18_poster.pdf"
+  year: 2018
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: "Complex network analysis of birds co-occurrence patterns in boreal forest"
+  authors:
+    - desy-beatrice
+    - st-onge-guillaume
+    - desrosiers-patrick
+    - dube-louis-j
+  conference: Sentinelle Nord Annual Meeting"
+  # abstract: "assets/pdf/abstracts/BDesy_SN18_Abstract_final.pdf"
+  year: 2018
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: "A new dimension-reduction method for complex dynamical networks"
+  authors:
+    - laurence-edward
+    - Nicolas Doyon
+    - dube-louis-j
+    - desrosiers-patrick
+  conference: SIAM Workshop on Network Science 2018
+  # abstract: "assets/pdf/abstracts/siam2018_edward_abs.pdf"
+  slides: "assets/pdf/slides/SIAM_edward18.pdf"
+  year: 2018
+  location: Portland, USA
+
+- type: oral-presentation
+  title: "Network archeology: phase transition in the recoverability of network history"
+  authors:
+    - Jean-Gabriel Young
+    - Laurent Hébert-Dufresne
+    - laurence-edward
+    - murphy-charles
+    - st-onge-guillaume
+    - desrosiers-patrick
+  conference: 13th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2018_ogy_abs.pdf"
+  slides: "https://speakerdeck.com/jgyou/network-archaeology-phase-transition-in-the-recoverability-of-network-history"
+  year: 2018
+  location: Paris, France
+
+- type: poster-presentation
+  title: "Synchronization dynamics on the stochastic block model"
+  authors:
+    - thibeault-vincent
+    - roy-pomerleau-xavier
+    - Jean-Gabriel Young
+    - st-onge-guillaume
+    - desrosiers-patrick
+  conference: 13th International School and Conference on Network Science
+  poster: "assets/pdf/posters/poster_thibeault_netsci2018.pdf"
+  year: 2018
+  location: Paris, France
+
+- type: poster-presentation
+  title: "Geometric evolution of complex networks"
+  authors:
+    - murphy-charles
+    - allard-antoine
+    - laurence-edward
+    - st-onge-guillaume
+    - dube-louis-j
+  conference: 1st Macfang workshop
+  # abstract: "assets/pdf/abstracts/Macfang2017_abstract_Murphy.pdf"
+  poster: "assets/pdf/posters/poster_murphy_Macfang_2017.pdf"
+  year: 2017
+  location: Barcelona, Spain
+
+- type: oral-presentation
+  title: "Functional resilience in neural networks"
+  authors:
+    - laurence-edward
+    - desrosiers-patrick
+    - Nicolas Doyon
+    - dube-louis-j
+  conference: 4th Mediterranean School of Complex Networks
+  slides: "assets/pdf/slides/MSCX_edward17.pdf"
+  year: 2017
+  location: Salina, Italy
+
+- type: poster-presentation
+  title: "Femtosecond Self-Reconfiguration of Periodic Plasma Patterns in Dielectrics"
+  authors:
+    - deziel-jean-luc
+    - dube-louis-j
+    - Sandra H. Messaddeq
+    - Younès Messaddeq
+    - Charles Varin
+  conference: International Conference on Laser Ablation (COLA2017)
+  # abstract: "assets/pdf/abstracts/photonicsnorth2017_abs_jld.pdf"
+  poster: "assets/pdf/posters/Cola2017_poster_deziel.pdf"
+  location: Marseille, France
+  year: 2017
+
+- type: poster-presentation
+  title: "Persitent activity of neural dynamics on hierarchical networks"
+  authors:
+    - laurence-edward
+    - desrosiers-patrick
+    - dube-louis-j
+  conference: 12th International School and Conference on Network Science (NetSci2017)
+  # abstract: "assets/pdf/abstracts/netsci2017_abs_el.pdf"
+  poster: "assets/pdf/posters/netsci2017_poster_laurence1.pdf"
+  location: Indianapolis, USA
+  year: 2017
+
+- type: poster-presentation
+  title: "Functional resilience in dynamical complex networks with adaptive connectivity"
+  authors:
+    - laurence-edward
+    - desrosiers-patrick
+    - Nicolas Doyon
+    - dube-louis-j
+  conference: 12th International School and Conference on Network Science (NetSci2017)
+  # abstract: "assets/pdf/abstracts/netsci2017_brain_network_abs_el.pdf"
+  poster: "assets/pdf/posters/netsci2017_poster_laurence2.pdf"
+  location: Indianapolis, USA
+  year: 2017
+
+- type: oral-presentation
+  title: "Time-dependent connection threshold in growing random geometric graphs"
+  authors:
+    - murphy-charles
+    - allard-antoine
+    - st-onge-guillaume
+    - dube-louis-j
+  conference: 12th International School and Conference on Network Science (NetSci2017)
+  # abstract: "assets/pdf/abstracts/netsci2017_abs_cm.pdf"
+  location: Indianapolis, USA
+  year: 2017
+
+- type: oral-presentation
+  title: "Susceptible-infected-susceptible dynamics on the rewired configuration model"
+  authors:
+    - st-onge-guillaume
+    - Jean-Gabriel Young
+    - laurence-edward
+    - murphy-charles
+    - dube-louis-j
+  conference: 12th International School and Conference on Network Science (NetSci2017)
+  # abstract: "assets/pdf/abstracts/netsci2017_abs_sto.pdf"
+  location: Indianapolis, USA
+  year: 2017
+
+- type: oral-presentation
+  title: "Statistical mechanics of mesoscopic structure extraction"
+  authors:
+    - young-jean-gabriel
+    - st-onge-guillaume
+    - desrosiers-patrick
+    - dube-louis-j
+  conference: 12th International School and Conference on Network Science (NetSci2017)
+  # abstract: "assets/pdf/abstracts/netsci2017_abs_jgy.pdf"
+  location: Indianapolis, USA
+  year: 2017
+
+- type: oral-presentation
+  title: "Femtosecond Self-Reconfiguration of Laser-Induced Plasma Patterns in Dielectrics"
+  authors:
+    - deziel-jean-luc
+    - dube-louis-j
+    - Sandra H. Messaddeq
+    - Younès Messaddeq
+    - Charles Varin
+  conference: 19th Photonics North Conference
+  # abstract: "assets/pdf/abstracts/photonicsnorth2017_abs_jld.pdf"
+  year: 2017
+  location: Ottawa, Canada
+
+- type: oral-presentation
+  title: "Ensemble symmetries and the detectability limit of finite size stochastic block models"
+  authors:
+    -  (SINM 2016)
+  presenters:
+    - young-jean-gabriel
+  conference: 11th International School and Conference on Network Science (NetSci2016)
+  # abstract: "assets/pdf/abstracts/netsci2016_abs_jg.pdf"
+  year: 2016
+  location: Seoul, South Korea
+
+- type: oral-presentation
+  title: "Time-dependent Spatial Growth of Complex Networks"
+  authors:
+    - murphy-charles
+    - laurence-edward
+    - st-onge-guillaume
+    - Jean-Gabriel Young
+    - dube-louis-j
+  conference: 11th International School and Conference on Network Science (NetSci2016)
+  # abstract: "assets/pdf/abstracts/netsci2016_abs_charles.pdf"
+  year: 2016
+  location: Seoul, South Korea
+
+- type: oral-presentation
+  title: "Co-evolution of Growth and Dynamics on Network"
+  authors:
+    - st-onge-guillaume
+    - laurence-edward
+    - murphy-charles
+    - Jean-Gabriel Young
+    - dube-louis-j
+  conference: 11th International School and Conference on Network Science (NetSci2016)
+  # abstract: "assets/pdf/abstracts/netsci2016_abs_sto.pdf"
+  year: 2016
+  location: Seoul, South Korea
+
+- type: oral-presentation
+  title: "Toward The Dynamical Modelization Of Self-organized Plasma Formation In Solids"
+  authors:
+    - deziel-jean-luc
+    - Charles Varin
+    - dube-louis-j
+    - Younes Messaddeq
+  conference: 18th Photonics North Conference
+  # abstract: "assets/pdf/abstracts/abstractphotonicnorth2016.pdf"
+  year: 2016
+  location: Québec, Canada
+
+- type: poster-presentation
+  title: "Growth of laser-induced periodic surface structures under competing ablation and photo-expansion mechanisms"
+  authors:
+    - deziel-jean-luc
+  conference: 17th Photonics North Conference
+  # abstract: "assets/pdf/abstracts/photonicnorth2015_abstract_jld.pdf"
+  poster: "assets/pdf/posters/photonicsnorth2015_poster_jld.pdf"
+  year: 2015
+  location: Ottawa,Canada
+
+- type: poster-presentation
+  title: "Exact analytical solution of binary dynamics on networks"
+  authors:
+    - laurence-edward
+    - young-jean-gabriel
+    - Sergey Melnik
+    - dube-louis-j
+  conference: 10th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2015_abs_ed.pdf"
+  poster: "assets/pdf/posters/netsci2015_poster_edgar.pdf"
+  year: 2015
+  location: Zaragoza, Spain
+
+- type: poster-presentation
+  title: "Structural preferential attachment: scale-free benchmark graphs for overlapping community detection algorithms"
+  authors:
+    - young-jean-gabriel
+    - hebert-dufresne-laurent
+    - laurence-edward
+    - dube-louis-j
+  conference: 10th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2015_abs_ogy.pdf"
+  poster: "assets/pdf/posters/netsci2015_poster_ogy.pdf"
+  year: 2015
+  location: Zaragoza, Spain
+
+- type: oral-presentation
+  title: "Growth of laser-induced periodic surface structures under competing ablation and photo-expansion mechanisms"
+  authors:
+    - deziel-jean-luc
+  conference: 11th International Conference on Excitonic and Photonic Processes in Condensed Matter and Nano Materials
+  # abstract: "assets/pdf/abstracts/excon2015_abstract_jld.pdf"
+  year: 2015
+  location: Montréal, Canada
+
+- type: oral-presentation
+  title: "Adding SALT to Coupled Microcavities: the making of active photonic molecule lasers"
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - deziel-jean-luc
+    - dube-louis-j
+  conference: 16th International Conference on Transparent Optical Networks
+  year: 2014
+  location: Graz, Austria
+
+- type: oral-presentation
+  title: "Structural preferential attachment of community structure and its relation to Dunbar's number"
+  authors:
+    - young-jean-gabriel
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - dube-louis-j
+  conference: 9th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2014_abs_ogy.pdf"
+  year: 2014
+  location: Berkeley, USA
+
+- type: poster-presentation
+  title: "Complex networks are an emerging property of hierarchical preferential attachment"
+  authors:
+    - hebert-dufresne-laurent
+    - laurence-edward
+    - allard-antoine
+    - young-jean-gabriel
+    - dube-louis-j
+  conference: 9th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2014_abs_lsd.pdf"
+  poster: "assets/pdf/posters/netsci2014_poster_lhd.pdf"
+  # poster_pf: "assets/pdf/posters/netsci2014_poster_lhd_handout.pdf"
+  year: 2014
+  location: Berkeley, USA
+
+- type: oral-presentation
+  title: "Coherent beam shaping using two-dimensional photonic crystals"
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - dube-louis-j
+  conference: 15th International Conference on Transparent Optical Networks
+  location: Cartagena, Spain
+  year: 2013
+
+- type: oral-presentation
+  title: "S and Q Matrices Reloaded: applications to open, inhomogeneous, and complex cavities"
+  authors:
+    - painchaud-april-guillaume
+    - dumont-joey
+    - gagnon-denis
+    - dube-louis-j
+  conference: 15th International Conference on Transparent Optical Networks
+  location: Cartagena, Spain
+  year: 2013
+
+- type: oral-presentation
+  title: "Hard-core random networks as an effective model of bond percolation on real networks"
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - young-jean-gabriel
+    - dube-louis-j
+  conference: 8th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2013_abs_lhd.pdf"
+  location: Copenhagen, Denmark
+  year: 2013
+
+- type: poster-presentation
+  title: "Bond and site percolation on clustered and correlated random graphs"
+  authors:
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - young-jean-gabriel
+    - dube-louis-j
+  conference: 8th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2013_abs_aa.pdf"
+  poster: "assets/pdf/posters/netsci2013_poster_aa.pdf"
+  # poster_pf: "assets/pdf/posters/netsci2013_poster_aa_handout.pdf"
+  location: Copenhagen, Denmark
+  year: 2013
+
+- type: poster-presentation
+  title: "Local and global solutions to community detection: when resolution matters"
+  authors:
+    - young-jean-gabriel
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - dube-louis-j
+  conference: 8th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2013_abs_ogy.pdf"
+  poster: "assets/pdf/posters/netsci2013_poster_ogy.pdf"
+  # poster_pf: "assets/pdf/posters/netsci2013_poster_ogy_handout.pdf"
+  location: Copenhagen, Denmark
+  year: 2013
+
+- type: poster-presentation
+  title: "Optimization in optical systems revisited: Beyond genetic algorithms"
+  authors:
+    - gagnon-denis
+    - dumont-joey
+    - dube-louis-j
+  conference: 44th Annual DAMOP Meeting
+  # abstract: "assets/pdf/abstracts/damop2013_abstract_dg.pdf"
+  poster: "assets/pdf/posters/damop2013_dgagnon_poster.pdf"
+  # poster_pf: "assets/pdf/posters/damop2013_dgagnon_handout.pdf"
+  year: 2013
+  location: Québec, Canada
+
+- type: oral-presentation
+  title: "Unveiling Hidden Communities Through Cascading Detection on Network Structures "
+  authors:
+    - young-jean-gabriel
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - dube-louis-j
+  presenters:
+    - allard-antoine
+  conference: 2nd International Conference on Complex Sciences
+  location: Santa Fe, USA
+  year: 2012
+
+- type: oral-presentation
+  title: "On the constrained growth of complex critical systems "
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - dube-louis-j
+  conference: 2nd International Conference on Complex Sciences
+  location: Santa Fe, USA
+  year: 2012
+
+- type: oral-presentation
+  title: "Exact solution of percolation on small arbitrary graphs"
+  authors:
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - noel-pierre-andre
+    - marceau-vincent
+    - dube-louis-j
+  conference: 7th International School and Conference on Network Science
+  location: Evanston, USA
+  year: 2012
+
+- type: poster-presentation
+  title: "Using network organization to hinder propagation in structured populations"
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - young-jean-gabriel
+    - dube-louis-j
+  presenters:
+    - allard-antoine
+  conference: 7th International School and Conference on Network Science
+  poster: "assets/pdf/posters/netsci2012_poster_hebertdufresne.pdf"
+  location: Evanston, USA
+  year: 2012
+
+- type: poster-presentation
+  title: "Stochastic Network Models: Analytical Tools for STI Studies"
+  authors:
+    - noel-pierre-andre
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - marceau-vincent
+    - dube-louis-j
+  conference: 19th Biennial Conference of the International Society for Sexually Transmitted Diseases Research
+  # abstract: "assets/pdf/abstracts/isstdr2011_abstract_noel.pdf"
+  poster: "assets/pdf/posters/isstdr2011_poster_noel.pdf"
+  # poster_pf: "assets/pdf/posters/isstdr2011_poster_noel_blanc.pdf"
+  location: Québec, Canada
+  year: 2011
+
+- type: oral-presentation
+  title: "Structural preferential attachment: network organisation beyond the link"
+  authors:
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - marceau-vincent
+    - noel-pierre-andre
+    - dube-louis-j
+  conference: 6th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2011_abstract_hebertdufresne.pdf"
+  location: Budapest, Hungary
+  year: 2011
+
+- type: oral-presentation
+  title: "Modelling the dynamical interaction between epidemics on overlay networks"
+  authors:
+    - marceau-vincent
+    - noel-pierre-andre
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - dube-louis-j
+  conference: 6th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2011_abstract_marceau.pdf"
+  location: Budapest, Hungary
+  year: 2011
+
+- type: poster-presentation
+  title: "A study of network representations for Markov dynamics modelling"
+  authors:
+    - noel-pierre-andre
+    - allard-antoine
+    - hebert-dufresne-laurent
+    - marceau-vincent
+    - dube-louis-j
+  conference: 6th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2011_abstract_noel.pdf"
+  poster: "assets/pdf/posters/netsci2011_poster_noel.pdf"
+  # poster_pf: "assets/pdf/posters/netsci2011_poster_noel_blanc.pdf"
+  location: Budapest, Hungary
+  year: 2011
+
+- type: oral-presentation
+  title: "Scattering Description of the Resonant Modes of Open 2D Dielectric Cavities"
+  authors:
+    - painchaud-april-guillaume
+    - dube-louis-j
+  conference: 2nd International Workshop on Microcavities and their Applications
+  # abstract: "assets/pdf/abstracts/woma2011_abstract_painchaudapril.pdf"
+  location: Pusan, South Korea
+  year: 2011
+
+- type: poster-presentation
+  title: "Numerical Design and Optimization Strategies for Annular Silica Microcavities"
+  authors:
+    - gagnon-denis
+    - painchaud-april-guillaume
+    - poirier-julien
+    - dube-louis-j
+    - Francis Vanier
+    - Ahmad Hayat
+    - Yves-Alain Peter
+  conference: 2nd International Workshop on Microcavities and their Applications
+  # abstract: "assets/pdf/abstracts/woma2011_abstract_gagnon.pdf"
+  poster: "assets/pdf/posters/woma2011_poster_gagnon.pdf"
+  # poster_pf: "assets/pdf/posters/woma2011_poster_gagnon_blanc.pdf"
+  location: Pusan, South Korea
+  year: 2011
+
+- type: oral-presentation
+  title: "Phase Space Engineering in Optical Microcavities I: Preserving near-field uniformity while inducing far-field directionality"
+  authors:
+    - painchaud-april-guillaume
+    - poirier-julien
+    - gagnon-denis
+    - dube-louis-j
+  conference: 12th International Conference on Transparent Optical Networks
+  year: 2010
+  location: Munich, Germany
+
+- type: poster-presentation
+  title: Phase Space Engineering in Optical Microcavities II. Controlling the far-field
+  authors:
+    - poirier-julien
+    - painchaud-april-guillaume
+    - gagnon-denis
+    - dube-louis-j
+  conference: 12th International Conference on Transparent Optical Networks
+  poster: "assets/pdf/posters/icton2010_poster_poirier.pdf"
+  year: 2010
+  location: Munich, Germany
+
+- type: poster-presentation
+  title: "Adaptive networks: Coevolution of disease and topology"
+  authors:
+    - marceau-vincent
+    - noel-pierre-andre
+    - hebert-dufresne-laurent
+    - allard-antoine
+    - dube-louis-j
+  conference: 5th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2010_abstract_marceau.pdf"
+  poster: "assets/pdf/posters/netsci2010_poster_marceau.pdf"
+  location: Boston, USA
+  year: 2010
+
+- type: poster-presentation
+  title: "Propagation dynamics on networks featuring complex topologies"
+  authors:
+    - hebert-dufresne-laurent
+    - noel-pierre-andre
+    - marceau-vincent
+    - allard-antoine
+    - dube-louis-j
+  conference: 5th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2010_abstract_hebertdufresne.pdf"
+  poster: "assets/pdf/posters/netsci2010_poster_hebertdufresne.pdf"
+  location: Boston, USA
+  year: 2010
+
+- type: poster-presentation
+  title: "Exact(?) SIR dynamics on networks of finite size"
+  authors:
+    - noel-pierre-andre
+    - allard-antoine
+    - dube-louis-j
+  conference: 5th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2010_abstract_noel.pdf"
+  poster: "assets/pdf/posters/netsci2010_poster_noel.pdf"
+  location: Boston, USA
+  year: 2010
+
+- type: poster-presentation
+  title: "Multitype modular networks as a model of clustered social networks"
+  authors:
+    - allard-antoine
+    - noel-pierre-andre
+    - hebert-dufresne-laurent
+    - marceau-vincent
+    - dube-louis-j
+  conference: 5th International School and Conference on Network Science
+  # abstract: "assets/pdf/abstracts/netsci2010_abstract_allard.pdf"
+  poster: "assets/pdf/posters/netsci2010_poster_allard.pdf"
+  location: Boston, USA
+  year: 2010
+
+- type: poster-presentation
+  title: "Phase Space as an Optical Engineering Tool in Open Microcavity Designs"
+  authors:
+    - painchaud-april-guillaume
+    - poirier-julien
+    - dube-louis-j
+  conference: 10th SIAM Conference on Applications of Dynamical Systems
+  # abstract: "assets/pdf/abstracts/siamds2009_abstract_painchaudapril.pdf"
+  poster: "assets/pdf/posters/siamds2009_poster_painchaudapril.pdf"
+  location: Snowbird, USA
+  year: 2009
+
+- type: poster-presentation
+  title: "Time Evolution of Epidemics on Complex Networks"
+  authors:
+    - noel-pierre-andre
+    - allard-antoine
+    - dube-louis-j
+  conference: 10th SIAM Conference on Applications of Dynamical Systems
+  # abstract: "assets/pdf/abstracts/siamds2009_abstract_noel.pdf"
+  poster: "assets/pdf/posters/siamds2009_poster_noel.pdf"
+  location: Snowbird, USA
+  year: 2009
+
+- type: poster-presentation
+  title: "Controlling transport properties in dielectric billiards"
+  authors:
+    - poirier-julien
+    - painchaud-april-guillaume
+    - dube-louis-j
+  conference: 10th SIAM Conference on Applications of Dynamical Systems
+  # abstract: "assets/pdf/abstracts/siamds2009_abstract_poirier.pdf"
+  poster: "assets/pdf/posters/siamds2009_poster_poirier.pdf"
+  location: Snowbird, USA
+  year: 2009
+
+- type: poster-presentation
+  title: "Heterogeneous Bond Percolation on Complex Networks: Application to Epidemiology"
+  authors:
+    - allard-antoine
+    - noel-pierre-andre
+    - dube-louis-j
+    - Babak Pourbohloul
+  conference: 63rd Canadian Association of Physicists Annual Congress
+  # abstract: "assets/pdf/abstracts/cap2008_abstract_allard.pdf"
+  poster: "assets/pdf/posters/cap2008_poster_allard.pdf"
+  location: Québec, Canada
+  year: 2008
+
+- type: poster-presentation
+  title: "Highly Directional Emission from Inhomogeneous Dielectric Microcavities"
+  authors:
+    - painchaud-april-guillaume
+    - poirier-julien
+    - Samir Saïdi
+    - Yves-Alain Peter
+    - Étienne Brasselet
+    - dube-louis-j
+  conference: 63rd Canadian Association of Physicists Annual Congress
+  # abstract: "assets/pdf/abstracts/cap2008_abstract_painchaudapril_a.pdf"
+  poster: "assets/pdf/posters/cap2008_poster_painchaudapril_a.pdf"
+  location: Québec, Canada
+  year: 2008
+
+- type: poster-presentation
+  title: "Transport Mechanisms in Dielectric Optical Microcavities"
+  authors:
+    - painchaud-april-guillaume
+    - poirier-julien
+    - dube-louis-j
+  conference: 63rd Canadian Association of Physicists Annual Congress
+  # abstract: "assets/pdf/abstracts/cap2008_abstract_painchaudapril_b.pdf"
+  poster: "assets/pdf/posters/cap2008_poster_painchaudapril_b.pdf"
+  location: Québec, Canada
+  year: 2008
+
+- type: poster-presentation
+  title: "Time Evolution of Epidemic Dynamics on Finite and Infinite Networks"
+  authors:
+    - noel-pierre-andre
+    - B. Davoudi
+    - R. C. Brunham
+    - dube-louis-j
+    - Babak Pourbohloul
+  conference: 63rd Canadian Association of Physicists Annual Congress
+  # abstract: "assets/pdf/abstracts/cap2008_abstract_noel.pdf"
+  poster: "assets/pdf/posters/cap2008_poster_noel.pdf"
+  location: Québec, Canada
+  year: 2008
+
+- type: poster-presentation
+  title: "Classical chaos in a novel inhomogeneous photonic billiard"
+  authors:
+    - Samir Saidi
+    - painchaud-april-guillaume
+    - poirier-julien
+    - Pierre-Yves St-Louis
+    - Josette Lépine
+    - dube-louis-j
+  conference: 9th SIAM Conference on Applications of Dynamical Systems
+  # abstract: "assets/pdf/abstracts/siamds2007_abstract_saidi.pdf"
+  poster: "assets/pdf/posters/siamds2007_poster_saidi.pdf"
+  year: 2007
+  location: Snowbird, USA
+
+- type: poster-presentation
+  title: "Wave chaos in a new class of optical microcavity"
+  authors:
+    - painchaud-april-guillaume
+    - poirier-julien
+    - Pierre-Yves St-Louis
+    - Josette Lépine
+    - Samir Saidi
+    - dube-louis-j
+  conference: 9th SIAM Conference on Applications of Dynamical Systems
+  # abstract: "assets/pdf/abstracts/siamds2007_abstract_painchaudapril.pdf"
+  poster: "assets/pdf/posters/siamds2007_poster_painchaudapril.pdf"
+  year: 2007
+  location: Snowbird, USA

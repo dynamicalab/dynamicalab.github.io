@@ -1,0 +1,988 @@
+# Example
+# - id: nom-prenom,
+#   name: Prenom Nom,
+#   picture: nom.prenom.png,          # optional
+#   email: prenom.nom.#@ulaval.ca,    # optional
+#   links:                            # optional
+#     website: ...,
+#     orcid: ...,
+#     gscholar: ...,
+#     cv: ...,
+#     github: ...,
+#   positions:
+#     - role: Intern
+#       start: 2020
+#       end: 2023
+#     - role: MSc student
+#       start: 2020
+#       end: 2023
+#       thesis: ...
+#     - role: PhD student
+#       supervisor:                      # optional, list; name is a member id or a plain name
+#         - name: allard-antoine
+#       cosupervisor:                    # optional, list, same layout as supervisor
+#         - name: desrosiers-patrick
+#         - name: Jane Doe
+#           university: McGill University  # optional, non-members only; defaults to U. Laval
+#       start: 2020
+#       end: 2023
+#       thesis: ...
+#     - role: Postdoctoral fellow
+#       start: 2023
+#       # no end = current
+#     - role: BSc student                 # a degree NOT done as a member of Dynamica (e.g. before joining)
+#       university: Universite de Montreal
+#       degree: Physics
+#       start: 2015
+#       end: 2018
+#       outside-of-dynamica: true          # hides this position from team.qmd/pubs.qmd; shown only on this member's own personal page
+#   alumnus: True,      # optional, alumni only
+#   nowat: ...,         # optional, alumni only
+#   movedto: ...,       # optional, alumni only
+#   personal-page: true,  # optional - generates a CV-style page (id.html) linked from the team page
+#   bio: >                # optional, free text shown on the personal page
+#     Free-text biography, can span multiple lines.
+#
+# Note: any position above, any entry in data/pubs.yml, or any entry in
+# data/news.yml can carry `outside-of-dynamica: true`. Such entries never
+# appear on team.qmd, pubs.qmd, home.qmd or news.qmd — they are shown only on
+# the personal page(s) of the member(s) they belong to (via 'authors'/
+# 'presenters' for pubs.yml, 'members' for news.yml).
+
+
+- id: allard-antoine
+  name: Antoine Allard
+  email: antoine.allard@phy.ulaval.ca
+  positions:
+    - role: Group leader
+      start: 2018
+  picture: allard-antoine.png
+  links:
+    github: antoineallard
+    gscholar: 7zq4KLMAAAAJ
+    orcid: 0000-0002-8208-9920
+    ul: https://antoine-allard.fsg.ulaval.ca
+    website: https://antoineallard.github.io
+
+
+- id: baril-emile
+  name: Émile Baril
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2022
+      end: 2022
+
+
+- id: beaulieu-frederic
+  name: Frédéric Beaulieu
+  alumnus: true
+  positions:
+    - role: MSc student
+      start: 1998
+      end: 2000
+
+
+- id: bedard-bastien
+  name: Bastien Bédard
+  email: bastien.bedard.1@ulaval.ca
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: desrosiers-patrick
+  picture: bedard-bastien.png
+
+
+- id: bergeron-gabriel
+  name: Gabriel Bergeron
+  email: gabriel.bergeron.5@ulaval.ca
+  positions:
+    - role: PhD student
+      supervisor:
+        - name: Pierre Legagneux
+      cosupervisor:
+        - name: allard-antoine
+      degree: Biology
+      start: 2022
+
+
+- id: bouderbala-ilhem
+  name: Ilhem Bouderbala
+  alumnus: true
+  email:
+  positions:
+    - role: Postdoctoral fellow
+      cosupervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2023
+  links:
+    gscholar: yfpAbS8AAAAJ
+    website: https://math.kfupm.edu.sa/facultyinfo/bouderbala-ilhem
+  nowat: Assist. Prof. at King Fahd U. of Petrol. and Min.
+
+
+- id: brasselet-etienne
+  name: Etienne Brasselet
+  alumnus: true
+  positions:
+    - role: Postdoctoral fellow
+      start: 2003
+      end: 2004
+
+
+- id: charest-jordan
+  name: Jordan Charest
+  email: jordan.charest.2@ulaval.ca
+  positions:
+    - role: PhD student
+
+
+- id: claveau-benjamin
+  name: Benjamin Claveau
+  picture: claveau-benjamin.jpg
+  email: benjamin.claveau.1@ulaval.ca
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: desrosiers-patrick
+      cosupervisor:
+        - name: allard-antoine
+      start: 2023
+      end: 2025
+      thesis:
+        title: Perspective spectrale sur la dynamique des systèmes complexes par la théorie de Koopman
+        tableau-d-honneur: true
+        doi: 20.500.11794/180604
+        pdf: claveau-benjamin-2026-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: desrosiers-patrick
+      cosupervisor:
+        - name: allard-antoine
+      start: 2025
+  links:
+    github: BenClav
+
+
+- id: despres-philippe
+  name: Philippe Després
+  alumnus: true
+  positions:
+    - role: MSc student
+      start: 1998
+      end: 2000
+
+
+- id: desrosiers-patrick
+  name: Patrick Desrosiers
+  email: patrick.desrosiers@phy.ulaval.ca
+  positions:
+    - role: Group leader
+      start: 2018
+  picture: desrosiers-patrick.jpg
+  links:
+    github: pdesrosiers
+    gscholar: YAqE0O0AAAAJ
+    ul: https://patrick-desrosiers.fsg.ulaval.ca
+
+
+- id: desy-beatrice
+  name: Béatrice Désy
+  alumnus: true
+  positions:
+    - role: Intern
+      start: 2019
+      end: 2019
+    - role: Intern
+      start: 2020
+      end: 2020
+    - role: MSc student
+      supervisor:
+        - name: allard-antoine
+      cosupervisor:
+        - name: desrosiers-patrick
+      start: 2019
+      end: 2022
+      thesis:
+        title: Effets de la dimension des réseaux hyperboliques sur la modélisation de la structure communautaire
+        tableau-d-honneur: true
+        doi: 20.500.11794/108124
+        pdf: desy-beatrice-2022-msc.pdf
+  links:
+    gscholar: 32X_CE4AAAAJ
+  movedto: PhD student at Victoria U. Wellington
+
+
+- id: deziel-jean-luc
+  name: Jean-Luc Déziel
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: Younès Messaddeq
+      start: 2013
+      end: 2015
+      thesis:
+        title: Ablation laser et croissance de réseaux de surface
+        tableau-d-honneur: true
+        doi: 20.500.11794/26377
+        pdf: deziel-jean-luc-2015-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: Charles Varin
+      start: 2015
+      end: 2020
+      thesis:
+        title: Formation et auto-organisation de plasma induit par impulsions laser intenses dans un milieu diélectrique
+        doi: 20.500.11794/67749
+        pdf: deziel-jean-luc-2020-phd.pdf
+
+
+- id: doyon-bernard
+  name: Bernard Doyon
+  alumnus: true
+  positions:
+    - role: PhD student
+      start: 1999
+      end: 2002
+
+
+- id: dumont-joey
+  name: Joey Dumont
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: Younès Messaddeq
+      start: 2012
+      end: 2014
+      thesis:
+        title: "On the modelization of optical devices: from dielectric cavities to radiating structures"
+        doi: 20.500.11794/25371
+        pdf: dumont-joey-2014-msc.pdf
+
+
+- id: drouin-anthony
+  name: Anthony Drouin
+  alumnus: true
+  positions:
+    - role: Intern
+      start: 2022
+      end: 2023
+
+
+- id: dube-felix
+  name: Félix Dubé
+  email: felix.dube.4@ulaval.ca
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: desrosiers-patrick
+      start: 2026
+      end: 2026
+
+
+- id: dube-louis-j
+  name: Louis J. Dubé
+  email: ljd@phy.ulaval.ca
+  positions:
+    - role: Honorary member
+      start: 2018
+  picture: dube-louis-j.png
+  links:
+    cv: dube_lj_cv_short.pdf
+
+
+- id: gagnon-denis
+  name: Denis Gagnon
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      start: 2009
+      end: 2011
+      thesis:
+        title: "Modélisation ondulatoire de structures optiques résonantes: application aux microcavités diélectriques bidimensionnelles"
+        tableau-d-honneur: true
+        doi: 20.500.11794/23078
+        pdf: gagnon-denis-2011-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: dube-louis-j
+      start: 2011
+      end: 2014
+      thesis:
+        title: "Generalized Lorenz-Mie theory: application to scattering and resonances of photonic complexes"
+        doi: 20.500.11794/25520
+        pdf: gagnon-denis-2014-phd.pdf
+
+
+- id: gince-jeremie
+  name: Jérémie Gince
+  alumnus: true
+  positions:
+    - role: MSc student
+      start: 2020
+      end: 2023
+
+
+- id: gregoire-louis
+  name: Louis Grégoire
+  picture: gregoire-louis.png
+  email: louis.gregoire.2@ulaval.ca
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: desrosiers-patrick
+      start: 2025
+      end: 2025
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2026
+      end: 2026
+
+
+- id: hatier-jeremie
+  name: Jérémie Hatier
+  email: jeremie.hatier.1@ulaval.ca
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: desrosiers-patrick
+      start: 2026
+      end: 2026
+
+
+- id: harimanana-samuel
+  name: Samuel Harimanana
+  email: Samuel.Harimanana@USherbrooke.ca
+  positions:
+    - role: PhD student
+      cosupervisor:
+        - name: allard-antoine
+      university: U. Sherbrooke
+      degree: Biology
+      start: 2026
+
+
+- id: hebert-dufresne-laurent
+  name: Laurent Hébert-Dufresne
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      start: 2009
+      end: 2011
+      thesis:
+        title: La structure communautaire comme paradigme d'organisation des réseaux complexes
+        tableau-d-honneur: true
+        doi: 20.500.11794/23165
+        pdf: hebert-dufresne-laurent-2011-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: dube-louis-j
+      start: 2011
+      end: 2014
+      thesis:
+        title: On the growth and structure of social systems following preferential attachment
+        doi: 20.500.11794/25331
+        pdf: hebert-dufresne-laurent-2014-phd.pdf
+  nowat: Prof. at U. Vermont
+
+
+- id: hermans-jeson
+  name: Jeson Hermans
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: desrosiers-patrick
+      start: 2021
+      end: 2023
+      thesis:
+        title: Étude spectrale des réseaux de neurones aléatoires
+        doi: 20.500.11794/135023
+        pdf: hermans-jeson-2024-msc.pdf
+
+
+- id: jarras-heikel
+  name: Heikel Jarras
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: Louis-Paul Rivest
+      cosupervisor:
+        - name: allard-antoine
+      degree: Statistics
+      start: 2020
+      end: 2023
+      thesis:
+        title: Modélisation d'une variable aléatoire à l'aide d'un réseau
+        doi: 20.500.11794/125407
+        pdf: jarras-heikel-2023-msc.pdf
+  movedto: Data Scientist at Beneva
+
+
+- id: lapointe-gagne-olivier
+  name: Olivier Lapointe-Gagné
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2021
+      end: 2021
+
+
+- id: larouche-pierre-luc
+  name: Pierre-Luc Larouche
+  email: pierre-luc.larouche.2@ulaval.ca
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2021
+      end: 2021
+    - role: MSc student
+  picture: larouche-pierre-luc.jpg
+
+
+- id: laurence-edward
+  name: Edward Laurence
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: desrosiers-patrick
+        - name: Daniel C. Côté
+      start: 2014
+      end: 2016
+      thesis:
+        title: "Étude des systèmes complexes: des réseaux au connectome du cerveau"
+        doi: 20.500.11794/27149
+        pdf: laurence-edward-2016-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: desrosiers-patrick
+      start: 2016
+      end: 2020
+      thesis:
+        title: La résilience des réseaux complexes
+        doi: 20.500.11794/66989
+        pdf: laurence-edward-2020-phd.pdf
+
+
+- id: legare-antoine
+  name: Antoine Légaré
+  email: antoine.legare.1@ulaval.ca
+  positions:
+    - role: PhD student
+  picture: legare-antoine.png
+
+
+- id: legare-arthur
+  name: Arthur Légaré
+  picture: legare-arthur.jpg
+  email: arthur.legare.1@ulaval.ca
+  positions:
+    - role: MSc student
+
+
+- id: lesage-jeremi
+  name: Jérémi Lesage
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2021
+      end: 2021
+    - role: MSc student
+      supervisor:
+        - name: allard-antoine
+      start: 2022
+      end: 2025
+      thesis:
+        title: Sur la représentation géométrique des réseaux orientés
+        doi: 20.500.11794/166087
+        pdf: lesage-jeremi-2025-msc.pdf
+  movedto: Science communicator at Soft DB
+
+
+- id: lizotte-ariane
+  name: Ariane Lizotte
+  email: ariane.lizotte.2@ulaval.ca
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2020
+    - role: MSc student
+      supervisor:
+        - name: allard-antoine
+      cosupervisor:
+        - name: Jean-Gabriel Young
+          university: U. Vermont
+      start: 2020
+      end: 2022
+      thesis:
+        title: Inférence de la structure d’interactions de données bruitées
+        tableau-d-honneur: true
+        doi: 20.500.11794/107424
+        pdf: lizotte-ariane-2022-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: allard-antoine
+      cosupervisor:
+        - name: Jean-Gabriel Young
+          university: U. Vermont
+      start: 2022
+  links:
+    gscholar: P6OnTrwAAAAJ
+    github: arianelizotte
+    orcid: 0000-0002-5446-675X
+  personal-page: true
+  bio: >
+    I am PhD student advised by allard-antoine and co-advised by young-jean-gabriel.
+    I use Bayesian statistics and computational methods to improve our understanding of network models and properties.
+    My current research focuses on the latent geometry of complex networks.
+
+
+- id: marceau-vincent
+  name: Vincent Marceau
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      start: 2009
+      end: 2011
+      thesis:
+        title: "Modélisation de processus coévolutifs sur réseaux: applications à l'épidémiologie"
+        tableau-d-honneur: true
+        doi: 20.500.11794/22898
+        pdf: marceau-vincent-2011-msc.pdf
+
+
+- id: mcdonald-gregory
+  name: Gregory McDonald
+  alumnus: true
+  positions:
+    - role: MSc student
+      start: 2001
+      end: 2003
+
+
+- id: murphy-charles
+  name: Charles Murphy
+  alumnus: true
+  positions:
+    - role: MSc Student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: allard-antoine
+      start: 2015
+      end: 2018
+      thesis:
+        title: "De la structure croissante des réseaux complexes: approche de la géométrie des réseaux"
+        doi: 20.500.11794/171523
+        pdf: murphy-charles-2018-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: allard-antoine
+      start: 2018
+      end: 2025
+      thesis:
+        title: Reconstruction dans les systèmes complexes
+        doi: 20.500.11794/171523
+        pdf: murphy-charles-2025-phd.pdf
+  links:
+    gscholar: xgBmSD8AAAAJ
+  movedto: Data Scientist at hectiq.ai
+  nowat: Data Scientist at hectiq.ai
+
+
+- id: noel-pierre-andre
+  name: Pierre-André Noël
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: Bernard Doyon
+      start: 2006
+      end: 2007
+      thesis:
+        title: "Dynamique de modèles épidémiologiques: applications au cas du virus du Nil occidental"
+        doi: 20.500.11794/19238
+        pdf: noel-pierre-andre-2006-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: dube-louis-j
+      start: 2007
+      end: 2012
+      thesis:
+        title: Dynamiques stochastiques sur réseaux complexes
+        tableau-d-honneur: true
+        doi: 20.500.11794/23875
+        pdf: noel-pierre-andre-2012-phd.pdf
+
+
+- id: normand-francis
+  name: Francis Normand
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: Daniel C. Côté
+      cosupervisor:
+        - name: allard-antoine
+      degree: Biophotonics
+      start: 2019
+      end: 2022
+      thesis:
+        title: Network-based approaches for case-control studies diagnostic/investigations
+        doi: 20.500.11794/73573
+  links:
+    gscholar: mHjPrnMAAAAJ
+  movedto: PhD student at Monash U.
+
+
+- id: olivier-mai
+  name: Mai Olivier
+  email: mai.olivier.1@ulaval.ca
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2024
+      end: 2024
+    - role: MSc student
+      supervisor:
+        - name: allard-antoine
+      start: 2025
+  email: mai.olivier.1@ulaval.ca
+
+
+- id: painchaud-april-guillaume
+  name: Guillaume Painchaud-April
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      start: 2004
+      end: 2006
+    - role: PhD student
+      supervisor:
+        - name: dube-louis-j
+      start: 2006
+      end: 2014
+      thesis:
+        title: "Cavités diélectriques: formalisme de diffusion et applications"
+        doi: 20.500.11794/24797
+        pdf: painchaud-april-guillaume-2014-phd.pdf
+
+
+- id: piuze-thomas
+  name: Thomas Piuze
+  email: thomas.piuze.1@ulaval.ca
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2026
+      end: 2026
+    - role: MSc student
+      supervisor:
+        - name: allard-antoine
+      start: 2026
+  links:
+    github: tpiuze11
+
+
+- id: poirier-julien
+  name: Julien Poirier
+  alumnus: true
+  positions:
+    - role: MSc student
+      start: 2007
+      end: 2009
+
+
+- id: raulier-bastian
+  name: Bastian Raulier
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2020
+
+
+- id: ribordy-olivier
+  name: Olivier Ribordy
+  picture: ribordy-olivier.png
+  email: olivier.ribordy.1@ulaval.ca
+  personal-page: true
+  positions:
+    - role: BSc student
+      start: 2017
+      end: 2020
+      outside-of-dynamica: true
+    - role: Intern
+      start: 2019
+      end: 2019
+    - role: MSc student
+      supervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2022
+      thesis:
+        title: De la densité spectrale des réseaux extrêmement creux
+        doi: 20.500.11794/110383
+        pdf: ribordy-olivier-2023-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: allard-antoine
+      start: 2023
+  email: olivier.ribordy.1@ulaval.ca
+
+
+- id: roy-pomerleau-xavier
+  name: Xavier Roy-Pomerleau
+  alumnus: true
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: desrosiers-patrick
+      start: 2017
+      end: 2020
+      thesis:
+        title: Inférence d'interactions d'ordre supérieur et de complexes simpliciaux à partir de données de présence/absence
+        doi: 20.500.11794/66994
+        pdf: roy-pomerleau-xavier-2020-msc.pdf
+  nowat: Instructor at U. Laval
+
+
+- id: saidi-samir
+  name: Samir Saidi
+  alumnus: true
+  positions:
+    - role: Postdoctoral fellow
+      start: 2008
+      end: 2009
+
+
+- id: st-onge-guillaume
+  name: Guillaume St-Onge
+  alumnus: true
+  positions:
+    - role: MSc Student
+      supervisor:
+        - name: dube-louis-j
+      start: 2015
+      end: 2017
+      thesis:
+        title: "Dynamique de propagation sur réseaux aléatoires: caractérisation de la transition de phase"
+        tableau-d-honneur: true
+        doi: 20.500.11794/28148
+        pdf: st-onge-guillaume-2017-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: allard-antoine
+      cosupervisor:
+        - name: Laurent Hébert-Dufresne
+          university: U. Vermont
+        - name: dube-louis-j
+      start: 2018
+      end: 2022
+      thesis:
+        title: Processus de contagion sur réseaux complexes au-delà des interactions dyadiques
+        tableau-d-honneur: true
+        doi: 20.500.11794/72971
+        pdf: st-onge-guillaume-2022-phd.pdf
+  links:
+    gscholar: UwKTgecAAAAJ
+    website: https://www.gstonge.ca
+  movedto: Northeastern U.
+  nowat: Assist. Prof. at U. Ottawa
+
+
+- id: thibault-francois
+  name: François Thibault
+  picture: thibault-francois.jpg
+  email: francois.thibault.8@ulaval.ca
+  positions:
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2019
+      end: 2019
+    - role: Intern
+      supervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2020
+    - role: MSc student
+      supervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2022
+      thesis:
+        title: Modèles de graphes aléatoires avec séquences de degrés et de centralité fixes
+        doi: 20.500.11794/108104
+        pdf: thibault-francois-2022-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: allard-antoine
+      start: 2022
+
+
+- id: thibeault-vincent
+  name: Vincent Thibeault
+  email: vincent.thibeault.1@ulaval.ca
+  alumnus: true
+  positions:
+    - role: MSc Student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: desrosiers-patrick
+      start: 2017
+      end: 2020
+      thesis:
+        title: "Réduire la dimension des systèmes complexes: un regard sur l'émergence de la synchronisation"
+        tableau-d-honneur: true
+        doi: 20.500.11794/67313
+        pdf: thibeault-vincent-2020-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: desrosiers-patrick
+      cosupervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2026
+      thesis:
+        title: Approches spectrales et conditions structurelles pour réduire la dimension des systèmes complexes
+        tableau-d-honneur: true
+        doi: 20.500.11794/188890
+        pdf: thibeault-vincent-2026-phd.pdf
+  links:
+    github: VinceThi
+    gscholar: jHEI8xcAAAAJ
+    twitter: vince_thib
+  movedto: Yale U.
+  nowat: Postdoc at Yale U.
+
+
+- id: tremblay-clement
+  name: Clément Tremblay
+  email: clement.tremblay.1@ulaval.ca
+  alumnus: true
+  positions:
+    - role: Intern
+      supervisor:
+        - name: desrosiers-patrick
+      start: 2026
+      end: 2026
+
+
+- id: vegue-marina
+  name: Marina Vegué Llorente
+  alumnus: true
+  positions:
+    - role: Postdoctoral fellow
+      supervisor:
+        - name: allard-antoine
+      start: 2020
+      end: 2022
+  links:
+    orcid: 0000-0001-7065-8623
+    website: https://directori.upc.edu/dadesPersona/1186662
+  nowat: Lectora at U. Politècnica de Catalunya
+
+
+- id: yazdani-zahra
+  name: Zahra Yazdani
+  email: zahra.yazdani-najafabadi.1@ulaval.ca
+  positions:
+    - role: PhD student
+      supervisor:
+        - name: desrosiers-patrick
+      cosupervisor:
+        - name: allard-antoine
+  picture: yazdani-zahra.jpg
+  links:
+    github: zyazdani-92
+    twitter: zaryazdani
+
+
+- id: young-jean-gabriel
+  name: Jean-Gabriel Young
+  alumnus: true
+  positions:
+    - role: Intern
+      start: 2011
+      end: 2011
+    - role: MSc student
+      supervisor:
+        - name: dube-louis-j
+      start: 2012
+      end: 2014
+      thesis:
+        title: De la détection de la structure communautaire des réseaux complexes
+        doi: 20.500.11794/25472
+        pdf: young-jean-gabriel-2014-msc.pdf
+    - role: PhD student
+      supervisor:
+        - name: dube-louis-j
+      cosupervisor:
+        - name: desrosiers-patrick
+      start: 2014
+      end: 2018
+      thesis:
+        title: Inférence et réseaux complexes
+        tableau-d-honneur: true
+        doi: 20.500.11794/31824
+        pdf: young-jean-gabriel-2018-phd.pdf
+  nowat: Assist. Prof. at U. Vermont
+
+
+- id: zahid-laila
+  name: Laila Zahid
+  email: laila.zahid.1@ulaval.ca
+  positions:
+    - role: MSc student
+      supervisor:
+        - name: Benoît Labonté
+      cosupervisor:
+        - name: allard-antoine
+      degree: Biostatistics
+      start: 2026

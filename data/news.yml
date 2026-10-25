@@ -1,0 +1,1605 @@
+# Example
+# - date: 2026-06-05                  # YYYY-MM-DD
+#   members: [nom-prenom, nom2-prenom2]  # optional, member ids; the item also appears on their personal pages
+#   draft: true                       # optional, hides the item everywhere
+#   outside-of-dynamica: true         # optional, shown only on the members' personal pages
+#   text: |-                          # Markdown, can span multiple lines
+#     **Congratulations!** Prenom Nom has successfully defended their Ph.D. thesis
+#     (see the abstract [here](/pdf/...)).
+#
+# The home page shows the most recent items (NUMBER_NEWS_ITEMS in create-pages.py);
+# the News page shows all of them, grouped by year.
+
+
+- date: 2024-11-01
+  draft: True
+  members: [alice, bob]
+  text: "Alice and Bob's paper on network resilience was accepted in Physical Review E."
+
+- date: 2026-06-05
+  members: [thibeault-vincent]
+  text: |-
+    **Habemus novum Doctor!** Vincent Thibeault has successfully defended his Ph.D. thesis (see the abstract [here](/assets/pdf/affiches/2026-06-05-vincent-soutenance.pdf)). His dissertation, entitled *“Approches spectrales et conditions structurelles pour réduire la dimension des systèmes complexes”*, introduces spectral approaches for reducing the dimension of complex systems and establishes general structural conditions for exact dimension reduction. It also proposes the low-rank hypothesis for complex systems and demonstrates how it provides a natural explanation for the emergence of higher-order interactions.
+
+    The examination committee was composed of Antoine Allard (director, Université Laval), Patrick Desrosiers (co-director, Université Laval), Jean-François Fortin (examiner, Université Laval), Nicolas Doyon (examiner, Université Laval), Renaud Lambiotte (external examiner, University of Oxford), and was chaired by Tigran Galstian (Université Laval). Recognized for its exceptional quality, Vincent's dissertation will be added to the *Tableau d'honneur* (Board of Honour) of the Faculty of Graduate and Postdoctoral Studies at Université Laval.
+
+    Vincent's remarkable doctoral work has also been recognized through prestigious postdoctoral fellowships, including the [Canada Postdoctoral Research Award Program](https://nserc-crsng.canada.ca/en/funding-opportunity/canada-postdoctoral-research-award-program) and the [Wu Tsai Postdoctoral Fellowship](https://wti.yale.edu/initiatives/postdoctoral) at [Yale University](https://www.yale.edu/). He will begin his postdoctoral research at Yale in September 2026.
+
+    **We warmly congratulate Vincent on this outstanding achievement and wish him every success in this exciting new chapter of his academic career!**
+
+- date: 2026-05-25
+  members: [ribordy-olivier, allard-antoine]
+  text: "New manuscript on arXiv: [*The impact of behavioral homophily and conformity on epidemic spreading in networks with large groups*](pubs.qmd#behavioral-homophily)."
+
+- date: 2026-05-07
+  members: [hebert-dufresne-laurent]
+  text: |-
+    \[Alumni update\] [Laurent Hébert-Dufresne](https://laurenthebertdufresne.github.io) was awarded the [2026 Erdős–Rényi Prize by the Network Science Society](https://netscisociety.net/award-prizes/er-prize) for *foundational contributions to the theory of contagion on complex networks, illuminating how network structure, higher-order interactions, and nonlinear transmission mechanisms shape the spread of diseases, behaviors, and ideas.*
+
+    The Erdős–Rényi Prize is *awarded each year to a selected young scientist (under 40 years old on the day of the nomination deadline) for their research achievements in the area of network science, broadly construed. While the achievements can be both theoretical and experimental, the prize is aimed at emphasizing outstanding contributions relevant to the interdisciplinary progress of network science.* (from the NSS website)
+
+- date: 2025-08-12
+  members: [legare-antoine, ribordy-olivier, allard-antoine, desrosiers-patrick]
+  text: "New manuscript on bioRxiv: [*Function aligns with geometry in locally connected neuronal networks*](pubs.qmd#geometric-networks)."
+
+- date: 2026-02-02
+  text: |-
+    We are delighted to share that Benjamin Claveau has been awarded the distinction of the *Tableau d’honneur* of the Faculty of Graduate and Postdoctoral Studies at Université Laval. His M.Sc. thesis in Physics, *“Perspective spectrale sur la dynamique des systèmes complexes par la théorie de Koopman”*, received unanimous excellent evaluations from the jury, earning him this prestigious recognition.
+
+    We are especially pleased that Benjamin has decided to continue his PhD in Physics within the Dynamica Research Lab, where he will further develop research on the *Koopman operator theory of complex systems*.
+
+    Congratulations to Benjamin for this remarkable achievement and for continuing the Dynamica tradition of excellence.
+
+    [Read the thesis (PDF)](https://dynamicalab.github.io/assets/pdf/theses/claveau26_master.pdf)
+
+- date: 2025-09-04
+  text: |-
+    Charles Murphy has successfully defended his Ph.D. thesis on June 9th (see the abstract [here](/assets/pdf/affiches/2025-06-09-charles-soutenance.pdf)). His dissertation, entitled *“Reconstruction dans les systèmes complexes”*, explores how the structure and dynamics of complex systems can be jointly inferred from data, unifying the problems of network reconstruction and dynamical prediction within an information-theoretic framework.
+
+    The examination committee was composed of Antoine Allard (director, Université Laval), Jean-François Fortin (examiner, Université Laval), Nicolas Doyon (examiner, Université Laval), Giovanni Petri (external examiner, Network Science Institute, Northeastern University London), and was chaired by Daniel Côté (Université Laval). The final version of the thesis is available [here](pubs.qmd#murphy-charles-phd-thesis).
+
+    Charles has now successfully completed all Ph.D. requirements and officially received his doctoral diploma on September 1st. He accomplished this impressive journey while building a family and working part-time at [Hectiq.AI](https://hectiq.ai/), where he is now pursuing his career as a Data Scientist. **Congratulations, Charles!**
+
+- date: 2025-09-03
+  text: We are excited to announce that **Arthur Légaré** and **Mai Olivier** have just begun their Master’s studies in Physics in our lab. Both previously completed promising research internships with us last year and have chosen to continue their graduate journey at Dynamica. Welcome aboard, Arthur and Mai!
+
+- date: 2025-07-14
+  text: |-
+    The latest article from our long-standing collaboration with the [Paul De Koninck Lab](https://greenspine.ca/) has just been published in [*Science Advances*](https://www.science.org/doi/10.1126/sciadv.adv7576). This work, driven by the exceptional research of PhD candidate **Antoine Légaré** and supported by [Sentinelle Nord](https://sentinellenord.ulaval.ca/en), marks a key milestone in our joint efforts to bridge brain structure and function.
+
+    The paper, titled "Structural and genetic determinants of zebrafish functional brain networks," shows how brain-wide functional imaging and network analysis in zebrafish larvae uncover parallels with human brain networks. By combining whole-brain calcium imaging, structural connectivity from single-neuron reconstructions, and regional gene expression data, the study reveals that functional connectivity reflects underlying anatomical wiring, exhibits hierarchical modularity, and aligns with genetic markers—reproducing features commonly observed in mammalian brains.
+
+    A [popular science article (in French)](https://nouvelles.ulaval.ca/2025/07/11/le-cerveau-du-poisson-zebre-une-fenetre-sur-le-cerveau-humain-a:54d10a2e-9880-48a1-a799-7f7865f80f05) by **Jean Hamann** provides broader context and includes a video showcasing whole-brain neural activity in a larval zebrafish.
+
+    For more information, visit our [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2025-05-19
+  text: We are pleased to welcome **Louis Grégoire** and **Bastien Bédard** as research interns at the Dynamica Research Lab this summer. Louis, an undergraduate student in physics, will investigate the dynamics of next-generation Hopfield networks. Bastien, who is studying mathematics, will focus on dimensionality reduction in neural networks, in collaboration with [**Nicolas Doyon**](https://cervo.ulaval.ca/en/profile/nicolas-doyon) from the Department of Mathematics and the CERVO Brain Research Center. We look forward to a stimulating summer of research.
+
+- date: 2025-04-30
+  text: We are proud to celebrate the achievements of several members of the Dynamica Research Lab who have been awarded prestigious **scholarships from NSERC and FRQNT**. These include **Benjamin Claveau** and **Jordan Charest** (PhD), **Mai Olivier** (Master’s), and **Louis Grégoire** and **Bastien Bédard** (Undergraduate). Congratulations to all for this well-deserved recognition!
+
+- date: 2024-06-21
+  text: |-
+    The Dynamica Research Lab is proud to announce that the Network Science Society has awarded the prestigious [Erdős–Rényi Prize](https://netscisociety.net/award-prizes/er-prize) to [Antoine Allard](https://antoineallard.github.io/) for:
+
+    > "The breadth and depth of his contributions to modeling complex systems as networks, including the geometry of networks and the role of heterogeneity and superspreading in contemporary diseases and complex contagions."
+
+    The Erdős–Rényi Prize, awarded annually to a young scientist under 40, recognizes exceptional theoretical or experimental contributions that advance the interdisciplinary field of network science. The prize, which includes a $3,000 cash award and a personalized plaque, was presented to Antoine during a special session on the final day of [NetSci2024](https://netscis2024.com/en), where he also delivered a lecture titled *Simplicity meets complexity: Reproducing complex connectivity patterns with simple models*, presenting some of his recent research.
+
+- date: 2024-06-20
+  text: |-
+    The Dynamica Research Lab showcased outstanding involvement in the **International School and Conference on Network Science**, the premier event in the field. This [year's edition](https://netsci2024.com/en) was co-organized by Antoine Allard and alumnus Laurent Hébert-Dufresne, with alumni Jean-Gabriel Young as Program Chair and Guillaume St-Onge as School & Satellite Chair. Additionally, Patrick Desrosiers and colleague Nicolas Doyon organized a focus session on Neuroscience.
+
+    The entire lab actively attended the conference, along with many of our close collaborators. This strong participation was underscored by presentations from numerous members of the Dynamica Research Lab, including Ilhem Bouderbala, Benjamin Claveau, Antoine Légaré, Jérémi Lesage, Ariane Lizotte, Olivier Ribordy, François Thibault, Vincent Thibeault, and Zahra Yazdani. For more details, you can view the slides and posters [here](https://dynamicalab.github.io/publications.html#).
+
+- date: 2024-02-14
+  text: |-
+    Dynamica's latest contribution, led by PhD candidate Vincent Thibeault, has been published in [Nature Physics](https://www.nature.com/articles/s41567-023-02303-0).
+    Our work critically examines the often implicit use of low-rank matrices in modeling complex systems, such as biological neural networks, through linear algebra and random matrix theory. Such simplification is not only shown to be widespread across various fields of research, but it is also empirically put to the test for over 600 real-world networks, revealing their low effective dimensionality. We demonstrate that our observations significantly impact the understanding of nonlinear dynamics, enabling optimal dimension reduction and the emergence of higher-order interactions, and thereby providing deeper insights into the mechanisms underlying complex phenomena.
+
+    Accompanying the publication, a [News & Views piece](https://www.nature.com/articles/s41567-023-02268-0) within the same issue of Nature Physics discusses the implications and significance of our findings. Further extending the reach of our research, a [news article on phys.org](https://phys.org/news/2024-01-validating-hypothesis-complex.html) and a [blog post by Manlio De Domenico](https://manlius.substack.com/p/complexity-thoughts-issue-25) have elaborated on the paper's themes and relevance to current scientific inquiries into complex systems. In recognition of this work, Vincent has been invited to present at the Mathematical Institute of Oxford University and Northeastern University's Network Science Institute (NetSI). Another notable achievement is the selection of the figure designed by Vincent and Myriam Thibeault for the front cover of the [latest issue of Nature Physics](https://www.nature.com/nphys/volumes/20/issues/2).
+
+    For further details on this publication and access to the full text, please visit our [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-10-20
+  text: |-
+    The latest article from our long-standing collaboration with the [Laboratory for Structure and Dynamics](https://joint-lab.github.io/) at the [Vermont Complex Systems Center](https://vermontcomplexsystems.org) titled "Temporal and probabilistic forecasts of epidemic interventions" has been published in the Bulletin of Mathematical Biology.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-10-05
+  text: |-
+    Our latest publication in Scientific Reports, led by Rémi Lamontagne, marks the first collaboration with [Simon Duchesne's Lab](https://www.medicslab.website) and continues our longstanding work with [Nicolas Doyon](https://cervo.ulaval.ca/en/nicolas-doyon). The paper introduces a novel approach using the UMAP dimension reduction algorithm to analyze MRI-derived cortical thickness measures, effectively differentiating between mild cognitive impairment and Alzheimer's subjects.
+
+    For detailed insights, visit our [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-09-30
+  text: |-
+    In collaboration with the [Paul De Koninck Lab](https://greenspine.ca/) and led by Antoine Légaré, our latest research funded by Sentinelle Nord has been published in Neurophotonics. This paper offers a comprehensive overview of digital atlases for the larval zebrafish brain, integrating neuroanatomical data, gene expression patterns, and connectivity insights.
+
+    For further details, please visit the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-07-25
+  text: |-
+    The latest article from our long-standing collaboration with the [Laboratory for Structure and Dynamics](https://joint-lab.github.io/) at the [Vermont Complex Systems Center](https://vermontcomplexsystems.org) titled "Hierarchical team structure and multidimensional localization (or siloing) on networks" has been published in Journal of Physics: Complexity.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-07-19
+  text: |-
+    The results of a collaboration with [Alice Patania](https://alpatania.github.io/) and [Jean-Gabriel Young](https://www.jgyoung.ca/) from the [Vermont Complex Systems Center](https://vermontcomplexsystems.org) titled "Exact and rapid linear clustering of networks with dynamic programming" has been published in Proceedings of the Royal Society A.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-07-12
+  text: François Thibault, Ariane Lizotte are Jérémi Lesage will be presenting our latest results at the NetSci 2023 conference, help in Vienna from July 10th to July 14th, 2023. [Alice Patania](https://alpatania.github.io/), [Guillaume St-Onge](https://www.gstonge.ca/) and [Laurent Hébert-Dufresne](http://laurenthebertdufresne.github.io/) will also be presenting results from project done in collaboration with Dynamica.
+
+- date: 2023-06-01
+  text: ''
+
+- date: 2023-05-19
+  text: |-
+    The first article based on Marina Vegué's research during her postdoc with us has been published in PNAS Nexus.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-05-16
+  text: Following a very promising research internship with Patrick Desrosiers during the fall semester 2022, Benjamin Claveau decided to continue working with us at the master’s level. His project will focus on the Koopman theory of complex dynamical systems on networks.  Welcome Benjamin!
+
+- date: 2023-05-15
+  text: Anne-Sophie Roy and Arthur Légaré have joined the group as summer interns. Anne-Sophie will work in close collaboration with [Pierre Marquet’s lab]( https://www.labrnp.ca/) on the network neuroscience aspects of the [NCADD project]( https://www.neuro-cervo.org/) while Arthur will collaborate with [Paul De Koninck's lab](https://greenspine.ca/) to study the whole-brain neuronal activity of the larval zebrafish. Welcome to the team!
+
+- date: 2023-05-09
+  text: |-
+    The article based on Béatrice Désy's research during her M.Sc. has been published in PNAS Nexus.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-05-08
+  text: |-
+    The third installment of our series <i>Beyond R<sub>0</sub></i> has been published in SIAM Review.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-04-27
+  text: |-
+    The second article to come out of our Sentinelle Nord-funded collaboration with Daniel Fortin (Biology, ULaval) and led by Ilhem Bouderbala has been published in Diversity and Distributions.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-03-15
+  text: |-
+    The first article to come out of our Sentinelle Nord-funded collaboration with Daniel Fortin (Biology, ULaval) and led by Ilhem Bouderbala has been published in PLOS Climate.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2023-03-14
+  text: François Thibault and Pierre-Luc Larouche have been awarded the Byron-T.-Darling scholarship created to support students pursuing a master or a PhD in Physics. Details can be found [here (in French)](https://repertoire.bbaf.ulaval.ca/bourse/73862/bourse-byron-t-darling-2e-et-3e-cycles-en-physique-hiver-2023). Congratulations!
+
+- date: 2023-01-27
+  text: Olivier Ribordy successfully completed his Master's degree with the final acceptation of his thesis titled [De la densité spectrale des réseaux extrêmement creux](assets/pdf/theses/ribordy22_master.pdf). Congratulations!
+
+- date: 2023-01-09
+  text: Pierre-Luc Larouche has joined our team together with [Michèle Desjardins' lab](https://www.crchudequebec.ulaval.ca/en/research/researchers/michele-desjardins/) as a master's student. His research project will focus on aging dynamics of neural networks in mice. Pierre-Luc had done a rewarding summer internship with us in 2021, so we are very pleased to work with him again. Welcome back Pierre-Luc!
+
+- date: 2022-12-20
+  text: François Thibault successfully completed his Master's degree with the final acceptation of his thesis titled [Modèles de graphes aléatoires avec séquences de degrés et de centralité fixes](assets/pdf/theses/thibault22_master.pdf). Congratulations!
+
+- date: 2022-12-15
+  text: Béatrice Désy successfully completed her Master's degree with the final acceptation of her thesis titled [Effets de la dimension des réseaux hyperboliques sur la modélisation de la structure communautaire](assets/pdf/theses/desy22_master.pdf). Her thesis was added to the Board of Honour, the highest distinction at Universit&eacute; Laval. Congratulations!
+
+- date: 2022-12-01
+  text: Ariane Lizotte successfully completed her Master's degree with the final acceptation of her thesis titled [Inférence de la structure d’interactions de données bruitées](assets/pdf/theses/lizotte22_master.pdf). Her thesis was added to the Board of Honour, the highest distinction at Université Laval. Congratulations!
+
+- date: 2022-09-05
+  text: Dynamica warmly welcomes Benjamin Claveau, Anthony Drouin and Émile Baril who join the lab this fall as undergraduate interns. Benjamin and Émile are third-year students in Physics while Anthony is entering his second year in Engineering Physics. In collaboration with the Ph.D. candidate Vincent Thibeault, Benjamin will work on the spectral theory of the Koopman operators describing the dynamics of recurrent neural networks. Émile's project will focus on networks geometrical embeddings, an important aspect of Ph.D. candidate Ariane Lizotte's current work. Finally, Anthony will assist the M.Sc. candidate Jérémie Gince in implementing biologically plausible learning algorithms for the Python package NeuroTorch.
+
+- date: 2022-09-05
+  text: Ariane Lizotte and François Thibault will pursue their scientific jouney with Dynamica as PhD students following the successful completion of their Master's thesis (more to come on that later this fall). Following his productive summer intership in 2021, Jérémi Lesage also decided to continue working with us at the master's level.
+
+- date: 2022-06-02
+  text: On June 1st and 2nd, François Thibault, Olivier Ribordy and Béatrice Désy presented their Master's colloquium, the last step before being allowed to submit their Master's thesis. Congratulations to the young masters to be!
+
+- date: 2022-04-05
+  text: Guillaume St-Onge's PhD thesis received the highest honor at Université Laval and his name will be added to the [Board of Honor of the Faculty of Graduate and Postdoctoral Studies](https://www.fesp.ulaval.ca/faculte/tableau-honneur) for the academic year 2021-2022. The final version of the thesis is available [here](http://hdl.handle.net/20.500.11794/72971). Congratulations!
+
+- date: 2022-02-03
+  text: |-
+    Guillaume St-Onge has successfully defended his thesis work on February 3rd (see the Abstract [here](/assets/pdf/affiches/2022-02-03-guillaume-soutenance.pdf)) and has been highly praised for the quality and the originality of his research on the "Processus de contagion sur réseaux complexes au-delà des interactions dyadiques" (Contagion processes in complex networks beyond dyadic interactions).  The team of examiners was composed of Antoine Allard (dir., Physics, U. Laval), Laurent Hébert-Dufresne (co-dir., U. Vermont), Patrick Desrosiers (CERVO), Peter Dodds (U. Vermont), and Laetitia Gauvin (ISI) who served as external referee.
+
+    The final version of the thesis is available [here](http://hdl.handle.net/20.500.11794/72971).  Guillaume is now a Postdoctoral Researcher at the [MOBS Lab](https://www.mobs-lab.org/) at Northeastern University.
+
+- date: 2022-01-20
+  text: |-
+    The latest contribution of Dynamica is a *News & Views* article published in [Nature Physics](https://www.nature.com/nphys/). The authors, Patrick Desrosiers and Xavier Roy-Pomerleau, present in non-technical terms the recent findings of [Hillel Sanhedrai and colleagues](https://doi.org/10.1038/s41567-021-01474-y) and put their work in context, focusing on the problem of the *resilience of complex systems* and exploring previous contributions by two great theoretical ecologists, Crawford S. Holling and Robert May.
+    Link to the full text is available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2022-01-17
+  text: |-
+    The latest contribution of Dynamica has just been published in [Communication Physics](https://www.nature.com/commsphys/) as part of a focus collection on higher-order networks.
+    The article is entitled [Influential groups for seeding and sustaining nonlinear contagion in heterogeneous hypergraphs](https://doi.org/10.1038/s42005-021-00788-w).
+    This is the result of an international collaboration between Dynamica members ([Guillaume St-Onge](https://www.gstonge.ca/), [Antoine Allard](https://antoineallard.github.io/), and [Laurent Hébert-Dufresne](http://laurenthebertdufresne.github.io/)), researchers from Central European University ([Iacopo Iacopini](https://iaciac.github.io/)), Queen Mary University of London ([Vito Latora](http://www.maths.qmul.ac.uk/~latora/)), CNRS ([Alain Barrat](http://www.cpt.univ-mrs.fr/~barrat/english.html)), and ISI Foundation ([Giovanni Petri](https://www.isi.it/en/people/giovanni-petri)).
+
+    The authors use a highly accurate approximate master-equation framework to study the importance of group interactions for complex contagions with nonlinear infection rates.
+    They find that Superlinear contagions promote the onset of localization in large groups, which influences the phase diagram of the dynamics.
+    Moreover, this work challenges the standard notion of influential _spreaders_ by introducing the concept of influential _groups_ to maximize the early spread of a contagion, which is a more effective approach for strongly nonlinear infection rates.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2022-01-05
+  text: Vincent Painchaud has completed the requirements for his M.Sc. degree in physics. His Master’s thesis entitled *Dynamique markovienne ternaire cyclique sur graphes et quelques applications en biologie mathématique* has been unanimously praised by the examiners [Nicolas Doyon (dir., Mathematics), Patrick Desrosiers (co-dir. Physics), Javad Mashreghi (Mathematics), Damir Kinzebulatov (Mathematics)] who have given the highest possible mark (excellent). Consequently, his name will be added to the [Board of Honor of the Faculty of Graduate and Postdoctoral Studies](https://www.fesp.ulaval.ca/faculte/tableau-honneur) for the academic year 2021-2022. The final version of the thesis is available [here](/assets/pdf/theses/painchaud22_master.pdf) Congratulations Vincent!
+
+- date: 2021-10-08
+  text: |-
+    The latest contribution of Dynamica has just been published in [Physical Review Letters](https://journals.aps.org/prl/), entitled [Universal Nonlinear Infection Kernel from Heterogeneous Exposure on Higher-Order Networks](https://doi.org/10.1103/PhysRevLett.127.158301).
+    This is the result of an international collaboration between Dynamica members ([Guillaume St-Onge](https://www.gstonge.ca/), [Antoine Allard](https://antoineallard.github.io/), and [Laurent Hébert-Dufresne](http://laurenthebertdufresne.github.io/)) and researchers from Queen Mary University of London ([Hanlin Sun](https://www.qmul.ac.uk/maths/profiles/sunh.html) and [Ginestra Bianconi](https://www.qmul.ac.uk/maths/profiles/bianconig.html)).
+
+    The article brings a new perspective on contagion dynamics: people attend various environments of different sizes, and this is through interactions with infected people that they accumulate a certain infective dose.
+    The authors combine this higher-order network representation with heterogeneous temporal patterns and the concept of a minimal infective dose to develop the infection.
+    They find that the probability of becoming infected through an environment is a nonlinear function of the number of infected people attending the environment.
+    Interestingly, this nonlinear function as a *universal* power-law form.
+    Under this nonlinear infection probability, conventional epidemic wisdom breaks down with the emergence of discontinuous transitions, superexponential spread, and hysteresis.
+
+    A press release of the paper is available on [phys.org](https://phys.org/news/2021-10-mathematical-insights-epidemics.html).
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2021-08-06
+  text: |-
+    Predicting the evolution of contagion dynamics is an important yet difficult problem, where simple mechanistic models, like mass-action models, can only take us so far. The paper entitled [Deep learning of contagion dynamics on complex networks](https://doi.org/10.1038/s41467-021-24732-2), newly published in Nature Communications and led by current Dynamica member [Charles Murphy](https://scholar.google.ca/citations?user=xgBmSD8AAAAJ&hl=en), alumni [Edward Laurence](https://edwardlaurence.me/) and Dynamica leader [Antoine Allard](https://antoineallard.github.io/), introduces a complementary approach based on deep learning to learning effective dynamical models of epidemic spreading directly from observational data. The authors show that not only is their approach effective at learning from data and predicting dynamics on observed network structures, it is also possible to extrapolate it beyond the observed structure to extract emergent behaviors from the learned model.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2021-07-26
+  text: |-
+    After a long fought battle with a rather _persistent_ referee, the last publication of the Optics branch of Dynamica has seen the light of day. It carries the name [Dynamical rate equation model for femtosecond laser-induced breakdown in dielectrics](https://doi.org/10.1103/PhysRevB.104.045201) or DRE for short. The first reactions are very positive and there is little doubt that the method presented  will find its way in the toolbox of the corresponding community. It serves us right to be at least as obstinate as some of the gatekeepers...
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2021-05-03
+  text: Olivier Lapointe-Gagné, Pierre-Luc Larouche and Jérémi Lesage joined the group as summer interns. Besides learning about advanced topics in complex networks, nonlinear dynamics and epidemiology, they will help us pushing forward three ongoing research projects. Welcome to the team!
+
+- date: 2021-03-01
+  text: |-
+    The latest contribution of Dynamica has just been published in [Physical Review Letters](https://journals.aps.org/prl/) alongside its companion paper in [Physical Review E](https://journals.aps.org/pre/), entitled [Social Confinement and Mesoscopic Localization of Epidemics on Networks](https://doi.org/10.1103/PhysRevLett.126.098301) and [Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks](https://doi.org/10.1103/PhysRevE.103.032301) respectively.
+
+    These articles provide a theoretical characterization of **mesoscopic localization**, the localization of a dynamics in certain groups, in the context of contagions on networks.
+    The letter, furthermore, investigates the impact of localized epidemics on structural interventions, where groups above a certain size are removed, akin to forbidding events or gathering involving a certain number of people.
+    This lays the foundation for a better comprehension of the impact of nonpharmaceutical interventions, ultimately helping us *control* epidemics.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2021-01-26
+  text: |-
+    Growth processes allow us to better understand many of the complex properties of networks, which are by nature dynamic objects.
+    We can go further and assume a certain growth model did generate the structure, allowing us to perform Bayesian inference on the past states of the network.
+    As it has been shown in a [previous study](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.9.041056) from Dynamica, _temporal reconstruction_ is, however, a very difficult task.
+
+    The paper entitled [Inference, Model Selection, and the Combinatorics of Growing Trees](https://doi.org/10.1103/PhysRevLett.126.038301), introduces a glimpse of hope for rigorous temporal reconstruction of networks. In this project, led by [George T. Cantwell](https://www.george-cantwell.com/), current Dynamica member [Guillaume St-Onge](https://gstonge.github.io/), and alumni [Jean-Gabriel Young](http://www.jgyoung.ca/), the authors derive exact and efficient inference methods for growing trees and demonstrate them in a series of applications: network interpolation, history reconstruction, model fitting, and model selection.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2020-12-03
+  text: |-
+    Jean-Luc Déziel has successfully defended his thesis work on the 23rd of Novembre  (see the Abstract [here](/assets/pdf/affiches/2020-11-23-jean-luc-soutenance.pdf)) and has been highly praised for his dedication and originality in completing his research on ''Formation et auto-organisation de plasma induit par impulsions laser intenses dans un milieu diélectrique'' (*Plasma formation and self-organisation in a dielectric medium induced by short intense laser pulses*). The team of examiners was composed of Louis J. Dubé (dir., Physics, U. Laval), Charles Varin (co-dir. Physics, Cégep de l’Outaouais, Gatineau (Québec), Michel Piché (Physics, U. Laval), Younès Messaddeq (Physics, U. Laval)], and François Vidal (Plasma Physics, INRS) who served as external referee.
+
+    Jean-Luc is the last member of the Photonics branch of Dynamica. He is to be congratulated for bringing his studies to completion despite the competing demands of his full time occupation as a research scientist at [LeddarTech](https://leddartech.com/), a company involved in sensor technologies whose goal is to enable *autonomous driving* through environmental sensing.  His present occupations are to conceive and train artificial neural networks to safely reach the designated goal. A loss for us, a win for AI ...
+
+    The final version of the thesis is available [here](/assets/pdf/theses/deziel2020_thesis.pdf).
+
+- date: 2020-11-11
+  text: |-
+    The latest contribution of Dynamica has just been published in [Physical Review Research](https://journals.aps.org/prresearch/).
+
+    The paper entitled [Threefold way to the dimension reduction of dynamics on networks: An application to synchronization](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.043215) addresses a difficult  problem: predicting the impact of network topology and dynamics on the evolution of the states of complex systems and, especially, on the emergence of collective phenomena, such as synchronization. A new method of *Dimension Reduction*, called DART, is developed to map high-dimensional dynamics unto low-dimensional ones while preserving the most salient features, both topological and dynamical, of the original system. The authors identify *three major reduction procedures* whose relative accuracy depends on whether the evolution of the states is mainly determined by the intrinsic dynamical parameters *W*, the degree sequence *K*, or the adjacency matrix *A*. DART is successfully used, for instance, to predict the synchronization curves for three phase dynamics (Winfree, Kuramoto, theta) on networks with heterogeneous and modular structures.
+
+
+    Links to the full text and preprint are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2020-10-29
+  text: |-
+    Vincent Thibeault has completed the requirements for his M.Sc. degree in physics.  His Master’s thesis entitled *Réduire la dimension des systèmes complexes: un regard sur l’émergence de la synchronisation* has been unanimously praised by the examiners [Louis J. Dubé (dir., Physics), Patrick Desrosiers (co-dir. Physics), Antoine Allard (Physics), Nicolas Doyon (Mathematics)] who have given the highest possible mark (excellent). Consequently, his name will be added to the [Board of Honor of the Faculty of Graduate and Postdoctoral Studies](https://www.fesp.ulaval.ca/faculte/tableau-honneur).  The final version of the thesis is available [here](/assets/pdf/theses/Thibeault20_master.pdf). Congratulations Vincent!
+
+    Congratulations are also in order for Pr. Dubé. Indeed, Vincent is Pr. Dubé’s tenth student in twelve years to be honored by the Faculty of Graduate and Postdoctoral Studies.  The current members of Dynamica will do their best to perpetuate this remarkable tradition of excellence.
+
+- date: 2020-09-01
+  text: |-
+    We are proud to announce that Xavier Roy-Pomerleau has successfully completed his M.Sc. degree in physics.  His impressive master’s thesis entitled "Inférence d'interactions d'ordre supérieur et de complexes simpliciaux à partir de données de présence/absence" (Inferring higher-order interactions and simplicial complexes from presence/absence data) has received very positive reviews from all the examiners: Louis J. Dubé (dir., Physics), Patrick Desrosiers (co-dir. Physics), Antoine Allard (Physics), Jérôme Comte (INRS - Eau Terre Environnement).  The final version of the thesis is available [here](/assets/pdf/theses/Roy-Pomerleau20_master.pdf).
+
+    Xavier is currently writing an article summarizing the main findings of his research.
+
+    Congratulations Xavier!
+
+- date: 2020-08-12
+  text: |-
+    Edward Laurence has successfully defended his thesis work on the 12th of August (see the Abstract [here](/assets/pdf/affiches/2020-08-12-edward-defense-abstract.pdf)) and received hearty accolades for his research on “La résilience des réseaux complexes” (Resilience of Complex Networks).
+    Apart from the local team of examiners [Louis J. Dubé (dir., Physics), Patrick Desrosiers (co-dir. Physics), Antoine Allard (Physics), Audrey Durand (Computer Science)], we were happy to have recruited a former member of Dynamica, Pierre-André Noel (Element AI – Montréal) as external referee for his expertise in Network Science and Deep Learning.
+
+    Edward is presently working in Artificial Intelligence in an AI start-up named [Hectiq AI](https://www.hectiq.ai/) based Québec City.
+    The final version of the thesis is available [here](/assets/pdf/theses/laurence20_thesis.pdf).
+
+    Congratulations Edward!
+
+- date: 2020-08-11
+  text: |-
+    Guillaume St-Onge successfully presented and defended his PhD seminar titled *Processus stochastiques de contagion sur réseaux complexes :  au-delà des interactions par paires* on August 11th (see Abstract [here](/assets/pdf/affiches/2020-08-11-seminar-gso.pdf)).
+
+    The event resembles the PhD defense in that the candidate presents their research in a 30-minute talk, and then answers questions from an evaluation committee. The committee was composed by Antoine Allard, Laurent Hébert-Dufresne, Louis J. Dubé and Patrick Desrosiers.
+
+    Congratulations Guillaume!
+
+- date: 2020-06-18
+  text: |-
+    While still under lockdown due the COVID-19 pandemic, the Dynamica Lab remains as active as ever!
+    Indeed, the group recently posted two new preprints discussing the use of _Deep learning_ to access dynamical systems on networks and their applications:
+
+    - [Detecting structural perturbations from time series with deep learning](https://arxiv.org/abs/2006.05232)
+    - [Deep learning of stochastic contagion dynamics on complex networks](https://arxiv.org/abs/2006.05410)
+
+
+    ##### Detecting structural perturbations from time series with deep learning
+
+    Small perturbations in the structure of complex systems can lead to critical scenarios, from functional breakdowns in the brain to economic crises.
+    Hence, our ability to prevent these situations is directly linked to our ability to detect these perturbations before the tipping point.
+    To address this issue, this paper proposes a data-driven approach based deep learning to infer broken links directly from time series.
+    As shown below, this extremely versatile tool is successfully applied to multiple cases, from epidemic spreading, to population and neural dynamics.
+    The approach is proved highly effective in realistic settings involving noise in the time series and limited training data, while remaining computationally scalable to large systems.
+
+    <img class="block-image" src="{{ "/assets/images/posts/2020-06-18-zoo2p0.png" }}">
+    <caption>Accuracy of the detection of broken links for (A--C) epidemic spreading, (D--F) population dynamics and (G--I) neural dynamics.</caption>
+
+    ##### Deep learning of stochastic contagion dynamics on complex networks
+
+    Forecasting the propagation of infectious diseases is a complex problem, which is only partially addressed by simple mechanistic models.
+    This paper presents a complementary and data-driven approach to modeling dynamics on networks using _graph neural networks_ (GNN), ranging from simple contagion, to complex and interacting contagion.
+    It is shown that GNNs can be trained to effectively reproduce the inner mechanisms of contagion dynamics---that is, their transition probabilities---with surprising accuracy (see below).
+    The paper also addresses the possibility to use GNNs to gain insights about the critical behaviors of contagion dynamics from data---some kind of numerical Petri dish.
+
+    <img class="block-image" src="{{ "/assets/images/posts/2020-06-18-dynalearn.png" }}">
+    <caption> Transition probabilities for (A) simple and (B) complex contagion dynamics as predicted by the GNN model. The predictions of the GNN are compared to the transitions probabilities as given by the process that generated the time series (GT, for ground truth) and the maximum likelihood estimators (MLE).</caption>
+
+- date: 2020-05-25
+  text: |-
+    The current COVID-19 pandemic is locking everybody inside, but this does not
+    mean putting a hold on science---on the contrary.
+    The group recently posted a few preprints reminding us all of the importance of
+    considering the network structure of social interactions, and its impact on the
+    spread of diseases :
+
+    - [Beyond R0: the importance of contact tracing when predicting epidemics](https://arxiv.org/abs/2002.04004)
+    - [Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks](https://arxiv.org/abs/2004.10203)
+    - [Social confinement and mesoscopic localization of epidemics on networks](https://arxiv.org/abs/2003.05924)
+    - [The role of directionality, heterogeneity and correlations in epidemic risk and spread](https://arxiv.org/abs/2005.11283)
+
+
+    ##### Beyond R0: the importance of contact tracing when predicting epidemics
+
+    One key intuition from network science is that _heterogeneity_ makes a huge difference on the outcome of an epidemic.
+    This paper reformulates classic results from percolation theory to emphasize the impact of the variability in the number of secondary cases produced by an infected individual.
+    As seen below, using a network approach that accounts for heterogeneity provides much more reliable estimates for the final size of epidemics, compared to a standard SIR model.
+
+    <img class="block-image" src="{{ "/assets/images/posts/2020-05-25-1.png" }}">
+
+    ##### The role of directionality, heterogeneity and correlations in epidemic risk and spread
+
+    Percolation approaches are rich and flexible, hence it is possible to investigate more complex interaction patterns than completely random contacts.
+    One way is to consider correlations between the _in-degree_ and _out-degree_ of individuals : if someone is likely to catch a disease, is it also likely to spread it?
+    Considering variations on this relationship can significantly change the outcome of an epidemic, as shown below.
+
+    <img class="block-image" src="{{ "/assets/images/posts/2020-05-25-4.png" }}">
+
+
+    ##### Master equation analysis of mesoscopic localization in contagion dynamics on higher-order networks
+
+    Beyond the question _if_ a disease can spread, and to what extent, an important question is _where_.
+    This paper provides a detailed analytical description of the phenomenon of _mesoscopic localization_, with an explicit characterization of the localization regimes.
+    The use of clique-based approximate master equations gives a fine-grained description of the states of all cliques within the network, as shown below.
+    In the localized regime, substructures of different sizes are effectively in a subcritical, critical and supercritical phases all at once.
+
+
+    <img class="block-image" src="{{ "/assets/images/posts/2020-05-25-2.png" }}">
+
+    ##### Social confinement and mesoscopic localization of epidemics on networks
+
+    What are the key impacts of a localized epidemic? More specifically, how does this affect our _control_ over them?
+    This paper investigate the consequences of a localized dynamics when performing _structural interventions_ on the structure, taking the form of removing cliques higher than a certain size.
+    This is akin to forbidding events or gathering involving a certain number of people.
+
+    It is found that for both the SIS model (analytically) and the SIR model (with simulations), there are increasing returns on the intervention for localized dynamics---the more you remove substructures, the more it is efficient.
+    This behavior is very different from what we would expect in a well-mixed population, more similar to the delocalized dynamics.
+
+    <img class="block-image" src="{{ "/assets/images/posts/2020-05-25-3.png" }}">
+
+- date: 2020-02-19
+  text: Patrick Desrosiers and Béatrice Désy presented their work on complex networks at the latest Pinte Sentinelle Nord event at the Rideau Rouge on February 19th.  Organized by [Sentinelle Nord Student Association](https://sentinellenord.ulaval.ca/en/communaute/association-etudiante-sentinelle-nord), this biannual science outreach activity is open to the public and aims to present the research of students and professors through a series of short presentations.  These social events also contribute to building a stronger community centered around Sentinelle Nord by allowing graduate students and postdocs, who may work in different departments and have very different backgrounds, to get to know one another, and to learn about each other’s research.
+
+- date: 2020-02-03
+  text: |-
+    A new contribution from the collaboration between Dynamica and [Mariangeles Serrano](http://morfeo.ffn.ub.es/~mariangeles/) from the [Universitat de Barcelona](https://www.ub.edu/web/ub/en/) has just been published in __PLOS Computational Biology__.
+
+    The paper titled [Navigable maps of structural brain networks across species](https://doi.org/10.1371/journal.pcbi.1007584) investigates the relationship between the structure of connectomes of different species and their spatial layout both in Euclidean and hyperbolic space. Among other things, it shows that hyperbolic maps offer a quantitative meaningful representation of connectomes, and that they provide a universal framework to study decentralized communication processes in connectomes of different species and at different scales on an equal footing.
+
+- date: 2020-02-03
+  text: |-
+    Guillaume St-Onge was awarded a scholarship to pursue his ongoing internship at the
+    [Vermont Complex Systems Center](https://vermontcomplexsystems.org). Financed by the [FRQ-NT](http://www.frqnt.gouv.qc.ca/bourses-et-subventions/consulter-les-programmes-remplir-une-demande/bourse/programme-de-stages-internationaux-tyq8kxxx1432653742744), the scholarship is awarded by [Calcul Québec](https://www.calculquebec.ca/nouvelle/obtenir-une-bourse-pour-un-stage-en-calcul-scientifique-a-letranger-cest-possible/) to research projects related to scientific computing.
+
+    Congratulations are in orders!
+
+- date: 2019-12-20
+  text: |-
+    The second edition of the [Complex Networks Winter Workshop (CNWW19)](https://sentinellenord.ulaval.ca/en/cnww-2019) was held at the [Monastère des Augustines](https://monastere.ca/) in Québec on December 15-20, 2019.
+
+    Organized jointly by the [Vermont Complex Systems Center](http://www.vermontcomplexsystems.org/) (Juniper Lovato, Laurent Hébert-Dufresne), [Sentinelle Nord](https://sentinellenord.ulaval.ca/) (Marie-France Gévry) and Dynamica (Antoine Allard), CNWW is a week-long international school offering a unique opportunity for participants to engage in rigorous transdisciplinary complexity science research alongside some of the top researchers in the field of networks.
+
+    Participants attended lectures on network science (e.g. community detection, dealing with network data, making high quality scientific figures) and on various topics leveraging the tools of network science (stability of ecosystems, on-line activism, sustainable forestry, animal behavior, etc) by leaders of the fields ([James P. Bagrow](https://bagrow.com/), [Dominique Gravel](http://ielab.recherche.usherbrooke.ca/), [Élise Filotas](http://elisefilotas.ca/en/home/), [Brooke Foucault Wells](http://brooke-welles.squarespace.com/), [Daniel B. Larremore](https://larremorelab.github.io/), [Elizabeth Hobson](http://hobsonresearch.com/), [Peter Sheridan Dodds](https://www.uvm.edu/pdodds/), [Samuel V. Scarpino](http://scarpino.github.io/)), as well as two lectures by [Vincent Larivière](https://crc.ebsi.umontreal.ca/) and [Cassidy R. Sugimoto](https://ella.sice.indiana.edu/~sugimoto/index.php) about the open-access publications and gender inequalities in science.
+
+    Participants and lecturers also worked together on various original projects (hockey fights, social roles in ant colonies, spread of infectious diseases in coral reefs, etc.) and presented their results Friday afternoon. The objective of these projects was to force participants to step outside their comfort zone, and to expose them to a new intensive (and fun) way of doing science.
+
+    This year again, the quality of the projects was outstanding.
+
+    Social activites were scheduled on most nights, allowing participants and faculty to create bonds which will hopefully last well beyond the duration of the workshop.
+
+    Dynamica's own Béatrice Désy and Vincent Thibeault were among the participants, and Guillaume St-Onge and Charles Murphy, who attended last year's edition of CNWW, returned as project liaisons.
+
+- date: 2019-12-17
+  text: |-
+    The latest contribution of Dynamica has just been published in [Physical Review X](https://journals.aps.org/prx/).
+    The project originates from a workshop in Charlevoix in September 2016, involving
+    current Dynamica members (G. St-Onge, E. Laurence, C. Murphy, P. Desrosiers) and alumni, [Jean-Gabriel Young](http://www.jgyoung.ca/) and [Laurent Hébert-Dufresne](http://laurenthebertdufresne.github.io/).
+
+    The paper titled [Phase Transition in the Recoverability of Network History](https://doi.org/10.1103/PhysRevX.9.041056) explores the very difficult *Network Archaeology* problem : reconstructing the past states of a growing network from a single static snapshot.
+    Formulated as Bayesian inference task, a state-of-the-art sequential Monte Carlo method is developed to estimate the posterior distribution, used to identify and characterize a phase transition in the quality of the reconstructed history.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2019-12-16
+  text: |-
+    The latest contribution from the long-standing collaboration between Dynamica and [Guillermo García-Pérez](https://scholar.google.es/citations?user=MibFSJIAAAAJ&hl=es), [Marián Boguñá](http://complex.ffn.ub.es/~mbogunya/) and [Mariangeles Serrano](http://morfeo.ffn.ub.es/~mariangeles/) from the [Universitat de Barcelona](https://www.ub.edu/web/ub/en/) has just been published in __New Journal of Physics__.
+
+    The paper titled [Mercator: uncovering faithful hyperbolic embeddings of complex networks](https://doi.org/10.1088/1367-2630/ab57d2) proposes a new algorithm to embed real complex networks in hyperbolic space. The algorithm leverages several developments proposed in recent years and outperforms previous approaches in most tested cases.  Critically, the algorithm is designed to naturally unveil the community structure that may be encoded in the network structure.
+
+    A C++ code as well as a Python package are available on [Github](https://github.com/networkgeometry/mercator). Links to the full text and preprints are available on the [publication page](/publications.html).
+
+- date: 2019-10-11
+  text: |-
+    We had the great pleasure of having [Jean-Gabriel Young](http://www.jgyoung.ca) (U. Michigan) with us on October 11th. Apart from working on ongoing projects and brainstorming on future ones, Jean-Gabriel gave a lecture on the Bayesian inference of network structure from observational data.
+
+    His latest preprint on the subject can be found [here](https://www.biorxiv.org/content/10.1101/754077v1).
+
+- date: 2019-10-07
+  text: |-
+    [George T. Cantwell](https://www.george-cantwell.com/) (University of Michigan) will be among us from the 14th to the 18th of October and will give a talk to the group (and any other Network Science enthusiams). The presentation will be held Tuesday the 15th of October at 13h30.
+
+    **Title : Mean-field theory and beyond in complex networks**
+
+    **Abstract :**
+    _Mean-field theory provides a simple and intuitive method for performing calculations in networks. It works particularly well for dense networks but usually fails for sparse ones.  To overcome this problem, "message passing" was developed, which is conceptually similar to mean-field theory but works well on sparse networks.  Unfortunately, most interesting real-world networks are neither wholly dense or sparse. Rather, they are sparse at large scales while dense locally.  As a result, conventional message passing ultimately fails to provide the required corrections in many cases._
+
+    _In this talk I will outline a series of successive approximations of increasing sophistication.  At one end, we recover standard mean-field theory, while at the other we obtain a method that is exactly correct on all networks but too difficult to apply in practice. In between, however, we find approximations that significantly out perform standard methods while maintaining their efficiency._
+
+- date: 2019-10-04
+  text: |-
+    Xavier Roy-Pomerleau presented his research project (oral + poster) on October 4th during the 8th edition of the Journée de la recherche en Sciences et Génie held at Université Laval. Organized by the Association des étudiants gradués en sciences et génie de l'Université Laval (Graduate Students Association), this event brings together students from the various scientific disciplines of the Faculté des sciences et génie so they can interact and exchange ideas with teachers and students from all levels.
+
+    His poster presentation was judged the best of all presentations by master students that day.
+
+    Congratulations are in order!
+
+- date: 2019-09-30
+  text: |-
+    Charles Murphy successfully presented and defended his PhD seminar titled _Apprentissage profond de dynamiques sur réseaux complexes_ on September 30th.
+
+    The PhD seminar normally occurs during the 7th semesters into the PhD. The event resembles the PhD defense in that the candidate presents their research in a 30-minute talk, and then answers questions from an evaluation committee. The committee was composed by [Simon V. Hardy](http://www2.ift.ulaval.ca/~hardy) from the [CERVO Brain Research Center](https://cervo.ulaval.ca), Louis J. Dubé and Antoine Allard.
+
+    The committee judged Charles’s performance from very good to excellent.
+
+    Congratulations Charles!
+
+- date: 2019-09-18
+  text: François Thibault, who worked with Charles Murphy and Antoine Allard as an intern last summer, presented on September 17th the research he pursued during his internship. The presentation was in front of his peers and is a prerequisite for the Sigma+ certification of his B.Sc. degree. Good work François, and we are proud that you decided to continue working with us during your M.Sc. starting in May 2020.
+
+- date: 2019-09-09
+  text: |-
+    This September, one of our master students, Xavier Roy-Pomerleau, flew to England in order to attend to the first edition of the Workshop on Higher-order Interaction Networks: Dynamics, Structure, Data. This workshop was held at the Mathematical Institute of University of Oxford from September 9 to 11.
+
+    He was accepted for a poster presentation in which he presented how one can infer higher-order co-occurrence patterns and simplicial complexes from presence/absence data.
+
+    More information can be found on the <a href='https://www.maths.ox.ac.uk/groups/networks/events/higher-order-interaction-workshop'> conference's webpage</a>.
+
+- date: 2019-09-03
+  text: |-
+    Béatrice Désy who joined the group in 2018 as a summer intern will be continuing her research with us as a master student co-supervised by Antoine Allard and Patrick Desrosiers.
+
+    Her research will involve both the development of null models to detect significative ecological cooccurrences and the development of a new approach to generate weighted networks embedded in hyperbolic space.
+
+- date: 2019-08-29
+  text: |-
+    The group attended the Sentinelle Nord 2019 Scientific Meeting that took place at the Lévis Convention Centre from August 26th to 28th.
+
+    Members that submitted a talk, Edward Laurence & Xavier Roy-Pomerleau, and a poster, Mohamed Bahdine, were all accepted and their presentations were well received.
+
+    Our senior member, Edward Laurence, presented a talk titled _Deciphering the time evolution of dynamical complex systems using deep learning models_. The content of this presentation was partly developed during the second edition of the Dynamica workshop retreat (a.k.a Rezoo) that was sponsored by Sentinelle Nord.
+
+    Xavier Roy-Pomerleau presented the method he developed during his master’s degree on the detection of higher-order co-occurrence patterns that can be applied to various presence/absence datasets.
+
+    Mohamed Bahdine’s poster topic was the use of deep learning to extract functional connectomes from time series.
+
+    Abstracts of the conference can be found on the <a href='https://sentinellenord.ulaval.ca/en/scientific-meeting-2019'> Scientific Meeting’s webpage</a>.
+
+- date: 2019-08-28
+  text: |-
+    The Sentinelle Nord Research Chair on Applications and Theory of Network Analysis held by Antoine Allard has officially been inaugurated on August 28th during the [3rd annual meeting](https://sentinellenord.ulaval.ca/en/scientific-meeting-2019) of the [Sentinelle Nord](https://sentinellenord.ulaval.ca/en) initiative.
+
+    Alongside two other holders of Sentinelle Nord Research Chairs, [Maripier Isabelle](http://www.mpisabelle.com/) and [Pierre Legagneux](https://www.bio.ulaval.ca/departement-et-professeurs/professeurs-et-personnel/professeurs/fiche/show/legagneux-pierre/), Antoine Allard presented his new research chair in front of several dignitaries and partners of Université Laval, and outlined the next four years of research financially supported by the means granted to the Chair. Exciting times ahead!
+
+- date: 2019-08-26
+  text: |-
+    From 18th to the 23rd of August, two group members had the chance to participate in Université de Sherbrooke's 2019 Summer School in Biodiversity Modelling that took place in beautiful Mount Orford, Québec. Béatrice Désy and Xavier Roy-Pomerleau, whose projects involve modelling of ecological cooccurrence and higher-order patterns, were chosen for this intense, diverse and interesting course. Béatrice and Xavier gained and brought back new insights on ecological modelling that shall complement their research, well done!
+
+    More info on the <a href='https://www.usherbrooke.ca/sciences-ete/fr/ecoles-dete-anterieures/modelisation-de-la-biodiversite-2019/accueil-modelisation-de-la-biodiversite/'>Summer School's webpage</a>.
+
+- date: 2019-08-08
+  text: |-
+    The latest contribution to come out of the long-standing collaboration between [Laurent Hébert-Dufresne](http://laurenthebertdufresne.github.io/) and Antoine Allard has just been published in [Physical Review Research](https://journals.aps.org/prresearch/).
+
+    The paper entitled [Smeared phase transitions in percolation on real complex networks](https://doi.org/10.1103/PhysRevResearch.1.013009) leverages the concept of _local order parameter_ to explore the way through which the largest connected component emerges in real complex networks. Among other things, it is shown how insights obtained from random graph models cannot always be directly used to study percolation transitions in networks with realistic complex structure.
+
+    Links to the full text and preprints are available on the [publication page](https://dynamicalab.github.io/publications.html).
+
+- date: 2019-06-17
+  text: |-
+    The three talks for the main conference were well received : Deep learning for dynamical processes on networks (C. Murphy), prediction of synchronization regimes using dimension reduction on graphs (V. Thibeault) and prediction of localization regimes for spreading processes on networks (G. St-Onge).
+
+
+     The conference was a big success, thanks to the Lead Conference Organizer Juniper Lovato and to two Dynamica alumni : Laurent Hébert-Dufresne (Co-Chair for the main conference) and Antoine Allard (Schools Co-Chair).
+
+    Abstracts for the presentations are available on the [publication page](/publications.html).
+
+- date: 2019-06-17
+  text: |-
+    The latest contribution of the network section is available in the July issue of Computer Physics Communication.
+
+
+     The paper entitled [Efficient sampling of spreading processes on complex networks using a composition and rejection algorithm](https://doi.org/10.1016/j.cpc.2019.02.008) propose an efficient simulation scheme for simple contagion models on networks, represented by a discrete-state and continuous time Markov process. The method hinges on a clever composition and rejection step that allows the efficient sampling of heterogeneous (and time-varying) probability distributions.
+
+
+     Links to the full text and preprints are available on the [publication page](/publications.html).
+
+- date: 2019-06-17
+  text: |-
+    Dynamica held 3 (!) end of winter semester Colloquia on April 12th.
+
+     Vincent Thibeault presented his plan for his master thesis, in a talk entitled
+    "Prédiction des régimes de synchronisation sur graphes aléatoires" (Predicting synchronization regimes on random graphs); Xavier Roy-Pomerleau did the same.
+    His presentation was titled "Inférence d’interactions d’ordre supérieur dans les systèmes complexes" (Inference of higher order interactions in complex systems).
+
+
+     On this occasion, Guillaume St-Onge also passed his doctoral entry exam. An important part of the evaluation was a presentation, titled "Theoretical and computational modeling of spreading processes on complex networks".
+
+
+     The three of them passed their respective tests with excellent grades, and are now free to undertake the next step; for VT and XRP, this will mean writing their M.Sc thesis, while GST can officially begin the active research portion of his PhD.
+
+
+     Best of luck to them!
+
+- date: 2019-05-10
+  text: |-
+    Francis Normand from the [DCClab at CERVO](http://www.dcclab.ca) joined the group as a master student co-supervised by Antoine Allard.
+
+    His research project will involve the development of network comparison techniques to investigate how the microbiome affects the early development of the zebrafish brain.
+
+- date: 2019-05-03
+  text: |-
+    The 13th edition of the Symposium Dynamica took place at the [Forêt Montmorency](https://www.foretmontmorency.ca/en/) on May 2nd and 3rd.
+
+    This symposium is the final evaluation of the course _Dynamique non linéaire, chaos et complexité_ created and taught by Louis J. Dubé for many years, and now taught by Antoine Allard. The material covered is heavily based on Steven H. Strogatz [_Nonlinear Dynamics and Chaos: With Applications to Physics, Biology, Chemistry, and Engineering_](http://www.stevenstrogatz.com/books/nonlinear-dynamics-and-chaos-with-applications-to-physics-biology-chemistry-and-engineering).
+
+    What makes this course a unique experience for the students is the symposium during which they present the results of the research they pursued during the semester on a topic of their choice related to nonlinear dynamics. For most of the students, the symposium consists in their first experience in doing a scientific communication with a profesional decorum.
+
+- date: 2019-03-11
+  text: |-
+    The latest contribution of the network section is available in the March issue of Physical Review X.
+
+    The paper entitled [Spectral Dimension Reduction of Complex Dynamical Networks](https://doi.org/10.1103/PhysRevX.9.011042) presents a mathematically sound formalism to coarse grain the high dimensional set of equations governing the evolution of a general deterministic dynamics on a network. The approach leverage the spectral properties of a network, more specifically the dominant eigenvalues and eigenvectors of the adjacency matrix, to perform the reduction. The lower dimensional system can be used to better understand the critical behavior of certain systems and lead the way towards a better comprehension of the robustness and the resilience of complex systems.
+
+    Links to the full text and preprints are available on the [publication page](/publications.html).
+
+- date: 2019-02-28
+  text: |-
+    Dynamica performs a hat trick : three members of the network division will attend and give talks during the main conference at NetSci 2019. This 14th edition will be held in Burlington, Vermont, at the end of May.
+
+
+     The presentations will cover diverse topics : the (deep) learning of dynamical processes on complex networks (C. Murphy), the characterization of localization on networks for spreading processes (G. St-Onge) and the prediction of synchronization regimes using dimension reduction on graphs (V.
+    Thibeault). Details are available on the conference page.
+
+
+     Beyond this formidable representation of the current members of the group,
+    alumni from Dynamica will be particularly active during this annual meeting on network science. Laurent Hébert-Dufresne, now assistant professor in the department of computer science at the University of Vermont, will be Co-Chair for the main conference. Jean-Gabriel Young, James S. McDonnell Fellow at the University of Michigan, will be Co-Chair at the Open NetSci Hackathon, the weekend before the main event.
+
+    Abstracts for the presentations are available on the [publication page](/publications.html).
+
+- date: 2019-02-27
+  text: |-
+    Dr. Vincent Marceau, former member of Dynamica (M.Sc. 2009-11) is to present in the Physics Department his recent involvement into machine learning in an industrial context. The title of his talk is Deep Learning for Aquaculture.
+    Not to be missed.
+
+- date: 2019-02-27
+  text: |-
+    Prof. Reinhold Blümel (Wesleyan Uni., Middeltown, CT), a long time collaborator will be among us from the 11th to the 14th of March and will give
+    2 talks to the community. The **first one** is meant for a wider audience and will be given on Tuesday the 12th of March 15h30 as a departmental colloquium.
+
+
+
+    **Title 1** : QUANTUM COMPUTERS
+
+
+    **Abstract** : _Finally! Quantum computers are here!_
+
+
+
+    _We can either buy them outright, or access them via the internet! As a consequence, university and industry-based education in quantum computing is growing, essential quantum workforce is scarce, and governments all over the globe have funded quantum initiatives worth billions of dollars for research and development of quantum computers. Quantum computing has emerged from the realm of pure academic research and is now a staple of industrial research and development._
+
+
+
+    _Quantum computing has reached criticality, is taking off, and it's an excellent time to hop on board!_
+
+
+
+    _After briefly reviewing the history of quantum computing, and explaining why quantum computers are so much faster than "classical" computers, I will provide an overview of current players in the market together with their products._
+
+
+
+    _The extraordinary levels of government funding currently pouring into quantum computing underscore the importance of quantum computing for the near and not-
+    so-near future._
+
+
+     The **second talk** of a more technical nature and is scheduled for the next day (location and time to be announced). It reads
+
+
+
+    **Title 2** : HOW TO MAKE A QUANTUM COMPUTER
+
+
+    **Abstract:** _While there are any number of ways to realize a qubit, two types of quantum computer architectures have emerged as the leading contenders for realizing a quantum computer:_
+
+
+
+    _(1) trapped ions and (2) Josephson junctions._
+
+
+
+    _After a brief overview over quantum computing companies and their preferred architectures, I'll focus exclusively on how to build a quantum computer based on trapped-ion technology. As an example I will discuss the types of quantum computers that have already been built at research labs at the University of Maryland. These computers use trapped Yb ions and realize the computational qubit as one of the hyperfine transitions in Yb^+. Advantages and problems of the ion-trap architecture will be discussed._
+
+- date: 2019-02-26
+  text: |-
+    From the 16th to the 22nd of February, the second edition of the Dynamica workshop retreats (a.k.a Rezoo) took place in Charlevoix. These events are completely organized by the students, with a sole purpose : make collaborative, bold and above all, original science in an idyllic environment.
+    It is also a unique opportunity for the seniors in the group to share their knowledge and their experience with the new members.
+
+
+     This edition was led by Edward Laurence, along with Charles Murphy, Guillaume St-Onge, Xavier Roy-Pomerleau and Vincent Thibeault. The topic of the workshop was to adapt and develop new methods to infer the change point, and the source of the change, for dynamical processes taking place on networks. During this one week retreat, the team exploited and tested two perspectives to perform this task : Bayesian Statistics and Machine Learning. Spoiler alert : it was a success, and without a doubt, it is expected that a publication will emerge from this workshop.
+
+
+     Finally, the participants want to express their sincere gratitude towards the Sentinel North program and the Pr. Antoine Allard for their financial support
+    --without their commitment, such highly formative events could not be realized. Thank you!
+
+- date: 2018-10-08
+  text: |-
+    After careful examination, the evaluation committee has given the highest overall mark (excellent) to the Doctoral thesis of Jean-Gabriel Young.
+    Therefore, the name of the author will be added to the Board of Honour of the Faculty of Graduate Studies. It perpetuates the group's tradition of excellence, with 9 theses added to the Board of Honour in 10 years.
+
+
+     Congratulations are not only a good idea, but another occasion (as if we needed an excuse) for celebration.
+
+- date: 2018-09-27
+  text: |-
+    In the latest published contribution of Dynamica, Mesoscopic Pattern Extraction (MPE) and SBM share central stage. Under the evocative title
+    “Universality of the SBM”, MPE is considered under the looking glass of the SBM. The Abstract tells some of the story. “MPE is the problem of finding a partition of the nodes of a complex network that maximizes some objective function. Many well-known network inference problems fall in this category,
+    including, for instance, community detection, core-periphery identification,
+    and imperfect graph coloring. In this paper, we show that the most popular algorithms designed to solve MPE problems can in fact be understood as special cases of the maximum likelihood formulation of the stochastic block model
+    (SBM) or one of its direct generalizations. These equivalence relations show that the SBM is nearly universal with respect to MPE problems.”
+
+
+     Links to the full text and preprints are available on the Publication page.
+
+- date: 2018-09-19
+  text: |-
+    Jean-Gabriel Young has successfully defended his thesis work on the 24th of August (see the Abstract here) and received the best of all possible evaluations for his research on “Inférence et réseaux complexes” (Inference and Complex Networks). Apart from the local team of examiners [Patrick Desrosiers (Physics), Jean-François Fortin (Physics), Nicolas Doyon
+    (Mathematics)], we were happy to have recruited Daniel Larremore (Computer Science, Boulder) as external referee. The final version of the thesis will be posted shorty on the theses page.
+
+- date: 2018-09-19
+  text: |-
+    We hear from reliable sources that Denis Gagnon (PhD 2014) has decided to make the transition (irreversible !?) to the world of finance. He has joined a customer analytics team at National Bank of Canada, on the 13th of August
+    2018, where his expertise with optimization algorithm and machine learning will be put to good use. With Pierre-André Noël (PhD 2012) and Vincent Marceau
+    (PhD 2015), he is the 3rd member of the brotherhood whose abilities will serve the machine (deep ?) learning community. We wish him an optimized transition…
+
+- date: 2018-09-19
+  text: |-
+    We had the pleasure to receive ALB, as a keynote speaker, in the realm of the second Annual Reunion of Sentinel North held in Québec city on August 27-30.
+    He had a fruitful exchange with members of Dynamica and both sides were left …
+    impressed. A nice nudge to the quality of our continuing efforts.
+
+- date: 2018-07-16
+  text: |-
+    Charles Murphy has received Ph.D. scholarship from the Sentinel North program. This scholarship is devoted to support " outstanding students who have excellent academic records and research proposals with innovative,
+    multidisciplinary potential", whose subject is in the scope of the Sentinel North’s research program.
+
+
+     Congratulations are in orders!
+
+- date: 2018-06-21
+  text: Jean-Gabriel YOUNG goes south! The long expected departure of one of the pillars of Dynamica for a region south of the border seems to be official according to the recent news from the College of Literature, Science, and the Arts (LSA) of the University of Michigan. He will be joining the group of Mark Newman, no less, at the Centre for the Study of Complex Systems (CS2); this is no trumpery! We wish to think less of a departure than a “relocalisation” (an extension of the brotherhood’s network), our local loss will be a global gain for Network Science. May his work there, be a fruitful and original continuation of his research here. The border is still open going North, he will know how to find his way … “
+
+- date: 2018-05-31
+  text: |-
+    The latest contribution of the Photonics section is available in the May issue of Physical Review B.
+
+
+     The paper entitled "Femtosecond self-reconfiguration of laser-induced plasma patterns in dielectrics" presents a self-consistent dynamic treatment of the plasma buildup and its interaction with light within a three-dimensional electromagnetic framework. This is used to study laser-induced self-
+    organization of transparent solids by intense femtosecond laser pulses.
+
+
+     Links to the full text, preprints and software are available on the Publication page.
+
+- date: 2018-04-18
+  text: |-
+    Béatrice Désy (BD), an undergraduate student in Physics at Laval University,
+    will join the Network division this summer. Part of her venture will be the study of co-occurrence patterns in complex ecological networks, in the spirit of the Sentinel North Strategy. It will also be a good opportunity for her to learn and explore the many facets of Network Science, anchored in statistical physics and graph theory.
+
+
+     Welcome aboard!
+
+- date: 2018-04-18
+  text: |-
+    It is always a pleasure to acknowledge the continuing success of one of the members of Dynamica. Charles Murphy has completed the requirements for his M.Sc. degree. His master thesis, with the unmistakable title of “De la structure croissante des réseaux complexes: approche de la géométrie des réseaux” (On the growth of complex networks: a geometric networks approach),
+    can be read on the thesis page. The core of his works, the paper entitled
+    "Geometric evolution of complex networks with degree correlations", is also available on the journal page.
+
+
+     Congratulations are in order, and we are happy to inform that Charles
+    (Morpheus) has chosen (wisely !) to remain within the fold for his Ph. D.
+    research, under the guidance of his advisors : Pr. Louis J. Dubé and Pr.
+    Antoine Allard.
+
+- date: 2018-04-12
+  text: |-
+    Charles Murphy has received the Byron-T. Darling award for his work on geometric complex networks.
+
+
+     The award is bestowed each year to graduate students of the Université Laval Physics Department who pursue exceptional and original research.
+
+
+     Congratulations are in orders!
+
+- date: 2018-04-04
+  text: |-
+    Three members of the network division will present their recent works at international conferences this summer. Edward Laurence is giving a short talk at the SIAM workshop on Network Science, held July 12-13 in Portland, Oregon,
+    the subject being a new dimension-reduction method for dynamics on complex networks. Vincent Thibeault and Jean-Gabriel Young will be at NetSci 2018,
+    held June 11-15 in Paris, France. Vincent will present his latest results on synchronization dynamics on the stochastic block model during the main conference's poster session; Jean-Gabriel will give a talk during the main conference about the now famous on twitter subject of network archeology, an analysis of our capacity to uncover the past states of a network only from its structure.
+
+
+     Note that two Dynamica alumni (Pr. Antoine Allard and Pr. Laurent Hébert-
+    Dufresne) are organizing the second edition of the satellite meeting Contagion on Networks at NetSci 2018.
+
+- date: 2018-03-20
+  text: |-
+    Guillaume ST-ONGE has been selected to attend the 2018 edition of the Complex Systems Summer School organized by the Santa Fe Institute. The summer school will be held in Santa Fe, NM from June 10 to July 6. Congratulations are in order. Here is an excerpt from the letter of acceptance highlighting the importance of the honour bestowed upon another member of the group (after Antoine Allard in 2011, Laurent Hébert-Dufresne in 2012, and Jean-Gabriel Young in 2015) :
+
+
+
+    “… The seminar is a scientific and educational program that provides a unique opportunity for graduate students, early career scientists, and professionals to further develop a solid foundation in interdisciplinary complex systems science. You have been invited because of your unusually strong application .”
+
+- date: 2018-03-19
+  text: |-
+    It seems that three is the magic number : a third contribution from the Networks section has been published in the latest issue of Physical Review E.
+
+
+     The paper entitled "Geometric evolution of complex networks with degree correlations" presents a novel model for network growth. The structure evolves in a metric space, and new nodes create links with existing ones with a probability that is a function of both, time and distance between the nodes.
+    This growth model allows to reproduce many features of real world networks,
+    such as the clustering (triadic closure) and the degree-degree correlations.
+
+
+     Links to the full text and preprints are available on the Publication page.
+
+- date: 2018-03-03
+  text: |-
+    The latest contribution of the Networks section is available in the March issue of Physical Review E.
+
+
+     The paper entitled "Exact analytical solution of irreversible binary dynamics on networks" presents a set of recursive equations to solve exactly a binary cascade dynamics on networks. An algorithm built around a breath-first search procedure is introduced to accelerate the calculation, leading to an exponential time worst-case complexity instead of a factorial one.
+
+
+     Links to the full text, preprints and software are available on the Publication page.
+
+- date: 2018-02-12
+  text: |-
+    The latest contribution of the Networks section is available in the February issue of Physical Review E.
+
+
+     The paper entitled "Phase transition of the susceptible-infected-susceptible dynamics on time-varying configuration model networks" revisits the critical phenomenon of the SIS model on time-varying networks, a standard prototype for the study of epidemic outbreaks. The contribution introduces a new theoretical framework that accurately describes the phase transition for a wide range of structures and provides a comprehensive study of the impact of networks evolution through the use of a rewiring mechanism.
+
+
+     Links to the full text and preprints are also available on the Publication page.
+
+- date: 2017-12-20
+  text: |-
+    After careful examination, the evaluation committee has given the highest overall mark (excellent) to the Master thesis of Guillaume St-Onge. Therefore,
+    the name of the author will be added to the Board of Honour of the Faculty of Graduate Studies. It perpetuates the group's tradition of excellence, with 8
+    theses added to the Board of Honour in 9 years.
+
+
+     Congratulations are not only a good idea, but another occasion (as if we needed an excuse) for celebration.
+
+- date: 2017-11-28
+  text: |-
+    It is always a pleasure to acknowledge the continuing success of one of the members of Dynamica. Guillaume St-Onge has completed the requirements for his M.Sc. degree. His master thesis with the unmistakable title of “Dynamique de propagation sur réseaux aléatoires - Caractérisation de la transition de phase” (Propagation Dynamics on Random Networks – Characterisation of the Phase Transition) can be read here.
+
+
+     Congratulations are in order, and we are happy to inform that Guillaume (STO
+    (or GuSTO) for the intimate few) has chosen (wisely !) to remain within the fold for his Ph. D. research with outreach towards the Lake Champlain
+    (University of Vermont, Burlington) under the guidance of Dr. Laurent Hébert-
+    Dufresne.
+
+- date: 2017-11-08
+  text: |-
+    This fall, the Network division has been particularly active abroad. As a reminder, Edward Laurence attended the 4th Mediterranean School of Complex Networks this September in Salina. Also, this October, Jean-Gabriel Young was in Bloomington (Indiana) at the Sporn's lab to work with collaborators.
+
+
+     Recently, Guillaume St-Onge visited and gave a talk at the Institute for Disease Modeling (IDM) in Seattle (Washington). He was invited by a former member of Dynamica, Laurent Hébert-Dufresne. Also, Charles Murphy is currently at the Macfang workshop in Barcelona (Catalonia), whose focus is on the role of space and geometry in complex networks. He will give a lightning talk,
+    followed by a poster session.
+
+
+     May the contributions from Dynamica continue to spread and impress abroad!
+    More details about the talks are available on the conference page.
+
+- date: 2017-11-01
+  text: Short stories are often the best. In the latest issue of Physics Today (available here), Prof. Louis J. Dubé reminds us of the powers of π, which can be used to approximate numbers with great accuracy.
+
+- date: 2017-10-30
+  text: |-
+    Jean-Gabriel Young (OGY). He is one of 10 recipients of this year 2017 JSMF Fellowships for Studying Dynamic and Multi-Scale Systems (previously, Studying Complex Systems). The post-doctoral award comes with a small (!) stipend at the level of $200 000 US for 2 to 3 years. We congratulate OGY for this remarkable achievement and are proud to salute the collaborative spirit and work of the Network section of Dynamica that helped make the application for the Fellowship an outstanding success. After Laurent Hébert-Dufresne in 2013,
+    this is the second award of its kind to salute the excellence of one of the members of Dynamica. The title of the research to be pursued under the Fellowships reads:« The structure of complex, adaptive, and nonlinear systems:
+    Beyond pairwise interactions ». It will be interesting to watch this research unfold … For the time being, the highest possible congratulations are barely good enough.
+
+- date: 2017-10-07
+  text: |-
+    The recently published contribution from the Network section, "Construction of and efficient sampling from the simplicial configuration model", received some attention from the press. A popularization article entitled "The Shape of Randomness" appeared on PhysicsCentral, a web site related to the American Physical Society (APS), whose goal is to communicate the excitement and importance of physics to the large public.
+
+
+     The contribution is about the "simplicial configuration model" (SCM), a null model for multinode interaction structures, Simplicial complexes. It allows easy comparisons with empirical data to determine whether the shape is surprising or random. The project was co-led by Jean-Gabriel Yound and Alice Patania, in collaboration with Giovanni Petri and Francesco Vaccarino. The publication appeared in Physical Review E this September.
+
+
+     Links to the full text and preprints are also available on the Publication page.
+
+- date: 2017-09-27
+  text: |-
+    Edward Laurence attended the 4th Mediterranean School of Complex Networks (MSCX), September 3-8 in Salina, Sicily. It is the first presence of a Dynamica member to this summer school, where E. Laurence presented his work on
+    "Functional resilience in neural networks".
+
+
+     More details are available on the conference page.
+
+- date: 2017-09-26
+  text: |-
+    Jean-Luc Déziel attended the International Conference on Laser Ablation (COLA)
+    2017, September 3-8 in Marseille. He presented a poster entitled "Femtosecond Self-Reconfiguration of Periodic Plasma Patterns in Dielectrics", available on the conference page. Despite being absent for the mandatory 100 km bicycle ride in Quebec, he did his part in a trail with even more magnificent landscapes.
+
+- date: 2017-09-24
+  text: 'This fall, the complex network section expanded with the arrival of two new master students : Vincent Thibeault and Xavier Roy-Pomerleau. Both succeeded the traditional 100 km bicycle ride challenge, despite the injuries! They used an unexpected but surprisingly efficient Tandem strategy, a metaphor that, we hope, will inspire them through the upcoming events. Welcome aboard!'
+
+- date: 2017-08-10
+  text: |-
+    The latest contribution of the Network section is available in the August issue of Scientific Reports.
+
+
+     The paper entitled "Strategic tradeoffs in competitor dynamics on adaptive networks" studies competition dynamics on asymmetric and adaptive networks to account for different competitor strategies. An interesting feature observed :
+    while there is an optimal strategy in a two competitor system, three competitor systems have no such solution.
+
+
+     Links to the full text and preprints are also available on the Publication page.
+
+- date: 2017-07-04
+  text: |-
+    The three talks for the main conference were well received : time-depedent spatial network (C. Murphy), SIS dynamics with tunable dynamical correlations
+    (G. St-Onge), and statistical mechanics of mesoscopic structure extraction
+    (J.-G. Young). The main conference's poster session and the Network Neuroscience satellite were also success, featuring E. Laurence's works on persistent activity and functional resilience.
+
+
+     J.-G. Young also presented his work on the Simplicial Configuration Model at the satellite workshop on higher-order models in Network Science (HONS).
+
+
+     Details are available on the conference page.
+
+- date: 2017-07-04
+  text: |-
+    Jean-Luc Déziel from the photonics division attended to Photonics North 2017,
+    June 6-8 in Ottawa. He has given a talk entitled "Femtosecond Self-
+    Reconfiguration of Laser-Induced Plasma Patterns in Dielectrics".
+
+     More details are available on the conference page.
+
+- date: 2017-06-19
+  text: |-
+    The latest contribution of the Networks section is available in the June issue of Physical Review E.
+
+
+     In the paper, entitled "Finite size analysis of the detectability limit of the stochastic block model", we propose a comprehensive information theoretical framework to study, well, the detectability limit of the stochastic block model, in finite networks. Considering the networks as finite allow us to visualize the parameter space of the model more completely, and this naturally leads to notion of symmetries (what transformations of the parameters maintain the difficulty of the detectability problem?), and conservation (what are the surface of constant detectability in the parameter space?).
+
+
+     The paper contains a thorough case study in a simple case (planted partition model), but the tools apply to the general SBM.
+
+
+     Links to the the full text, software, and preprints are also available on the Publications page.
+
+- date: 2017-06-15
+  text: |-
+    The 15th of June 2017, Pr. Louis J. Dubé has presented the thematic project 1
+    to the Sentinel North's community, followed by the detailed description of the
+    5 subprojects by each investigator in charge.
+
+     Due to the transdisciplinary aim of Sentinel North, scientists in many fields,
+    from biology to architecture, had the pleasure to learn that on average, your friends have more friends than you.
+
+- date: 2017-05-15
+  text: |-
+    Jean-Luc Déziel, Edward Laurence and Guillaume St-Onge have received Scholarships awarded by the Fond de Recherche--Nature et Technologie to pursue their PhD.
+
+
+     These scholarships are awarded based on the research track record of the candidates, as well as the quality and originality of their proposed work.
+
+- date: 2017-05-12
+  text: |-
+    This year, Dynamica held 3 (!) end of winter semester Colloquia.
+
+     On April 24th, Guillaume St-Onge presented his plan for his master thesis, in a talk entitled "Dynamique de propagation sur réseaux aléatoires" (
+    _Propagation dynamics on Random Networks_ ); Charles Murphy did the same on May 12th. His presentation was titled "Étude de la structure croissante des réseaux géométriques" ( _The Growing Structure of Geometrical Networks_ ).
+
+
+     On this occasion, Edward Laurence also passed his doctoral entry exam. An important part of the evaluation was a presentation, given on May 12th, titled
+    "La résilience des réseaux neuronaux" ( _Resilience of the Brain_ ).
+
+
+     The three of them passed their respective tests with excellent grades, and are now free to undertake the next step; for GST and CM, this will mean writing their M.Sc thesis, while EL can officially begin the active research portion of his PhD.
+       Best of luck to them!
+
+
+
+
+
+    [The abstracts are linked below]
+
+- date: 2017-03-31
+  text: |-
+    Edward Laurence has received the Byron-T. Darling award for his work on Connectomics and Complex Network.
+
+
+     The award is bestowed each year to graduate students of the Université Laval Physics Department who pursue exceptional and original research.
+
+
+     Congratulations are in orders!
+
+- date: 2017-03-16
+  text: |-
+    On the first allocation wave of the Canada First Research Excellence Fund,
+    University Laval was among the funding recipients (98 M$ over 7 years) for a transdisciplinary project called Sentinel North. Letters of intent for 3
+    themes were prepared in June 2016, evaluated and made into sub-projects in Decembre 2016. We are proud to announce that _Dynamica_ will take part in 2
+    sub-projects under the Theme 1: Complex Relationships (CoRe) of the North. The sub-projects are
+
+
+
+
+
+
+     The group leader (LJD) is co-investigator of SP 1.1 and co-PI of SP 1.2 with
+    _Dynamica_ providing the base of expertise for the structural and functional network analysis. Let the fun(d) begin!
+
+- date: 2017-03-09
+  text: |-
+    The entirety of network division will attend NetSci 2017 in Indianapolis, at the end of June.   Three members will give talks during the main conference on subjects such as time-depedent spatial network (C. Murphy), SIS dynamics with tunable dynamical correlations (G. St-Onge), and network inference (J.-G. Young). Moreover, E.
+    Laurence will present his latest results on neural dynamics and hierarchical networks during the main conference's poster session and at the Network Neuroscience satellite.
+
+
+     Details are available on the conference page.   I will update this news with the schedule once it is available.
+
+
+     Note that two Dynamica alumni (Drs. Antoine Allard and L. Hébert-Dufrense) are also organizing a satellite meeting, Contagion on Networks.
+
+- date: 2017-01-10
+  text: |-
+    The latest contributions of the Networks division (n=2) are now available on arxiv.org.
+
+
+     The first paper, entitled "Finite size analysis of the detectability limit of the stochastic block model", focuses on the detectability limit in finite networks. We approach the problem from an algorithm-independent point of view,
+    i.e., we focus on the information theoretic causes of the detectability problem. This point of view allows us to establish, among other things, i.
+    classes of networks with block partitions equally hard to detect, ii. a condition for detectability, and iii. a quantitative relation between the level of corruption in the dataset (missing or spurious edges) and the difficulty of the detection problem.
+
+
+     In the second contribution, entitled "Susceptible-infected-susceptible dynamics on the rewired configuration model", we investigate the SIS dynamics on networks drawn from the configuration model, whose edges are constantly being rewired (whilst preserving the degree). This rewiring network approach
+    (RNA!) leads to an explicit connection between many formalism that focus on the so-called annealed and quasi-static limits of the dynamics. Furthermore,
+    it provides a natural interpolation for the intermediate regimes (rewiring rate similar to the recovery rate).
+
+
+     The full texts are available on the Publications page.
+
+- date: 2016-10-14
+  text: |-
+    It is always a pleasure to acknowledge the undeniable success of one of the members of Dynamica. Edward Laurence has completed the requirements for his M.Sc. degree. His master thesis with the flamboyant title of “Study of Complex Systems – from networks to the brain connectome” can be read here.
+    Congratulations are in order, and we are happy to inform that Edward (Edgar for the intimate few) has chosen (wisely !) to remain within the fold for his Ph. D. research.
+
+- date: 2016-10-03
+  text: |-
+    Pr. L.J. Dubé will give a talk, entitled " _A Network Approach to Complex Systems---complexity made simple, ... but not simpler_ " at the Physics and Astronomy department of Western University, on Thursday, the 6th of October,
+    2016.
+
+
+     What follows is an excerpt from the full abstract, which can be found here.
+
+
+
+    " _We will present complex systems through the looking glass of network science, a new field, perhaps only 15 years old, that gather the combined expertise of statistical physics, graph theory and nonlinear dynamics_
+
+
+
+    _[...]_
+
+
+
+    _we will focus on describing how_ [the common features of complex systems]
+    _emerge from simple principles in an attempt to illuminate their past and to predict their future **. Utopia or reality? The story will tell.** "_
+
+- date: 2016-08-30
+  text: |-
+    Social networks encode the interactions of the elements of a social system;
+    one thinks, for instance, of Facebook, where individuals interact through friendship relations. A striking feature of most social networks is their modularity, a feature implying that individuals are not connected at random but rather that connections are the reflection of social communities.
+    Structurally, small communities---such as group of friends or nuclear families
+    ---are usually tightly connected groups, whereas larger communities---such as workplaces or schools---are loosely connected group of individuals.
+
+
+     In our latest paper, titled " _Growing networks of overlapping communities with internal structure_ ", we argue that this difference of connection density is the result of the continuous growth of social networks. We support this proposition with empirical evidence, and present a general recipe to realistically model real social networks. Our approach offers a natural and dynamical explanation of the Dunbar number, i.e., an upper bound on the number of connection that individuals can sustain in a social network.
+
+
+     The full text is available on the Publications page.
+
+- date: 2016-06-14
+  text: |-
+    Guillaume St-Onges has received the Governor General's Academic Medal for his track record.
+
+
+     The medal is awarded to student who achieve unusually high GPAs in the course of their B.Sc.
+
+
+     This does not preclude Guillaume from running late; he supposedly showed up at the very end of the ceremony, thanks to a delayed flight back from Seoul,
+    where he was presenting his latest work.
+
+
+     Congratulations!
+
+- date: 2016-05-29
+  text: |-
+    Three members from the network section will represent Dynamica at NetSci this year.
+
+
+     The conference will be held in Seoul from May 30 to June 3, at the K-Hotel conference center.
+
+
+
+
+     Charles Murphy will present his latest results on spatial networks in a talk entitled "Time-Dependent Spatial Growth of Complex Networks". The talk is scheduled on Thursday, June 2 at 11:55. He will introduce a new class of growth processes for spatial networks, where connection probabilities depend both on distance and time. Among other things, Charles will show that the model is analytically tractable, and that one can obtain scale-free spatial networks for particular values of the parameters.
+
+
+     Guillaume St-Onge will present a poster entitled "Co-evolution of Growth and Dynamics on Network".Posters will be displayed for two days, from Wednesday to Thursday, and a poster session will be held on Wednesday night. This should leave ample opportunity to read the poster and discuss with Guillaume. In his poster, Guillaume presents a novel growth process for complex networks, in which growth mechanisms are restrained to certain subsets of nodes. This set of nodes changes dynamically through time. He shows that this growth process can lead, for instance, to preferential attachment.
+
+
+
+
+     Finally, I will present my latest work on the Stochastic Block Model in a satellite session, on Thursday (Statistical Inference for Networks Model), as well as in a lightning talk on Friday. I will discuss the detectability limit,
+    and its analog in the finite size regime. Among other things, I will present a statistical explanation of the limit (independent from any algorithms), and approximation methods to compute the boundaries of the undetectable region. I will also connect graph transformations to the symmetries of the undetectable region.
+
+
+
+
+     Head over to the publication page to see the abstracts of each contribution in full.
+
+- date: 2016-05-21
+  text: |-
+    Jean-Luc Déziel will present his latest work on self-organized plasma formation at Photonics North 2016, in Québec, Canada.
+
+
+     In his talk, Jean-Luc will show how to incorporate extreme non-linear optics into particle in cell simulations of the interaction between light and matter.
+    He will argue that the resulting numerical framework is ideal to study self-
+    organized plasma formation.
+
+
+     As always, head over to the publication page to read the abstract.
+
+- date: 2016-05-07
+  text: |-
+    Yours truly (Jean-Gabriel Young) will represent Dynamica at the summer school
+    "Complex networks: theory, methods, and applications (2nd ed.)".
+
+     The school, which will takes place at the beautiful Villa Grumello in Lake Como Italy, will regroup over 50 participants from all over the world.
+
+
+     Speakers will discuss important topics such as unconventional network analysis methods, spatial and temporal networks, principled community detection,
+    connectomics, and more.
+
+- date: 2016-04-11
+  text: |-
+    As is now tradition, Dynamica will hold two Colloquia at the end of the winter semester.
+
+
+     On Monday, April 11th, Edward Laurence will present his master thesis,
+    entitled " _Étude des systèmes complexes, des réseaux au_ _connectome du cerveau"._ He will discuss network growth and dynamics in the context of connectomics.
+
+
+     On Wednesday, April 13th, Jean-Luc Déziel will pass his doctoral preparation exam. For this occasion, he prepared a presentation entitled " _Simulation d'interaction intenses entre matière et rayonnement"_. Jean-Luc will discuss the numerical processes that go into modelling interactions between light and matter, at high energy levels.
+
+
+     We wish them both the best of luck!
+
+- date: 2016-03-16
+  text: |-
+    Back in December, our group leader, Pr. Louis J. Dubé, received the 2015
+    Excellence Award in Teaching, in the "Outstanding Graduate Faculty Mentor"
+    category.
+
+     The publicity department of Université Laval just released short videos presenting the laureates (in French).
+
+
+     The relevant video can be found on the official page of the awards or directly on YouTube.
+
+
+     Congratulation!
+
+- date: 2016-03-08
+  text: |-
+    We are happy to announce that the latest contribution of the networks division, entitled " _Constrained growth of complex scale-independent systems_
+    ", is now featured in the highlights of Physical Review E for its 'particular interest, importance, [and] clarity'.
+
+
+     One of the perks that comes with the recognition is a crystal clear summary of our work. which reads as follows
+
+
+      _Scale-free distributions of resources arise in very diverse systems, such as in the distribution of wealth or of the population of cities. By coupling the overall population growth with the individual growth in resources, the authors propose a model describing the emergence of such behavior. Through this model,
+    the authors introduce a method to reconstruct the past or forecast the future from a snapshot of data._
+
+
+     The full text is available on the Publications page.
+
+- date: 2016-02-02
+  text: |-
+    _
+    _The most recent contribution of the photonics division, " _Constructive feedback for the growth of laser-induced periodic surface structures_ ", has been published Phys. Status Solidi C.   In the paper, we study the formation and growth of laser-induced periodic surface structures (LIPSSs) with the finite-difference time-domain method.   We introduce a novel feedback mechanism which not only explains why
+    "classical" (type-s) LIPSSs appear on materials with dielectric and metallic optical properties, but also why type-d structures are observed on metallic materials. _
+    _The full text is available on thePublications page.
+
+- date: 2016-01-13
+  text: |-
+    A figure from our recent paper " _Complex networks as an emerging property of hierarchical preferential attachment_ " has been selected to appear in the January Kaleidoscope of Physical Review E. Figures are selected on aesthetic merit.
+
+
+     Congratulations to our local artist, Edward Laurence!
+
+
+     For the record, the figure was produced with D3.js, a Java library for data visualization.
+
+- date: 2015-12-10
+  text: |-
+    The latest contributions of the Networks section are now available in the December issue of Physical Review E.
+
+
+     In the first paper, entitled "Complex networks as an emerging property of hierarchical preferential attachment", we introduce an unifying principle that explains many real-world properties of complex networks, such as scale independence, clustering, fractality, and navigability.
+
+
+     It builds upon simple models such as the Structural Preferential Attachment
+    (SPA) principle, and the classical PA model of Barabási and Albert.
+
+
+     In the second contribution, entitled "General and exact approach to percolation on random graphs", we proposes a comprehensive and versatile theoretical framework to study site, bond and hybrid percolation on clustered and correlated random graphs.
+
+
+     It encompasses most of the models published to this day as special cases, and will help model structural properties not yet considered in the literature.
+
+
+     The full texts are available on the Publications page.
+
+- date: 2015-12-04
+  text: Jean-Gabriel Young has successfully completed his doctoral exam (with an unanimous excellent overall rating from the 4 examiners). This is the first official and major compulsory step towards his Ph. D. Congratulations are in order and celebrations are soon to come …
+
+- date: 2015-11-12
+  text: |-
+    It is with great pride that we announce that our group leader, Pr. Louis J. Dubé, has received the 2015 Excellence Award in Teaching, in the "Outstanding Graduate Faculty Mentor" category. The distinction is awarded to professors that foster an outstanding research and learning environment throughout their career. Pr. Louis J. Dubé brings the best out of every student, and, through invested mentorship, turns them in independent thinkers and researchers.
+    Thanks to the emphasis that he puts on communication and camaradrie, Dynamica is a tightly knit group of students akin to a family. Needless to say that the prize is well deserved, as no less than 15 members graduated from Dynamica in the past 10 years, and now pursue fulfilling academic and industrial careers.
+
+
+     Congratulations on behalf of the current and past members of Dynamica.
+
+- date: 2015-10-16
+  text: |-
+    After careful examination, the evaluation committee has given the highest overall mark (excellent) to the Master thesis of Jean-Luc Déziel. Therefore,
+    the name of the author will be added to the Tableau d’Honneur of the Faculté
+    des Etudes Supérieures et Post-doctorales (Graduate School). It perpetuates the group's tradition of excellence, with 7 theses added to the Board of Honour in 7 years. Congratulations are in order.
+
+
+
+
+     The thesis can be found here.
+
+- date: 2015-10-13
+  text: |-
+    The latest contribution of the networks section, titled " _A Shadowing Problem in the Detection of Overlapping Communities: Lifting the Resolution Limit through a Cascading Procedure_ " has just been published on the PLoS ONE website. In the paper, we show that a large class of overlapping community detection algorithm suffers from a new kind of resolution problem called shadowing. A simple meta-algorithm that circumvents the problem is proposed.
+    The full text is available on the publisher website (open access), and the software can be downloaded from github.
+
+- date: 2015-10-01
+  text: |-
+    A new member, Charles Murphy, has now officially joined Dynamica. This brings the network section to a combined force of 4 students. After he completes the Trial by Fire (an introductory marathon to nonlinear dynamics, network science and statistical physics), Morphée (his current nickname, waiting approval …)
+    will set on an investigation of the connectome, from a network point of view.
+
+- date: 2015-07-14
+  text: |-
+    The Photonics section strikes again. A tutorial/review entitled _Lorenz-Mie theory for 2D scattering and resonance calculations_ has just been accepted for publication in J. Opt. The PhD tutorial is based on the thesis work of Dr.
+    Denis Gagnon. It is concerned with a description of the two-dimensional generalized Lorenz-Mie theory (2D-GLMT), a well-established numerical method used to compute the interaction of light with arrays of cylindrical scatterers. This theory is based on the method of separation of variables and the application of an addition theorem for cylindrical functions. The purpose of this tutorial is to assemble the practical tools necessary to implement the
+    2D-GLMT method for the computation of scattering by passive scatterers or of resonances in optically active media. The first part contains a derivation of the vector and scalar Helmholtz equations for 2D geometries, starting from Maxwell's equations. Optically active media are included in 2D-GLMT using a recent stationary formulation of the Maxwell-Bloch equations called steady-
+    state ab initio laser theory (SALT), which introduces new classes of solutions useful for resonance computations. Following these preliminaries, a detailed description of 2D-GLMT is presented. The emphasis is placed on the derivation of beam-shape coefficients for scattering computations, as well as the computation of resonant modes using a combination of 2D-GLMT and SALT. The final section contains several numerical examples illustrating the full potential of 2D-GLMT for scattering and resonance computations. These examples, drawn from the literature, include the design of integrated polarization filters and the computation of optical modes of photonic crystal cavities and random lasers.
+
+- date: 2015-07-06
+  text: ''
+
+- date: 2015-05-11
+  text: |-
+    We are happy to announce the arrival of a new member, Guillaume St-Onge, to the brotherhood. While finishing his last course works for his B.Sc., and cumulating the load of a summer research student (NSERC fellowship), STO (his obvious (!) acronym) is learning the tricks of the trade in the Network Section. He has not yet passed the necessary test of our 100 kms+ bike outing,
+    but we are confident in his abilities. He is most welcome (until further notice) and we have set for him the investigation of Adaptive Networks started some time ago by Vincent Marceau.
+
+- date: 2015-04-22
+  text: |-
+    The _eleventh_ edition of the Symposium Dynamica will take place on April 30th at the beautiful Forêt Montmorency. This pedagogical activity is held as part of the Non-linear dynamics, Chaos and Complexity course. The second half of the semester is dedicated to team projects on selected subjects ranging from KAM theorem to Markov chain analysis of musical compositions. During the Symposium, each team must present their work to a jury composed of their peers and of the members of the research group. The program of the day is available here (in french).
+
+
+     We will have the honour to have Patrick Desrosiers as our distinguished guest.
+
+- date: 2015-04-13
+  text: |-
+    Jean-Luc Déziel will hold his Master's colloquia on April 17th. He will expose his latest work, " _Ablation laser et croissance de réseaux de surfaces_ ", on theoretical and numerical models of Laser Induced Periodic Surfaces.
+
+
+     We wish him the best of luck!
+
+
+     For more information, see the attached notice (in French).
+
+- date: 2015-04-10
+  text: |-
+    Members of Dynamica will travel both close and far to 3 important Conferences this summer: Edward Laurence, Jean-Gabriel Young and LJD will attend the 2015
+    edition of the NetSci International School and Conference on Network Science in Zaragosa, Spain at the beginning of June, whereas Jean-Luc Déziel will take part in 2 conferences  closer to home base: EXCON 2015 in Montreal, and Photonic North in Ottawa,. The abstracts of the research to be presented can be seen here.
+
+- date: 2015-03-17
+  text: |-
+    Dynamica addresses anew its warm welcome to Professor Reinhold Blümel,
+    specialist of quantum chaos and the exact solution of "unsolvable" problems,
+    among other things. During his stay, Prof. Blümel will be giving a talk entitled "Introduction to Quantum Chaos: An Unconventional Perspective”.
+
+- date: 2015-02-18
+  text: |-
+    Jean-Gabriel YOUNG has been selected to attend the 2015 edition of the Complex Systems Summer School organized by the Santa Fe Institute. The summer school will be held in Santa Fe, NM from June 7 to July 3. Congratulations are in order. Here is an excerpt from the letter of acceptance highlighting the importance of the honour bestowed upon another member of the group (after Antoine Allard in 2011 and Laurent Hébert-Dufresne in 2012) :
+
+    “ … Out of more than 300 students (about 5 applicants for each seat) you have been selected based on your academic credentials, eclectic research agenda,
+    and evidence of transdisciplinary interests.
+
+
+     Selected participants come from all over the world and represent a wide range of disciplines. The Institute’s CSSS is our flagship educational program, now twenty-five years old. Many of our alumni tell us that participation in the program has had a major, sustained impact on their academic and professional careers, including membership in a research network of outstanding collaborators at the cutting edge of science.”
+
+- date: 2014-12-15
+  text: |-
+    It is with great pride that we announce that Denis Gagnon (DeGa) has successfully defended his thesis entitled "Generalized Lorenz-Mie Theory:
+    Applications to scattering and resonances of photonic complexes” and has therefore been awarded the title of Philosophiae Doctor (Ph. D.).
+
+
+     The thesis and the oral presentation have left a strong impression on the examiners. Rigour in the treatment of the models and novelty in the combination of methods (from scattering and resonance calculations to optimisation in photonics) were hailed as the highest standard to reach by all present. Besides the 4 publications that form the core of the thesis, a further success is to note, a special editorial invitation by the Journal of Optics (IOP) to produce a tutorial review of his thesis work.
+
+
+     The final version of his thesis is available from the theses page.
+
+
+     DeGa will join early in February 2015 the group of Steve Maclean at INRS Varennes (Energie-Matériaux-Télécommunications) for his post-doctoral research.
+
+- date: 2014-11-18
+  text: |-
+    Postdoctoral fellow Dr. Sergey Melnik will be visiting snowy Quebec City between the 17th and 22nd of November.
+
+
+     While his recent research focus mostly on spreading process on networks, he also has a keen interest for the dynamics of semiconductor laser, a subject that is close to the interest of our photonics section.
+
+
+     During his stay, Dr. Melnik will be giving a talk entitled "Modeling the structure and dynamics of complex networks".
+
+- date: 2014-09-30
+  text: |-
+    It is with great pride that we announce that Laurent Hébert-Dufresne (LSD) has successfully defended his thesis entitled "On the Growth and Structure of Social Systems Following Preferential Attachment" and has therefore been awarded the title of Philosophiae Doctor (Ph. D.).
+
+
+     There is no doubt that LSD belongs to this group of exceptional young researchers that will permeate the field of complex systems for the years to come. He has demonstrated time and time again his ability to move from ideas
+    (or germs of) to a workable model and his impressive list of publications bears testimony to this statement.
+
+
+     The final version of his thesis will be available from the theses page in the very near future.
+
+
+     Dr. Hébert-Dufresne is now pursuing his research as a James S. McDonnell Foundation Post-doctoral Fellow at the Santa-Fe Institute, New Mexico.
+
+- date: 2014-09-11
+  text: |-
+    Members of the network division authored a chapter in the recently published book "Mathematical Modelling of Zombies".
+
+
+     In this tongue-in-cheek presentation, they showcase the tools of adaptive
+
+
+     network theory by predicting the outcome of a Zombie apocalypse.
+
+
+     You can download the chapter from our website. The complete book is now available on Amazon.
+
+- date: 2014-09-08
+  text: The latest contribution of the Photonics section, entitled _Optimization of integrated polarization filters_ , will be published in the October issue of Optics Letters. In this crisp Letter, we present the design of integrated optical devices suited for the dual purpose of beam shaping and logical polarization filtering. The full text is available here. See the Publications page for more details
+
+- date: 2014-09-08
+  text: |-
+    It is with pride that we announce that Joey Dumont and Jean-Gabriel Young have submitted for evaluation their master’s theses entitled "On the Modelization of Optical Devices: From Dielectric Cavities to Radiating Structures" and « De la Détection de la Structure Communautaire des Réseaux Complexes » (On the Detection of Community Structure in complex Systems) respectively. The full text of the research will soon be available from the Theses section of this site.
+
+
+     Joey Dumont is pursuing his graduate studies in light-matter interactions at INRS-ÉMT, while Jean-Gabriel Young has decided to remain in the fold a bit longer to continue his doctoral research.
+
+- date: 2014-08-01
+  text: |-
+    Last July, the latest research of our group was presented by L. J. Dubé at the
+    16th International Conference on Transparent Optical Networks in Graz,
+    Austria. The proceedings of the invited talk, titled _Adding SALT to Coupled Microcavities: the making of active photonic molecule lasers,_ is available from the Conferences section of this site.
+
+- date: 2014-07-03
+  text: |-
+    Last month, our Network division went to Berkeley, California to take part in the 9th International School and Conference on Network Science. Jean-Gabriel Young and Laurent Hébert-Dufresne presented their lastest work.
+
+
+     The poster entitled "Complex networks are an emerging property of hierarchical preferential attachment" was one of the five posters, out of the 150+, to be awarded the Outstanding Poster Award. You can take a look at it in Publications section.
+
+- date: 2014-06-23
+  text: The latest contribution of the Photonics section, entitled _Ab initio investigation of lasing thresholds in photonic molecules_ , will be published in the August issue of J. Opt. Soc. Am B. In it, Denis Gagnon studies the lasing thresholds of photonic molecules by using the recently developed steady-state _ab initio_ laser theory (SALT). The full text is available on the Publications page.
+
+- date: 2014-04-25
+  text: |-
+    April 24th saw the second edition of our now traditional Symposium Numerica, a pedagogical activity held as part of the Numerical Physics course. Near the end of the semester, students are given a project and are tasked with making the most out of their nascent numerical skills. During the Symposium, each team must present their work to a jury composed of their peers and of the members of the research group. The program of the day is available here.
+
+
+     This year, we had the honour to have Daniel Côté and Philippe Després as our distinguished guests.
+
+- date: 2014-04-25
+  text: |-
+    It is with great pride that we announce that Antoine Allard has successfully defended his thesis entitled "Percolation sur graphes aléatoires –
+    modélisation et description analytique" (Percolation on Random Graphs –
+    modeling and analytic description), and has therefore been awarded the title of Philosophiae Doctor (Ph. D.).
+
+
+     After careful study of his thesis, the four examiners have been unanimous in granting the highest overall mark–excellent in all counts. Dr. Allard's name will soon be added to the Tableau d’Honneur (Board of Honour) of the Faculté
+    des Études Supérieures et Post-doctorales (Graduate School). The final version of his thesis will be available from the theses page in the very near future.
+
+
+     It has been a pleasure to discover the world of Network Science with Antoine,
+    one of the first two collaborators with Dr. Pierre-André Noël in our Networks Section. His talents have matured over the years and his scientific contributions have always been inspired by a sense of rigour and a search for generality. His thesis is a vibrant testimony of the depth and breadth of his work. We wish him continuing success in his research in tune with his undeniable scientific (and human) qualities.
+
+
+     Dr. Allard will soon be pursuing his research as a Postdoctoral Scholar in Prof. Marian Boguna’s group at the Universitat de Barcelona, Spain.
+
+- date: 2014-04-04
+  text: |-
+    It is a pleasure to announce that Jean-Gabriel Young and myself, Joey Dumont,
+    have held our Master's colloquia. The former brilliantly exposed his latest work, _On the Detection of the Community Structure of Complex Networks_ ,
+    wherein he discussed a generalized theoretical framework for the study of community detection algorithms. For more information, see the attached notice
+    (in French).
+
+
+     As for myself, I discussed the modelization of optical devices with the use of scattering methods and applied these methods to the study of bidimensional microcavities and of radiating structures. Once again, more details can be found in the notice (also in French).
+
+
+     Here at Université Laval, a Master's colloquium is a rather informal event where the graduate student publicly presents his or her work before a panel of judges. Because this occurs before the thesis is shown to the judges (or even written), their task is not to evaluate the student, but to provide him or her with some last advice before the conclusion of his/her graduate work. These colloquia thus represent the beginning of the end for Mr. Young and I.
+
+- date: 2014-04-04
+  text: |-
+    The Networks division will once again be participating to the NetSci conference. During the 9th edition of the international conference, Jean-
+    Gabriel Young will be giving a talk entitled _Structural preferential attachment of community structure and its relation to Dunbar’s number_ ,
+    chosen amongst 310 contributions. Our other emissary will be Laurent Hébert-
+    Dufresne. He shall reveal how _Complex networks are an emerging property of hierarchical preferential attachment_ in a poster presentation.
+
+
+     Held in Berkeley, California this year, the meeting will provide us the opportunity to be, if only briefly, reunited with our former member, Dr.
+    Pierre-André Noël, who is on the program committee of this year's edition.
+
+- date: 2014-02-10
+  text: |-
+    _Physical Review E_ has recently announced that they will be marking a small numbers of articles with a seal reserved for papers 'of particular interest,
+    importance, or clarity.'
+
+
+     On that note, we wish to announce that _Coexistence of phases and the observability of random graphs_ has been published in PRE and has been chosen as an Editors' Suggestion. We congratulate Antoine Allard (and his co-authors)
+    for this fine work and hope this paper will receive the attention it deserves.
+    __
+
+- date: 2014-01-29
+  text: |-
+    The senior member of our research group, Antoine Allard, has been nominated for a merit award by the local student association for his work as a TA. It seems our budding physicist has grown to become a capable educator.
+
+
+     This nomination follows from his Fall 2013 stint as TA for the Statistical Physics course.
+
+- date: 2014-01-21
+  text: |-
+    It is with great pride that we announce that Guillaume Painchaud-April has successfully defended his thesis entitled " **Dielectric cavities: Scattering formalism and applications** " and has therefore been awarded the title of Philosophiae Doctor (Ph. D.). The event took place on the 11th of December
+    2013 as mentioned in previous news.
+
+
+     The final version of his thesis is now available from the theses page.
+
+
+     During his time in the group, Dr. Painchaud-April has been the rock upon which we all, at one time or another, reached for support. He has developed into a thorough and careful analyst unafraid to tackle the most daunting difficulties. His thesis is a testimony of his skill and his thoughtful insights. We wish him well for his future endeavours.
+
+
+     Dr. Painchaud-April is continuing his career as a NDT Specialist in the Solutions and Technologies Group of Olympus NDT Canada (www.olympus-IMS.com).
+
+- date: 2013-12-10
+  text: On November 29th, 2013, Denis Gagnon met with his doctoral committee to present the work he performed in the last year. Almost a year to the day after his doctoral exam, this oral presentation allows the advisors to follow-up on the progress of the doctoral candidate. Needless to say, D.G. delivered an excellent seminar.
+
+- date: 2013-12-10
+  text: 'The continued effort of our Networks division has borne fruit once again. Two new papers, _Epidemics on contact networks: a general stochastic approach_ by Dr. Pierre-André Noël is to appear in _J. Math. Bio._ while _Percolation on random networks with arbitrary k-core structure_ by Laurent Hébert-Dufresne and Antoine Allard was accepted to be published Phys. Rev. E. We heartily congratulate the authors for their work!'
+
+- date: 2013-12-10
+  text: |-
+    Tomorrow, on December 11th, Guillaume Painchaud-April will be defending his thesis. Entitled _Dielectric Cavities: Scattering formalism and applications_
+    , it is the apotheosis of years of hard work. We wish him the best of luck.
+
+- date: 2013-12-10
+  text: |-
+    Dynamica bids a warm welcome to Professor Reinhold Blümel, specialist of ion trapping, quantum chaos and the exact solution of "unsolvable" problems.
+    During his stay in snowy Quebec City, Prof. Blümel will be giving talk entitled "Code Breaking with Quantum Computers".
+
+
+     He is also on Guillaume Painchaud-April's advising committee and will act as an external advisor for his thesis defence.
+
+- date: 2013-10-21
+  text: |-
+    Laurent Hébert-Dufresne (LSD) is one of the 10 recipients of this year 2013
+    JSMF Fellowships. The post-doctoral award comes with a small (!) stipend at the level of $200 000 US for 2 years. We congratulate LSD for this remarkable achievement and are proud to salute the collaborative spirit and work of the Network section of Dynamica that helped make the application for the Fellowship a outstanding success. The title of the research to be pursued under the Fellowships reads:« Co-evolution dynamics : from disease spread and resource distribution in human systems to biological and cultural evolution ».
+    Is there more to say?
+
+- date: 2013-07-11
+  text: |-
+    A new paper entitled _Global Efficiency of Local Immunization on Complex Networks_ , has been published by our Networks division. To appear in
+    _Scientic Reports_ , it deals with the importance of local measures to properly identify influential spreaders in a complex network.
+
+
+     More information can be found on our Publications page.
+
+- date: 2013-06-19
+  text: A new paper, penned by Denis Gagnon, is set to appear in the July issue of Opt. Lett. Both the arXiv preprint and the full text are available from the Publications page.
+
+- date: 2013-05-15
+  text: 'Copenhagen, capital city of Denmark, will be host to the 8th International School and Conference on Network Science, or NetSci 2013. Our Networks division will be contributing a talk and two poster presentations. Laurent Hébert-Dufresne will be giving a talk entitled _Hard-core random networks as an effective model of bond percolation on real networks_. Antoine Allard''s poster is _Bond and site percolation on clustered and correlated random graphs_. Finally, Jean-Gabriel Young will be presenting _Local and global solutions to community detection: when resolution matters_. More information can be found on the Conferences section of this site. ****'
+
+- date: 2013-05-13
+  text: |-
+    In the latter part of the month of June, Joey Dumont and Denis Gagnon will present their latest research at the 15th International Conference on Transparent Optical Networks. Their respective oral presentations, _S and Q Matrices Reloaded: applications to open, inhomogeneous and complex cavities_
+    and _Coherent beam shaping using two-dimensional photonic crystals_ will be part of the Special session on Photonic Atoms  & Molecules. The conference proceedings and copies of the talks will be available from the Conferences section of this site.
+
+- date: 2013-05-13
+  text: |-
+    A member of our Photonics division, Denis Gagnon, will be contributing to the
+    44th Annual DAMOP Meeting in the form of a poster presentation entitled
+    _Optimization in optical systems revisited: Beyond genetic algorithms_. An abstract and the poster are available from the Conferences section of the site. __
+
+- date: 2013-03-05
+  text: |-
+    While at the Complex Systems Summer School (Santa Fe Institute) in June 2012,
+    Laurent Hébert-Dufresne and three fellow attendees studied a competitive form of percolation (competition between site and bond percolation). Doing so they demonstrated that the order parameter could undergo a macroscopic jump,
+    therefore answering a long-standing question as whether first-order phase transitions could occur on random networks. Congratulations are indeed in order.
+       Their paper may be found here (APS website). This fruitful collaboration also yielded another paper that appeared in PLoS Comput. Biol. at the end of last year.
+
+- date: 2012-12-20
+  text: |-
+    Denis Gagnon and Laurent Hébert-Dufresne have successfully completed their doctoral exams on the 5th and the 19th of Decembre respectively.
+    Congratulations are in order.
+
+- date: 2012-12-03
+  text: 'Two emissaries (Antoine Allard and Laurent Hébert-Dufresne) have been sent south of the border to take part in the 2nd International Conference on Complex Sciences: Theory and Applications, December 5–7, 2012 Santa Fe, New Mexico. Their oral presentations are titled: _On the constrained growth of complex critical systems_ and _Unveiling hidden communities through cascading detection on network structures_. The archived manuscripts may be found from the Publications page.'
+
+- date: 2012-11-12
+  text: Our most recent contribution on photonic crystals and their use to generate arbitrary-profiled beams has appeared in J. Opt. Soc. Am. A shortly. The arXiv version as well as the full text version of the paper can be downloaded from the Publications page.
+
+- date: 2012-09-25
+  text: |-
+    It is with great pride that we announce that Pierre-André Noël has successfully defended his thesis entitled "Dynamiques stochastiques sur réseaux complexes" (Stochastic Dynamics on Complex Networks), and has therefore been awarded the title of Philosophiae Doctor (Ph. D.).
+
+
+     After careful study of his thesis, the four examiners have been unanimous in granting the highest overall mark–excellent in all counts. Dr. Noël's name will soon be added to the Tableau d’Honneur of the Faculté des Études Supérieures et Post-doctorales (Graduate School). The final version of his thesis will be available from the theses page in the very near future.
+
+
+     Throughout his time in our group, Dr. Noël has been highly esteemed both at the personal and professional levels. Besides his talent and originality, his intellectual generosity has been one of his defining qualities. He has significantly contributed to the success of many projects, and to the training of his younger colleagues.
+
+
+     Dr. Noël is now pursuing his research as a Postdoctoral Scholar in Prof.
+    Raissa D'Souza's group at University of California, Davis.
+
+- date: 2012-09-21
+  text: Our new paper entitled "Bond percolation on a class of correlated and clustered random graphs" has been published in J. Phys. A. The full text (on the IOP website) and the associated arXiv are available from the publications page.
+
+- date: 2012-09-17
+  text: Pierre-André Noël will be defending his PhD thesis on September 24th in room POP-1168. Abstract of the presentation and other details may be found here.
+
+- date: 2012-07-17
+  text: Guillaume Painchaud-April has recently joined the R&D Team at Olympus NDT Canada situated in the Parc technologique near Québec City. Congratulations are in order. May he remain safe and sound outside of the “fold”.
+
+- date: 2012-05-17
+  text: Pierre-André Noël has been hired as a Postdoctoral Scholar in Prof. Raissa D'Souza's group at University of California, Davis. We wish him an interesting and productive time despite his physical distance from the Brotherhood...
+
+- date: 2012-03-28
+  text: Our new paper in EPL has been published. The full text (on the IOP website) and the associated arXiv are available from the publications page.
+
+- date: 2012-03-16
+  text: Our new paper in Physical Review E has been published. The full text (on the APS website) and the associated arXiv are available from the publications page.
+
+- date: 2012-03-01
+  text: |-
+    Laurent Hébert-Dufresne has been selected to attend the 2012 edition of the Complex Systems Summer School organized by the Santa Fe Institute. The summer school will be held in Santa Fe, NM from June 4 to June 29. Congratulations are in order. Here is an excerpt from the letter of acceptance highlighting the importance of the honour bestowed upon another member of the group (after Antoine Allard in 2011) :
+
+    " ...Out of more than 300 students (about 6 applicants for each seat) you have been selected based on your academic credentials, eclectic research agenda,
+    and evidence of transdisciplinary interests. Selected participants come from all over the world and represent a wide range of disciplines.
+       The Institute’s Complex Systems Summer School is our flagship educational program, now nearly twenty-five years old. Many of our alumni tell us that participation in the School has had a major, sustained impact on their academic and professional careers, including membership in a research network of outstanding collaborators at the cutting edge of science."
+
+- date: 2012-02-29
+  text: Our new paper in Physical Review E has been published. The full text (on the APS website) and the associated arXiv are available from the publications page.
+
+- date: 2011-11-14
+  text: |-
+    The world-renowned biosensor par excellence Dr. Vollmer will be presenting 2
+    talks in the Physics Department: a general public Colloquium (15 Nov.) entitled "Resonator-based Biosensing and Light Localization" as well as a more technical Seminar (16 Nov.) on "Microcavity Biosensors: Application of a label-free microsystem biodetection technology". More details can be found here.
+       He will also take the opportunity to discuss new projects with the Photonics section of Dynamica and meet a number of colleagues interested in biosensing in the greater Québec area. He will end his trip on the 18th of Novembre with a visit to our Montréal collaborators at Ecole Polytechnique and McGill.
+
+- date: 2011-11-13
+  text: Following in the footsteps of Antoine Allard who received the no-less prestigious Frederick Banting and Charles Best Canada Doctoral Scholarship from the Canadian Institutes of Health Research (CIHR) in 2008, Laurent Hébert-Dufresne has recently been informed by NSERC of its intention to upgrade his doctoral support to the level of the Alexander Graham Bell scholarship. We bow to the wisdom of NSERC for this most judicious and well deserved decision.
+
+- date: 2011-10-13
+  text: |-
+    It is with great pride that we have learned that Laurent Hébert-Dufresne's Master thesis has received the highest overall mark (excellent) by its three examiners. The thesis will be added to the Tableau d’Honneur of the Faculté
+    des Etudes Supérieures et Post-doctorales (Graduate School).
+
+- date: 2011-10-13
+  text: |-
+    Our recent publication in _Physical Review Letters_ is the subject of an article in _Au fil des événements_ , Université Laval's community newspaper.
+    The article can be found here.
+
+- date: 2011-09-30
+  text: |-
+    Our new paper in Physical Review Letter will be published online on October
+    3rd. The full text (on the APS website) and the associated arXiv are available from the publications page.
+
+- date: 2011-09-29
+  text: |-
+    After careful examination of the Master thesis of Denis Gagnon and Vincent Marceau, the examiners (3 x 2) have given the highest overall mark (excellent)
+    for both theses. Therefore, the names of their authors will be added to the Tableau d’Honneur of the Faculté des Etudes Supérieures et Post-doctorales
+    (Graduate School). Congratulations are the least we can do.
+
+- date: 2011-09-15
+  text: The look of our homepage has changed!
+
+- date: 2011-05-01
+  text: |-
+    We will be attending the 2011 edition of the International School and Conference on Network Science (NetSci 2011). Vincent Marceau, Laurent Hébert-
+    Dufresne and Pierre-André Noël will be presenting their latest results via two oral presentations and a poster presentation, respectively. Netsci 2011 will be help from June 6th to June 10th in Budapest, Hungary.
+
+- date: 2011-03-30
+  text: |-
+    We will be attending the 2011 edition of the International Workshop on Microcavities and their Applications (WOMA 2011). Denis Gagnon and Louis J.
+    Dubé will be presenting the latest results of the group via a poster presentation and a oral presentation, respectively. WOMA 2011 will be help from May 24th to May 27th in Pusan, South Korea.
+
+- date: 2011-03-30
+  text: Laurent Hébert-Dufresne and Denis Gagnon have received PhD scholarships from the Natural Sciences and Engineering Research Council of Canada (NSERC).
+
+- date: 2011-03-01
+  text: Antoine Allard has been selected to attend the 2011 edition of the Complex Systems Summer School organized by the Santa Fe Institute. The summer school will be held in Santa Fe, NM from June 8th to July 1st.

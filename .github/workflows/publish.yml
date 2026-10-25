@@ -1,0 +1,78 @@
+name: Render and Deploy Quarto Site
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+concurrency:
+  group: pages
+  cancel-in-progress: false   # let a deploy finish rather than cancel mid-publish
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v5
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Checkout LFS objects
+        run: git lfs checkout
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10.0.1
+        with:
+          enable-cache: true
+
+      - name: Set up Python and install dependencies
+        run: |
+          uv python install
+          uv sync --frozen
+
+      - name: Run create-pages.py
+        run: uv run python create-pages.py
+
+      - name: Set up Quarto
+        uses: quarto-dev/quarto-actions/setup@v2
+
+      - name: Cache Quarto extensions
+        uses: actions/cache@v5
+        with:
+          path: _extensions
+          key: quarto-ext-${{ hashFiles('_extensions/**') }}
+
+      - name: Install Quarto extensions
+        run: |
+          quarto add quarto-ext/fontawesome --no-prompt
+          quarto add schochastics/academicons --no-prompt
+        # skip this step instead if _extensions/ is already committed to the repo
+
+      - name: Render site
+        run: uv run quarto render
+
+      - name: Disable Jekyll processing
+        run: touch docs/.nojekyll
+
+      - name: Upload site artifact
+        uses: actions/upload-pages-artifact@v5
+        with:
+          path: docs   # match your output-dir in _quarto.yml
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

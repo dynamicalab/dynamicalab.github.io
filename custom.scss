@@ -1,0 +1,457 @@
+/*-- scss:defaults --*/
+$max-width: 800px;
+$navbar-offset: 150px; // An offset should not be required, but I did not find a way to left-align the navbar and the content without it...
+$headings-font-weight: 200;
+$ourblue:              #4C72B0;
+$ourorange:            #DD8452;
+$ourgreen:             #55A868;
+$body-color:           #3a3a3a;
+$headings-color:       $ourblue;
+// $headings-color:       $body-color;
+$link-color:           $ourblue;
+$available-link-color: #304479;
+$keyword-color:        $ourgreen;
+$body-bg:              #F9F9F9;
+// $navbar-hl: $navbar-fg;
+
+
+/*-- scss:rules --*/
+body {
+  max-width: 960px;
+  margin: auto;
+  padding-bottom: 2rem;
+  font-size: 100%;
+  background-color: $body-bg;
+}
+
+a {
+    color: $link-color;
+    text-decoration: none;
+}
+a:hover {
+    color: $link-color;
+    text-decoration: underline;
+}
+
+h1, .title {
+  font-weight: $headings-font-weight !important;
+}
+
+
+.home-title {
+  font-size: 2rem;
+  color: $headings-color;
+}
+
+.home-subtitle {
+  font-size: 1rem;
+  // color: $link-color;
+}
+
+.home-subsubtitle {
+  font-size: 1.2rem;
+  // color: $link-color;
+}
+
+.home-about-us {
+  background-color: #f0f0f0;
+  padding-top: 0.1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  border-radius: 16px;
+}
+
+.home-group-picture {
+  text-align: center;
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+// Use direct-child selectors: quarto duplicates the .quarto-figure classes
+// onto the inner <img> itself, so a plain descendant selector would shrink
+// the image twice (once for the wrapper, once for the img).
+.home-group-picture > .quarto-figure {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.home-group-picture img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+
+.home-group-picture .figure {
+  margin-bottom: 0.0rem;
+}
+
+.home-group-picture > p {
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0rem;
+  margin-bottom: 0.0rem;
+}
+
+.home-news {
+  padding-top: 1rem;
+}
+
+.home-news-item {
+  padding-top: 0.5rem;
+  margin-bottom: 0rem;
+  padding-bottom: 0rem;
+  height: 5rem;
+}
+
+.home-news-excerpt {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.home-news-more-details {
+  display: none;
+  font-size: 0.8rem;
+  text-align: right;
+  // margin-bottom: -5.8rem;
+}
+
+
+.news-item {
+  // padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.news-date {
+  font-weight: bold;
+}
+
+.news-body {
+  font-size: 1rem;
+  color: currentColor;
+}
+
+
+.member-card {
+  text-align: center;
+}
+
+.member-card p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.4;
+}
+
+.member-card a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.member-card a:hover {
+  color: $link-color;
+  opacity: 0.8;
+}
+
+.member-clickable-handle:hover {
+  color: $link-color;
+  opacity: 0.8;
+}
+
+.member-icon {
+  font-size: 1.4rem;
+  margin: 0 0.2rem;
+}
+
+.member-name {
+  font-weight: bold;
+  color: $link-color !important;
+}
+
+.alumni-icon {
+  margin: 0 0.2rem;
+}
+
+#alumni p {
+  margin-bottom: 0.2rem;
+}
+
+
+.author-presenter {
+  text-decoration: underline;
+}
+
+/* Style of personal (CV-style) member pages */
+
+.member-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.member-page-header img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  flex: 0 0 auto;
+}
+
+.member-page-education-entry {
+  font-weight: bold;
+}
+
+.member-page-headtext {
+  flex: 1 1 auto;
+  text-align: right;
+}
+
+.member-page-headtext h1 {
+  margin-bottom: 0.2rem;
+}
+
+.member-page-role {
+  display: block;
+  font-size: 1.1rem;
+  color: currentColor;
+  opacity: 0.8;
+  margin-bottom: 0.3rem;
+}
+
+.pub-outside-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-style: italic;
+  opacity: 0.65;
+}
+
+.education-supervisors {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.education-sub-entries {
+  margin-left: 1.5rem;
+  margin-top: -0.2rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+.education-sub-entries ul {
+  margin-bottom: 0;
+  padding-left: 1.2rem;
+}
+
+/* Style of publication entries */
+
+
+.pub-entry {
+  margin-bottom: 1.5rem;
+}
+
+.pub-entry p {
+  margin-top: 0;
+  margin-bottom: 0.15rem;
+  line-height: 1;
+}
+
+.pub-title {
+  font-size: 1.2rem;
+  color: currentColor;
+  // color: $headings-color;
+  line-height: 1;
+  margin-bottom: 0.4rem;
+  display: block;
+}
+
+.pub-content {
+  font-size: 0.9rem;
+  opacity: 0.9;
+}
+
+.pub-authors {
+  line-height: 1.2;
+}
+
+.pub-author-member {
+  // font-size: 1.2rem;
+  // color: #55A868;
+  // font-weight: 600 !important;
+  // font-style: italic;
+  // color: #545454 !important;
+  font-weight: bold;
+}
+
+.pub-author-nopage {
+  color: currentColor;
+}
+
+.pub-author-page {
+  color: $available-link-color
+}
+
+.pub-author-collaborator {
+  color: currentColor;
+  // font-style: italic;
+  // font-size: 1.2rem;
+  // color: #545454 !important;
+  // font-weight: 500 !important;
+}
+
+.pub-details {
+  // color: #55A868;
+  color: currentColor;
+  // font-style: italic;
+}
+
+// .pub-presentation-tag {
+//   font-weight: 600;
+//   font-size: 0.8em;
+//   text-transform: uppercase;
+//   letter-spacing: 0.03em;
+//   color: $headings-color;
+//   margin-right: 0.4rem;
+// }
+
+.pub-link a {
+  color: $link-color;
+  text-decoration: none;
+}
+
+.pub-link a:hover {
+  color: $link-color;
+  opacity: 0.8;
+}
+
+.pub-highlight {
+  font-size: 0.9rem;
+  color: currentColor;
+  opacity: 0.8;
+}
+
+.pub-keywords {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.2em;
+  margin-top: -0.5rem; // tighten the gap to the links line right above
+  margin-bottom: 0.3em; // control keyword-to-highlight gap explicitly, no strut fighting
+}
+
+.pub-keyword {
+  display: inline-block;
+  font-weight: 600;
+  font-size: 0.7em;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: $keyword-color;
+  margin-right: 0.4rem;
+  // display: inline-block;
+  // font-size: 0.8em;
+  // // padding-right: 0.1em;
+  // // border-radius: 999px;
+  // // background-color: #f0f0f0;
+  // // border: 1px solid #d0d0d0;
+  // color: #555;
+  // white-space: nowrap;
+}
+
+// #title-block-header {
+//   display: none;
+// }
+
+.icon-text {
+  display: inline-block;
+  font-family: sans-serif; /* or match your site's heading font */
+  font-weight: 900;
+  font-size: 1.1em;        /* academicons are typically sized relative to text */
+  // vertical-align: middle;
+  vertical-align: 0.1em;
+  // line-height: 1;
+  width: 1.28571429em;      /* same fixed-width trick academicons/FA use */
+  text-align: center;
+  color: currentColor;      /* inherits like a real icon font would */
+}
+
+
+
+
+.footnotes > h2 {
+  display: none;
+}
+
+
+#TOC > ul > li > a {
+  display: none;
+}
+#TOC > ul > li > ul {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.navbar > .container-fluid {
+  max-width: calc($max-width + $navbar-offset);
+  margin: 0 auto;
+  padding-left: 0 !important;
+}
+
+// Remove the harsh default outline, replace with something subtle
+.navbar .dropdown-toggle:focus,
+.navbar .dropdown-toggle:focus-visible {
+  outline: none;
+  box-shadow: none; // Bootstrap often uses box-shadow instead of outline for its own focus ring
+}
+
+// Optional: a gentler focus indicator instead of none at all (keeps accessibility)
+.navbar .dropdown-toggle:focus-visible {
+  // box-shadow: 0 0 0 2px rgba($link-color, 0.25);
+  box-shadow: none;
+  // border-radius: 4px;
+}
+
+.navbar .dropdown-menu {
+  border: none;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba($body-color, 0.12);
+  padding: 0.5rem 0;
+}
+
+.navbar .dropdown-item {
+  padding: 0.4rem 1.25rem;
+  font-size: 0.95rem;
+
+  &:hover, &:active {
+    background-color: rgba($link-color, 0.08);
+    color: $link-color;
+    border-radius: 16px;
+  }
+}
+
+.navbar .nav-item.dropdown.show .nav-link.dropdown-toggle,
+.navbar .dropdown-toggle[aria-expanded="true"] {
+  text-decoration: none;
+  color: $link-color;
+}
+
+// covers hover while open too, in case simplex's hover rule is what's underlining it
+.navbar .nav-item.dropdown.show .nav-link.dropdown-toggle:hover {
+  text-decoration: none;
+  color: $link-color;
+}
+
+// $navbar-light-color:         rgba($body-color, .8);
+// $navbar-light-hover-color:   rgba($body-color, .8);
+// $navbar-light-active-color:  rgba($body-color, .8);
+// $navbar-light-disabled-color: rgba(#212529, .3);
+
+// .navbar-light .navbar-nav .nav-link,
+// .navbar-light .navbar-nav .nav-link:hover,
+// .navbar-light .navbar-nav .nav-link.active {
+//   color: #212529 !important;
+// }

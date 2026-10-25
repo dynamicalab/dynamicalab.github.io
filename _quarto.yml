@@ -1,0 +1,69 @@
+project:
+  type: website
+  output-dir: docs
+  render:
+    - "!*.ipynb"
+    - "*.qmd"
+  resources:
+    - "cv/"
+    - "posters/"
+    - "slides/"
+  post-render:
+       - rm -f docs/search.json
+      #  - rm -f team.qmd
+
+
+website:
+  title: Dynamica Lab
+  site-url: https://antoineallard.github.io/dynamicalab/
+  repo-url: https://github.com/antoineallard/dynamicalab
+  repo-actions: []
+  favicon: images/logos/dynamica-bleu.svg
+
+  search: false
+  bread-crumbs: false
+
+  navbar:
+    title: false
+    # logo: images/logos/dynamica-bleu.svg
+    # pinned: true
+    search: false
+    left:
+       - text: Home
+         href: home.qmd
+       - text: News
+         href: news.qmd
+       - text: Team
+         href: team.qmd
+       - text: Publications
+         menu:
+            - text: Journal Articles & Writings
+              href: pubs.qmd#journal-articles-writings
+            - text: Presentations
+              href: pubs.qmd#presentations
+            - text: Theses
+              href: pubs.qmd#theses
+
+  sidebar: false
+
+  page-footer:
+    center: ""   # disables the "Made with Quarto" footer (equivalent to generator: false)
+
+
+format:
+  html:
+    # page-layout: custom
+    theme: [simplex, custom.scss]
+    toc: false
+    toc-depth: 3
+    toc-expand: 3
+    smooth-scroll: true
+    # code-copy: true
+    # mathjax: true
+    # callout-appearance: simple   # equivalent to admonition
+    default-image-extension: svg
+    # include-after-body: scripts/anchor-fix.html
+
+
+execute:
+  freeze: auto   # only re-execute notebooks when they change
