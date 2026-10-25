@@ -2017,6 +2017,18 @@
 
 
 - type: oral-presentation
+  title: Analytical prediction of structure-function relationships in networks of Kuramoto oscillators
+  authors:
+    - legare-arthur
+    - Nicolas Doyon
+    - desrosiers-patrick
+  conference: International School and Conference on Network Science (NetSci2026)
+  location: Boston, USA
+  year: 2026
+  slides: 2026-netsci-legare-arthur.pdf
+
+
+- type: oral-presentation
   title: Function aligns with geometry in locally connected neuronal networks
   authors:
     - legare-antoine
@@ -2200,10 +2212,9 @@
     - Pierre Marquet
     - desrosiers-patrick
   conference: SPIE Photonics West
-  slides: "/assets/pdf/slides/Behnaz_PW2025.pptx.zip"
-  country: United States
-  year: 2025
   location: San Francisco, California
+  year: 2025
+  slides: 2025-photonics-west-yazdani-zahra.pptx.zip
 
 - type: oral-presentation
   title: Unravelling neuronal network organization and growth stages through graph fingerprints
