@@ -1,6 +1,6 @@
 # Dynamica Lab website
 
-Source of the [Dynamica Research Lab](https://antoineallard.github.io/dynamicalab/) website, built with [Quarto](https://quarto.org/).
+Source of the [Dynamica Research Lab](https://dynamicalab.github.io) website, built with [Quarto](https://quarto.org/).
 
 The pages are not written by hand: `create-pages.py` reads the YAML files in `data/` and generates the Quarto pages (`home.qmd`, `news.qmd`, `team.qmd`, `pubs.qmd` and one `<id>.qmd` per member with a personal page), which Quarto then renders to HTML in `docs/`. The generated `.qmd` files and `docs/` are git-ignored, so **to change the site, edit the files in `data/`** (or `create-pages.py` for the layout), never the `.qmd` files.
 
