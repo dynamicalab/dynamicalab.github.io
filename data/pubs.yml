@@ -130,6 +130,19 @@
     - network-geometry
     - neuroscience
 
+- type: article
+  title: Operator-theoretic approach to the partial integration of randomly coupled phase oscillators
+  authors:
+    - thibeault-vincent
+    - claveau-benjamin
+    - allard-antoine
+    - desrosiers-patrick
+  journal: "_to appear in J. Phys.: Complex._"
+  year: 2026
+  arxiv: 2607.02617
+  keywords:
+    - dimension-reduction
+
 
 - type: article
   title: "Kuramoto meets Koopman: Constants of motion, symmetries, and network motifs"
