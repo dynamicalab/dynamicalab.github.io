@@ -15,8 +15,8 @@ project:
 
 website:
   title: Dynamica Lab
-  site-url: https://antoineallard.github.io/dynamicalab/
-  repo-url: https://github.com/antoineallard/dynamicalab
+  site-url: https://dynamicalab.github.io/
+  repo-url: https://github.com/dynamicalab/dynamicalab.github.io
   repo-actions: []
   favicon: images/logos/dynamica-bleu.svg
 
