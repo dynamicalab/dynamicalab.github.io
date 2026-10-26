@@ -146,6 +146,15 @@
   email: benjamin.claveau.1@ulaval.ca
   personal-page: true
   positions:
+    - role: Intern
+      start: 2022
+      end: 2022
+    - role: BSc student
+      university: Université Laval
+      degree: Physics
+      start: 2020
+      end: 2023
+      outside-of-dynamica: true
     - role: MSc student
       supervisor:
         - name: desrosiers-patrick
