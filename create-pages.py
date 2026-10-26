@@ -485,9 +485,9 @@ def get_pub_links(pub: dict[str, Any]) -> str:
     if pub.get("medrxiv"):
         links.append(f"[medRxiv]({DOI_PREFIX}{pub['medrxiv']}){{ .pub-link }}")
     if pub.get("slides"):
-        links.append(f"[slides]({SLIDES_PREFIX}{pub['slides']}){{ .pub-link }}")
+        links.append(f"<a class='pub-link' target='_blank' href='{SLIDES_PREFIX}{pub['slides']}'>slides<a>")
     if pub.get("poster"):
-        links.append(f"[poster]({POSTER_PREFIX}{pub['poster']}){{ .pub-link }}")
+        links.append(f"<a class='pub-link' target='_blank' href='{POSTER_PREFIX}{pub['poster']}'>poster<a>")
     return " | ".join(links)
 
 
