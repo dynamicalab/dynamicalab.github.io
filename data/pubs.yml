@@ -2041,6 +2041,28 @@
   year: 2026
   slides: legare-arthur-2026-netsci.pdf
 
+- type: oral-presentation
+  title: A Koopmanian approach to spectral and geometric properties of dynamics on networks
+  authors:
+    - claveau-benjamin
+    - thibeault-vincent
+    - allard-antoine
+    - desrosiers-patrick
+  conference: International School and Conference on Network Science (NetSci2026)
+  location: Boston, USA
+  year: 2026
+
+- type: poster-presentation
+  title: Développement d’analyses des réseaux d’activité cérébrale par imagerie optique
+  authors:
+    - claveau-benjamin
+    - Jérémie Guilbert
+    - Vincent Chouinard
+    - Michèle Desjardins
+  conference: Journée scientifique des étudiants – Centre de recherche sur le cancer de l’Université Laval
+  location: Québec, Canada
+  year: 2022
+
 
 - type: oral-presentation
   title: Function aligns with geometry in locally connected neuronal networks
@@ -2078,7 +2100,6 @@
     - desrosiers-patrick
   conference: UNIQUE Center Scientific Retreat
   year: 2025
-  poster: "assets/pdf/posters/2025-benjamin-unique.pdf"
   location: Saint-Paulin, Canada
 
 - type: oral-presentation
@@ -2265,7 +2286,6 @@
     - allard-antoine
     - desrosiers-patrick
   conference: International School and Conference on Network Science (NetSci2024)
-  slides: "assets/pdf/slides/Thibeault_Vincent_Netsci2024_slides_final.pdf"
   country: Canada
   year: 2024
   location: Québec, Qc
@@ -2294,7 +2314,6 @@
     - allard-antoine
     - desrosiers-patrick
   conference: International School and Conference on Network Science (NetSci2024)
-  poster: "assets/pdf/posters/netsci2024_claveau.pdf"
   location: Québec, Canada
   year: 2024
 
