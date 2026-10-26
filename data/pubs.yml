@@ -2039,7 +2039,7 @@
   conference: International School and Conference on Network Science (NetSci2026)
   location: Boston, USA
   year: 2026
-  slides: 2026-netsci-legare-arthur.pdf
+  slides: legare-arthur-2026-netsci.pdf
 
 
 - type: oral-presentation
@@ -2128,7 +2128,7 @@
   conference: 8th Canadian Neuroscience Meeting
   location: Toronto, Canada
   year: 2025
-  poster: 2025-can-charest-jordan.pdf
+  poster: charest-jordan-2025-can.pdf
 
 - type: oral-presentation
   title: Kuramoto meets Koopman -- Constants of motion, symmetries and network motifs
@@ -2228,7 +2228,7 @@
   conference: SPIE Photonics West
   location: San Francisco, California
   year: 2025
-  slides: 2025-photonics-west-yazdani-zahra.pptx.zip
+  slides: yazdani-zahra-2025-photonics-west.pptx.zip
 
 - type: oral-presentation
   title: Unravelling neuronal network organization and growth stages through graph fingerprints
