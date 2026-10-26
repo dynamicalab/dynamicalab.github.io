@@ -573,10 +573,10 @@
     github: arianelizotte
     orcid: 0000-0002-5446-675X
   personal-page: true
-  bio: >
-    I am PhD student advised by allard-antoine and co-advised by young-jean-gabriel.
-    I use Bayesian statistics and computational methods to improve our understanding of network models and properties.
-    My current research focuses on the latent geometry of complex networks.
+  #bio: >
+    #I am PhD student advised by allard-antoine and co-advised by young-jean-gabriel.
+    #I use Bayesian statistics and computational methods to improve our understanding of network models and properties.
+    #My current research focuses on the latent geometry of complex networks.
 
 
 - id: marceau-vincent

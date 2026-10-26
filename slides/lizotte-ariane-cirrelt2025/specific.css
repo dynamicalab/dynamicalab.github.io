@@ -1,0 +1,23 @@
+.theorem-box {
+    border: 2px solid #967bc0;
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+.theorem-title {
+    font-weight: bold;
+    background-color: #967bc0;
+    color: white;
+    padding: 5px 10px;
+    position: absolute;
+    top: 0;
+    left: -2px;
+    border-radius: 5px 0px 0 0;
+    font-size: 1.1em;
+}
+
+.theorem-content {
+    margin-top: 10px;
+}

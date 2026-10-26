@@ -1,0 +1,100 @@
+:root {
+    --main-color: #967bc0;
+    --pale-color: #ccb8ea;
+}
+
+
+#title-slide .subtitle {
+    font-size: 1.5em;
+    margin-top: .25em;
+    margin-bottom: .75em;
+}
+
+.reveal .slides {
+    font-weight: 500;
+    color: #444444;
+}
+
+.reveal code {
+    background-color: #f2f2f2;
+    border: 1px solid #a6a6a6;
+}
+
+.reveal h2 {
+    border-bottom: 1px solid;
+    border-color: var(--pale-color);
+    margin-bottom: 30px;
+    font-size: 1.4em;
+}
+
+.reveal em {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.reveal i {
+    font-style: italic;
+}
+
+/* Match callout font size with presentation*/
+.reveal .callout.callout-style-default div.callout-title {
+    font-size: 1.3em;
+}
+.reveal .callout-content {
+    font-size: 1.2em;
+}
+
+/* Adjust icons height in callouts */
+.reveal .callout.callout-titled .callout-icon::before {
+    margin-top: .6rem;
+}
+
+/* Center images */
+.reveal img {
+    display: block;
+    margin: auto;
+}
+
+.callout-icon {
+    vertical-align: middle;
+}
+
+.reveal a {
+    color: #A4A4CC;
+}
+
+.reveal .slide-number a {
+    font-size: 30px;
+}
+
+.reveal .slide ul li {
+    margin-top: 0.1em;
+    margin-bottom: 0em;
+}
+
+
+.logo-container {
+    table-layout: fixed;
+    width: 90%;
+    margin-top: 50px !important;
+}
+.logo {
+    max-height: 110px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.reveal .slides section .fragment.semi-fade-out.visible {
+    opacity: .2;
+}
+
+.reveal .slide ol, .reveal .slide ul{
+    margin-left: 5%;
+    margin-bottom: 0 !important;
+    width: 100%;
+}
+
+.reveal p {
+    margin-bottom: 0em;
+    margin-top: 1em;
+}

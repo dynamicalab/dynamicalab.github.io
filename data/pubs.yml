@@ -2110,8 +2110,8 @@
     - Jean-Gabriel Young
     - allard-antoine
   conference: Conference on Complex Systems (CCS2025)
-  # abstract: "assets/pdf/abstracts/ccs2025_abstract_lizotte.pdf"
-  slides: "assets/pdf/slides/ccs2025_slides_lizotte.pdf"
+  #abstract: "lizotte-ariane-ccs2025-abstract.pdf"
+  slides: "lizotte-ariane-ccs2025/index.html"
   year: 2025
   location: Siena, Italy
 
@@ -2231,7 +2231,7 @@
     - lizotte-ariane
     - Jean-Gabriel Young
     - allard-antoine
-  slides: "/assets/pdf/slides/cirrelt2025_slides_lizotte.pdf"
+  slides: "lizotte-ariane-cirrelt2025/index.html"
   # abstract: "/assets/pdf/abstracts/cirrelt2025_abstract_lizotte.pdf"
   conference: Montréal Network Science Workshop
   year: 2025
@@ -2325,7 +2325,7 @@
     - Jean-Gabriel Young
     - allard-antoine
   conference: International School and Conference on Network Science (NetSci2024)
-  poster: "assets/pdf/posters/netsci2024_poster_lizotte.pdf"
+  poster: "lizotte-ariane-netsci2024.pdf"
   # abstract: "assets/pdf/abstracts/netsci2024_abstract_lizotte.pdf"
   location: Québec, Canada
   year: 2024
@@ -2339,7 +2339,7 @@
     - allard-antoine
   conference: Sentinelle Nord Scientific Meeting
   # abstract: "assets/pdf/abstracts/sn2023_abstract_lizotte.pdf"
-  slides: "assets/pdf/slides/sn2023_slides_lizotte.pdf"
+  slides: "lizotte-ariane-sn2023/index.html"
   location: Québec, Canada
   year: 2023
 
@@ -2375,7 +2375,7 @@
     - allard-antoine
   conference: International School & Conference on Network Science (NetSci2023)
   # abstract: "assets/pdf/abstracts/netsci2023_abstract_lizotte.pdf"
-  slides: "assets/pdf/slides/netsci2023_slides_lizotte.pdf"
+  slides: "lizotte-ariane-netsci2023.pdf"
   location: Vienna, Austria
   year: 2023
 
@@ -2401,7 +2401,7 @@
     - Jean-Gabriel Young
     - allard-antoine
   conference: New England Statistics Symposium (NESS2023)
-  slides: "assets/pdf/slides/ness2023_slides_lizotte.pdf"
+  slides: "lizotte-ariane-ness2023.pdf"
   location: Boston, USA
   year: 2023
 
@@ -2517,7 +2517,7 @@
     - allard-antoine
   conference: International School and Conference on Network Science (Netsci2022)
   # abstract: "assets/pdf/abstracts/netsci2022_abstract_lizotte.pdf"
-  slides: "assets/pdf/slides/netsci2022_slides_lizotte.pdf"
+  slides: "lizotte-ariane-netsci2022.pdf"
   location: Shanghai, China
   year: 2022
 

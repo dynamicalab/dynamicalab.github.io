@@ -1,0 +1,117 @@
+:root {
+    --main-color: var(--r-heading-color);
+    --pale-color: #ccb8ea;
+    --color-bg: #EEE4F9;
+    --parskip: 1em;
+}
+
+
+#title-slide .subtitle {
+    font-size: 1.5em;
+    margin-top: .25em;
+    margin-bottom: .75em;
+}
+
+.reveal .slides {
+    font-weight: 500;
+    color: #444444;
+}
+
+.reveal code {
+    background-color: #f2f2f2;
+    border: 1px solid #a6a6a6;
+}
+
+.reveal h2 {
+    border-bottom: 1px solid;
+    border-color: var(--pale-color);
+    margin-bottom: 30px;
+    font-size: 1.4em;
+}
+
+.reveal em {
+    font-style: normal;
+    font-weight: 700;
+}
+
+.reveal i {
+    font-style: italic;
+}
+
+/* Match callout font size with presentation*/
+.reveal .callout.callout-style-default div.callout-title {
+    font-size: 1.3em;
+}
+.reveal .callout-content {
+    font-size: 1.2em;
+}
+
+/* Adjust icons height in callouts */
+.reveal .callout-icon-container{
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+/* Center images */
+.reveal img {
+    display: block;
+    margin: auto;
+}
+
+.callout-icon {
+    vertical-align: middle;
+}
+
+.reveal a {
+    color: #A4A4CC;
+}
+
+.reveal .slide-number a {
+    font-size: 30px;
+}
+
+.reveal .slide ul li {
+    margin-top: 0.1em;
+    margin-bottom: 0em;
+}
+
+.reveal .slides section .fragment.semi-fade-out.visible {
+    opacity: .2;
+}
+
+.reveal .slide ol, .reveal .slide ul{
+    margin-left: 5%;
+    margin-bottom: 0 !important;
+    width: 100%;
+}
+
+.reveal p {
+    margin-bottom: 0em;
+    margin-top: var(--parskip);
+}
+
+.indented {
+    margin-left: 4%;
+}
+
+.noskip p {
+    margin-top: calc(0.3 * var(--parskip));
+}
+
+
+.logo-container {
+    table-layout: fixed;
+    width: 90%;
+    margin-top: 50px !important;
+}
+.logo {
+    max-height: 110px;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+div.animation {
+    display:unset;
+}

@@ -1,0 +1,31 @@
+<section id="$idprefix$title-slide"$for(title-slide-attributes/pairs)$ $it.key$="$it.value$"$endfor$>
+  <h1 class="title">$title$</h1>
+$if(subtitle)$
+  <p class="subtitle">$subtitle$</p>
+$endif$
+$for(author)$
+  <p class="author">$author$</p>
+$endfor$
+$for(institute)$
+  <p class="institute">$institute$</p>
+$endfor$
+$if(date)$
+  <p class="date">$date$</p>
+$endif$
+<table class="logo-container">
+  <tr id="title-logo-list"></tr>
+</table>
+<script>
+const logos = ["dynamica.svg", "drac.png", "logo-frqnt-couleur.png", "logo_sn_fr.svg", "ul.svg"];
+
+for (var i = 0; i < logos.length; i++) {
+    let td = document.createElement("td");
+    td.classList.add("logo");
+    let img = document.createElement("img");
+    img.src = "logos/" + logos[i];
+
+    td.appendChild(img);
+    document.getElementById("title-logo-list").appendChild(td);
+}
+</script>
+</section>
