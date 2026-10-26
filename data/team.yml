@@ -144,6 +144,7 @@
   name: Benjamin Claveau
   picture: claveau-benjamin.jpg
   email: benjamin.claveau.1@ulaval.ca
+  personal-page: true
   positions:
     - role: MSc student
       supervisor:
@@ -164,7 +165,7 @@
         - name: allard-antoine
       start: 2025
   links:
-    github: BenClav
+    gscholar: CXK6K20AAAAJ
 
 
 - id: despres-philippe
