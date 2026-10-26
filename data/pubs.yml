@@ -2062,6 +2062,7 @@
   conference: Journée scientifique des étudiants – Centre de recherche sur le cancer de l’Université Laval
   location: Québec, Canada
   year: 2022
+  outside-of-dynamica: true
 
 
 - type: oral-presentation
