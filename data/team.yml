@@ -135,9 +135,32 @@
 
 - id: charest-jordan
   name: Jordan Charest
+  picture: charest-jordan.png
   email: jordan.charest.2@ulaval.ca
+  personal-page: true
   positions:
+    - role: BSc student
+      university: Université Laval
+      degree: Physics
+      start: 2020
+      end: 2023
+      outside-of-dynamica: true
+    - role: MSc student
+      supervisor:
+        - name: Michèle Desjardins
+      cosupervisor:
+        - name: desrosiers-patrick
+      start: 2023
+      end: 2026
+      thesis:
+        title: Analyse du couplage neurovasculaire et de la connectivité fonctionnelle corticale chez la souris par imagerie optique
+        tableau-d-honneur: true
     - role: PhD student
+      supervisor:
+        - name: Vincent Breton-Provencher
+      cosupervisor:
+        - name: desrosiers-patrick
+      start: 2026
 
 
 - id: claveau-benjamin
