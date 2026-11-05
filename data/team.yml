@@ -156,11 +156,14 @@
         title: Analyse du couplage neurovasculaire et de la connectivité fonctionnelle corticale chez la souris par imagerie optique
         tableau-d-honneur: true
     - role: PhD student
+      degree: Biophotonics
       supervisor:
         - name: Vincent Breton-Provencher
       cosupervisor:
         - name: desrosiers-patrick
       start: 2026
+  links:
+    gscholar: rIg6GbwAAAAJ
 
 
 - id: claveau-benjamin
